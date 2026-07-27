@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning className={inter.className}>
         <GATracker />
-        {children}
+      
         
       </body>
     </html>
