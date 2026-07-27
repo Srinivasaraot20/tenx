@@ -278,10 +278,10 @@ export default function Header() {
 
           {/* Social icons */}
           <div className="drawer-socials">
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Twitter">TW</a>
-            <a href="#" aria-label="LinkedIn">LN</a>
-            <a href="#" aria-label="Instagram">IG</a>
+            <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+            <a href="https://x.com/DigitalTenx9" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
+            <a href="https://linkedin.com/in/digitalmarketing-tenx-8278b440b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LN</a>
+            <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
           </div>
         </div>
       </div>
