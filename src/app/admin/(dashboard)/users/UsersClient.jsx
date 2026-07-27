@@ -454,7 +454,7 @@ export default function UsersClient({ initialUsers }) {
                     </td>
                     <td className="px-6 py-4">
                       {user.image ? (
-                        <img src={user.image} alt="" className="w-10 h-10 rounded-full object-cover border border-slate-200" />
+                        <img src={user.image} alt={user.name} className="w-10 h-10 rounded-full object-cover border border-slate-200" />
                       ) : (
                         <div className="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 font-bold uppercase">
                           {(user.name || user.email || "U").charAt(0)}
@@ -560,7 +560,7 @@ export default function UsersClient({ initialUsers }) {
             <div className="p-6 overflow-y-auto">
               <div className="flex items-center space-x-6 mb-8">
                 {viewModalData.image ? (
-                  <img src={viewModalData.image} alt="" className="w-24 h-24 rounded-full object-cover border-4 border-slate-50 shadow-sm" />
+                  <img src={viewModalData.image} alt={viewModalData.name} className="w-24 h-24 rounded-full object-cover border-4 border-slate-50 shadow-sm" />
                 ) : (
                   <div className="w-24 h-24 rounded-full bg-slate-100 border-4 border-slate-50 flex items-center justify-center text-slate-400 text-3xl font-bold uppercase shadow-sm">
                     {(viewModalData.name || viewModalData.email || "U").charAt(0)}
