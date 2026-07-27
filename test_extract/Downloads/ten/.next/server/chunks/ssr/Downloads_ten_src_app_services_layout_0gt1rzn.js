@@ -1,0 +1,3 @@
+module.exports=[99627,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"Digital Marketing Services | Best SEO & PPC Agency Hyderabad | TenX",description:"Boost your traffic and scale your sales. We offer professional digital marketing services, organic SEO, PPC Google Ads management, web design, and AI automation in Hyderabad.",alternates:{canonical:"https://digitalmarketingtenx.com/services"}}])},79283,a=>{a.n(a.i(99627))}];
+
+//# sourceMappingURL=Downloads_ten_src_app_services_layout_0gt1rzn.js.map

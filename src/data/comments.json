@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1001,
+    "articleId": 1,
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "website": "",
+    "comment": "Excellent breakdown of 2026 trends! The AI personalization section was especially helpful for our Hyderabad-based startup.",
+    "rating": 5,
+    "notify": false,
+    "status": "approved",
+    "isAdmin": false,
+    "replies": [
+      {
+        "id": 1002,
+        "name": "Digital Marketing TenX",
+        "comment": "Thank you, Rahul! Glad you found it useful. Feel free to reach out if you need help implementing any of these strategies.",
+        "isAdmin": true,
+        "createdAt": "2026-06-20T10:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-18T14:30:00.000Z"
+  },
+  {
+    "id": 1003,
+    "articleId": 10,
+    "name": "Kavitha Naidu",
+    "email": "kavitha@example.com",
+    "website": "https://example.com",
+    "comment": "This local SEO guide helped us rank on Google Maps for our clinic in Begumpet. Highly recommend!",
+    "rating": 5,
+    "notify": true,
+    "status": "approved",
+    "isAdmin": false,
+    "replies": [],
+    "createdAt": "2026-06-10T09:15:00.000Z"
+  },
+  {
+    "id": 1782795163058,
+    "articleId": 13,
+    "name": "snjnjknds",
+    "email": "ff@gmail.com",
+    "website": "",
+    "comment": "dsndnnjdn",
+    "rating": 5,
+    "notify": true,
+    "status": "pending",
+    "isAdmin": false,
+    "replies": [],
+    "createdAt": "2026-06-30T04:52:43.058Z"
+  },
+  {
+    "id": 1782850835503,
+    "articleId": 1,
+    "name": "vv",
+    "email": "n@gmail.com",
+    "website": "",
+    "comment": "cnjjnnfjdnfkjngng",
+    "rating": 5,
+    "notify": true,
+    "status": "pending",
+    "isAdmin": false,
+    "replies": [],
+    "createdAt": "2026-06-30T20:20:35.503Z"
+  }
+]

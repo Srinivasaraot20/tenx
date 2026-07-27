@@ -1,0 +1,258 @@
+.ty-main {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 100px;
+  background-color: #f8fafc;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+/* Dynamic Animated Background */
+.ty-main::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(29, 78, 216, 0.05), transparent 40%),
+              radial-gradient(circle at 20% 30%, rgba(255, 107, 0, 0.05), transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.05), transparent 40%);
+  animation: ty-bg-drift 25s infinite linear;
+  z-index: 1;
+}
+
+@keyframes ty-bg-drift {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ty-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ty-card {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  padding: 60px 50px;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255,255,255,0.8);
+  animation: ty-fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes ty-fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Success Checkmark Animation */
+.ty-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 30px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+  animation: ty-scale-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+@keyframes ty-scale-in {
+  to { opacity: 1; transform: scale(1); }
+}
+
+.ty-checkmark {
+  width: 45px;
+  height: 45px;
+  stroke: #10b981;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: ty-draw-check 0.6s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+}
+
+@keyframes ty-draw-check {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Typography */
+.ty-title {
+  font-size: 42px;
+  font-weight: 900;
+  margin: 0 0 16px;
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+}
+
+.ty-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0284c7;
+  margin: 0 0 20px;
+  letter-spacing: 0.5px;
+}
+
+.ty-desc {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0 0 40px;
+}
+
+.ty-desc strong {
+  color: #0f172a;
+}
+
+/* What Happens Next Steps */
+.ty-steps-box {
+  background: rgba(241, 245, 249, 0.7);
+  border: 1px solid rgba(0,0,0,0.04);
+  border-radius: 20px;
+  padding: 24px 30px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.ty-steps-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #64748b;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.ty-step-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.ty-step-item:last-child {
+  margin-bottom: 0;
+}
+
+.ty-step-item:hover {
+  background: rgba(255,255,255,0.8);
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.ty-step-num {
+  font-size: 16px;
+  font-weight: 900;
+  color: #ff6b00;
+  background: rgba(255, 107, 0, 0.15);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.ty-step-text {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.ty-step-text strong {
+  color: #0f172a;
+  display: block;
+  font-size: 14.5px;
+  margin-bottom: 4px;
+}
+
+/* Buttons */
+.ty-btn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ty-btn-primary {
+  background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
+  color: #ffffff !important;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(255, 107, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ty-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 107, 0, 0.35);
+}
+
+.ty-btn-secondary {
+  background: rgba(2, 132, 199, 0.05);
+  color: #0284c7 !important;
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ty-btn-secondary:hover {
+  background: rgba(2, 132, 199, 0.1);
+  border-color: rgba(2, 132, 199, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ty-card {
+    padding: 40px 24px;
+  }
+  .ty-title {
+    font-size: 32px;
+  }
+  .ty-steps-box {
+    padding: 20px;
+  }
+}

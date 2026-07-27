@@ -1,0 +1,3 @@
+module.exports=[64435,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"Website Design Company Jubilee Hills | Custom Web Development | TenX",description:"Get a premium, responsive website designed for high conversions. We build custom WordPress, Shopify, and Next.js corporate websites in Jubilee Hills, Hyderabad.",alternates:{canonical:"https://digitalmarketingtenx.com/services/website-design"}}])},33144,a=>{a.n(a.i(64435))}];
+
+//# sourceMappingURL=Downloads_ten_src_app_services_website-design_layout_1wvmb6l.js.map

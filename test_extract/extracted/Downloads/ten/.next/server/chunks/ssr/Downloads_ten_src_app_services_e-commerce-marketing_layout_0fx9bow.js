@@ -1,0 +1,3 @@
+module.exports=[77368,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"E-Commerce Marketing Agency | Shopify & WooCommerce SEO | TenX",description:"Grow your online store sales. We provide e-commerce marketing, Shopify SEO, WooCommerce search optimization, and Google Shopping ad campaigns.",alternates:{canonical:"https://digitalmarketingtenx.com/services/e-commerce-marketing"}}])},19738,a=>{a.n(a.i(77368))}];
+
+//# sourceMappingURL=Downloads_ten_src_app_services_e-commerce-marketing_layout_0fx9bow.js.map

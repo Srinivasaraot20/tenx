@@ -1,0 +1,3 @@
+module.exports=[60589,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"Google Ads Agency Hyderabad | PPC Campaign Management | TenX",description:"Accelerate your sales with our certified Google Ads agency in Hyderabad. We build and optimize high-ROAS PPC campaigns, Performance Max, and Shopping ads.",alternates:{canonical:"https://digitalmarketingtenx.com/services/google-ads"}}])},56524,a=>{a.n(a.i(60589))}];
+
+//# sourceMappingURL=Downloads_ten_src_app_services_google-ads_layout_0lij5o0.js.map

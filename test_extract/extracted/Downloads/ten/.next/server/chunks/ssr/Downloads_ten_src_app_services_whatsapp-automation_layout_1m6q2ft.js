@@ -1,0 +1,3 @@
+module.exports=[27426,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"WhatsApp Business Automation Setup | CRM Marketing | TenX",description:"Automate your lead nurturing and customer support. We integrate WhatsApp API, design custom chatbots, and build automated broadcast campaign setups.",alternates:{canonical:"https://digitalmarketingtenx.com/services/whatsapp-automation"}}])},69379,a=>{a.n(a.i(27426))}];
+
+//# sourceMappingURL=Downloads_ten_src_app_services_whatsapp-automation_layout_1m6q2ft.js.map
