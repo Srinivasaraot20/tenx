@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import { GoogleAnalytics } from '@next/third-parties/google';
 import GATracker from "@/components/GATracker";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema } from "@/components/schema/SchemaComponents";
 import "./globals.css";
 
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning className={inter.className}>
         <GATracker />
-      
+        {children}
         
       </body>
     </html>
