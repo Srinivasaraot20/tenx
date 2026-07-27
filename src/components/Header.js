@@ -137,7 +137,7 @@ export default function Header() {
                     <div className="dropdown-item-icon-wrap" style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "24px", height: "24px", minWidth: "24px", borderRadius: "6px", backgroundColor: "#f8fafc", border: "1px solid #f1f5f9" }}>
                       <Image 
                         src={item.icon} 
-                        alt="" 
+                        alt={item.title} 
                         width={14} 
                         height={14} 
                         style={{ objectFit: "contain", width: "auto", height: "auto" }}
@@ -238,7 +238,7 @@ export default function Header() {
                     {item.icon && (
                       <Image 
                         src={item.icon} 
-                        alt="" 
+                        alt={item.title} 
                         width={14} 
                         height={14} 
                         style={{ objectFit: "contain", width: "auto", height: "auto" }}
