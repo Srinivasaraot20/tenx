@@ -10,16 +10,13 @@ export default function Footer() {
       <footer>
         <div className="footer-brand">
           <Link href="/" className="logo" style={{ marginBottom: "12px" }}>
-            <picture>
-              <source srcSet="/logo.webp" type="image/webp" />
-              <img 
-                src="/logo.webp" 
-                alt="Digital Marketing TenX" 
-                width={56} 
-                height={56} 
-                className="logo-img-file footer-logo" 
-              />
-            </picture>
+            <Image
+              src="/logo.webp"
+              alt="Digital Marketing TenX Logo"
+              width={56}
+              height={56}
+              className="logo-img-file footer-logo"
+            />
             <span className="brand-name footer-brand-name">
               Digital Marketing <span className="brand-highlight">TenX</span>
             </span>
@@ -35,7 +32,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h4>Company</h4>
+          <h3>Company</h3>
           <ul>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about-us">About Us</Link></li>
@@ -63,7 +60,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h3>Services</h3>
           <ul>
             <li><Link href="/seo-services">SEO</Link></li>
             <li><Link href="/services/google-ads">Google Ads</Link></li>
@@ -74,20 +71,20 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4>Resources</h4>
+          <h3>Resources</h3>
           <ul>
-            <li><a href="#">Blog</a></li>
+            <li><Link href="/blog">Blog</Link></li>
             <li><a href="#">Case Studies</a></li>
             <li><a href="#">Marketing Guides</a></li>
           </ul>
-          <h4 style={{ marginTop: "20px" }}>Legal</h4>
+          <h3 style={{ marginTop: "20px" }}>Legal</h3>
           <ul>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             <li><Link href="/terms-and-conditions">Terms &amp; Conditions</Link></li>
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <div className="contact-item">
             <a href="tel:+919392251739" className="footer-contact-link" onClick={() => gtag.event({ action: "phone_call_click", category: "Contact", label: "Footer Phone" })}><span>📞</span><span>+91 93922 51739</span></a>
           </div>

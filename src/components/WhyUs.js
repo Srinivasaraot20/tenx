@@ -5,10 +5,10 @@ export default function WhyUs() {
       title: "Data-Driven Strategies",
       desc: "We use data, analytics, and market insights to make smarter marketing decisions that drive measurable business results.",
       bg: "#fff5ee",
-      badgeColor: "#ff6b00",
+      badgeColor: "#cc5500",
       badgeBg: "#fff5ee",
       icon: (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc5500" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <line x1="18" y1="20" x2="18" y2="10" />
           <line x1="12" y1="20" x2="12" y2="4" />
           <line x1="6" y1="20" x2="6" y2="14" />
@@ -51,10 +51,10 @@ export default function WhyUs() {
       title: "Dedicated Growth Team",
       desc: "Work with a dedicated team of digital marketing professionals focused on your business goals and long-term growth.",
       bg: "#f0fdf4",
-      badgeColor: "#16a34a",
+      badgeColor: "#15803d",
       badgeBg: "#f0fdf4",
       icon: (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#15803d" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M17 21v-2a4 4 0 0 0-3-3.87" />
           <path d="M9 21v-2a4 4 0 0 0-3-3.87" />
           <path d="M13 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -129,16 +129,16 @@ export default function WhyUs() {
         
         {/* Eyebrow Choice with Lines */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "12px" }}>
-          <div style={{ width: "40px", height: "2px", background: "#ff6b00" }}></div>
-          <span className="eyebrow" style={{ color: "#ff6b00", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <div style={{ width: "40px", height: "2px", background: "#cc5500" }}></div>
+          <span className="eyebrow" style={{ color: "#cc5500", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
             WHY BUSINESSES CHOOSE US
           </span>
-          <div style={{ width: "40px", height: "2px", background: "#ff6b00" }}></div>
+          <div style={{ width: "40px", height: "2px", background: "#cc5500" }}></div>
         </div>
 
         {/* Title */}
         <h2 style={{ fontSize: "36px", fontWeight: "800", color: "#0f172a", margin: "0 0 12px 0", textAlign: "center" }}>
-          Why Businesses <span style={{ color: "#ff6b00" }}>Partner</span> With Digital Marketing TenX
+          Why Businesses <span style={{ color: "#cc5500" }}>Partner</span> With Digital Marketing TenX
         </h2>
 
         {/* Subtitle */}
@@ -220,7 +220,7 @@ export default function WhyUs() {
               top: "16px",
               right: "16px",
               background: "#fff5ee",
-              color: "#ff6b00",
+              color: "#cc5500",
               fontSize: "11px",
               fontWeight: "800",
               width: "28px",
@@ -236,7 +236,7 @@ export default function WhyUs() {
               width: "80px",
               height: "80px",
               borderRadius: "50%",
-              background: "#ff6b00",
+              background: "#cc5500",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -260,7 +260,7 @@ export default function WhyUs() {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "8px",
-                background: "#ff6b00",
+                background: "#cc5500",
                 color: "#ffffff",
                 fontSize: "13px",
                 fontWeight: "700",

@@ -31,7 +31,7 @@ export default function Challenges() {
           <p style={{ fontSize: "16px", color: "#64748b", maxWidth: "680px", margin: "0 auto", lineHeight: "1.6" }}>
             Helping Businesses Scale with Data-Driven Digital Marketing Solutions
           </p>
-          <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#ff6b00", margin: "16px auto 0" }}></div>
+          <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#cc5500", margin: "16px auto 0" }}></div>
         </div>
 
         {/* 2-Column Comparison Wrap */}
@@ -54,7 +54,7 @@ export default function Challenges() {
 
           {/* Solutions Box */}
           <div className="chal-box green" style={{ height: "100%" }}>
-            <h3 style={{ fontSize: "16px", fontWeight: "800", color: "#16a34a", marginBottom: "20px", display: "flex", alignItems: "center", gap: "8px" }}>
+            <h3 style={{ fontSize: "16px", fontWeight: "800", color: "#15803d", marginBottom: "20px", display: "flex", alignItems: "center", gap: "8px" }}>
               <span>✅</span> Our Growth Solutions
             </h3>
             {solutions.map((item, idx) => (

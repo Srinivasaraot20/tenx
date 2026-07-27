@@ -86,16 +86,14 @@ export default function Header() {
     <>
       <nav className="header-nav">
         <Link href="/" className="logo" onClick={handleLinkClick}>
-          <picture>
-            <source srcSet="/logo.webp" type="image/webp" />
-            <img 
-              src="/logo.webp" 
-              alt="Digital Marketing TenX" 
-              width={56} 
-              height={56} 
-              className="logo-img-file"
-            />
-          </picture>
+          <Image
+            src="/logo.webp"
+            alt="Digital Marketing TenX Logo"
+            width={56}
+            height={56}
+            className="logo-img-file"
+            priority
+          />
           <span className="brand-name">
             Digital Marketing <span className="brand-highlight">TenX</span>
           </span>
@@ -139,7 +137,7 @@ export default function Header() {
                     <div className="dropdown-item-icon-wrap" style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "24px", height: "24px", minWidth: "24px", borderRadius: "6px", backgroundColor: "#f8fafc", border: "1px solid #f1f5f9" }}>
                       <Image 
                         src={item.icon} 
-                        alt={item.title} 
+                        alt="" 
                         width={14} 
                         height={14} 
                         style={{ objectFit: "contain", width: "auto", height: "auto" }}
@@ -185,10 +183,7 @@ export default function Header() {
       <div className={`ga-mobile-drawer ${isMobileMenuOpen ? "open" : ""}`}>
         <div className="drawer-header">
           <div className="logo">
-            <picture>
-              <source srcSet="/logo.webp" type="image/webp" />
-              <img src="/logo.webp" alt="TenX" width={40} height={40} />
-            </picture>
+            <Image src="/logo.webp" alt="TenX Logo" width={40} height={40} />
             <span className="brand-name" style={{ fontWeight: 800, fontSize: "15px" }}>TenX Menu</span>
           </div>
           <button className="drawer-close-btn" onClick={handleLinkClick}>✕</button>
@@ -243,7 +238,7 @@ export default function Header() {
                     {item.icon && (
                       <Image 
                         src={item.icon} 
-                        alt={item.title} 
+                        alt="" 
                         width={14} 
                         height={14} 
                         style={{ objectFit: "contain", width: "auto", height: "auto" }}
@@ -283,10 +278,10 @@ export default function Header() {
 
           {/* Social icons */}
           <div className="drawer-socials">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">LN</a>
-            <a href="#">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="LinkedIn">LN</a>
+            <a href="#" aria-label="Instagram">IG</a>
           </div>
         </div>
       </div>

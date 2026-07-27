@@ -63,7 +63,7 @@ export default function Hero() {
       <section className="hero">
         <div className="hero-content">
           <h1 className="animate-fade-in-up delay-100">
-            <span style={{ background: "linear-gradient(135deg, #ff6b00 0%, #d946ef 50%, #3b82f6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", display: "inline-block" }}>AI-Powered</span><br />
+            <span style={{ background: "linear-gradient(135deg, #cc5500 0%, #d946ef 50%, #3b82f6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", display: "inline-block" }}>AI-Powered</span><br />
             Digital Marketing Agency in Hyderabad
           </h1>
           <p className="animate-fade-in-up delay-200">
