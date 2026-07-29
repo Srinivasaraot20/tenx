@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import * as gtag from "@/lib/gtag";
 import "./contact.css";
 
 export default function ContactClient() {
@@ -89,6 +90,9 @@ export default function ContactClient() {
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+      // Track validation error
+      gtag.event("contact_form_error", { error_type: "validation", form_name: "contact_page_form" });
+
       // Scroll to first error
       const firstErrorKey = Object.keys(validationErrors)[0];
       const errorElement = document.getElementsByName(firstErrorKey)[0];
@@ -98,6 +102,7 @@ export default function ContactClient() {
       return;
     }
 
+    gtag.event("contact_form_start", { form_name: "contact_page_form" });
     setIsSubmitting(true);
 
     try {
@@ -111,8 +116,9 @@ export default function ContactClient() {
       
       const res = await response.json();
 
-      if (response.status === 201 || res.success) {
-        setFormData({
+        if (response.status === 201 || res.success) {
+          gtag.event("contact_form_success", { form_name: "contact_page_form" });
+          setFormData({
           fullName: "", companyName: "", email: "", phone: "", whatsApp: "",
           website: "", businessLocation: "", businessType: "", industry: "",
           services: { seo: false, googleAds: false, websiteDesign: false, socialMedia: false, ecommerce: false, whatsappAutomation: false, aiAutomation: false },
@@ -120,10 +126,12 @@ export default function ContactClient() {
         });
         setShowSuccessModal(true);
       } else {
+        gtag.event("contact_form_error", { error_type: "api_error", error_message: res.message, form_name: "contact_page_form" });
         setErrors({ form: res.message || "Failed to submit request." });
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } catch (error) {
+      gtag.event("contact_form_error", { error_type: "network_error", form_name: "contact_page_form" });
       setErrors({ form: "Network error. Please try again later." });
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -240,6 +248,7 @@ export default function ContactClient() {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="con-btn-primary"
+                  onClick={() => gtag.event("get_directions_click", { location: "head_office" })}
                 >
                   📍 Get Directions
                 </a>
@@ -261,6 +270,7 @@ export default function ContactClient() {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="con-btn-primary"
+                  onClick={() => gtag.event("get_directions_click", { location: "nandyal_branch" })}
                 >
                   📍 Get Directions
                 </a>
@@ -282,8 +292,8 @@ export default function ContactClient() {
                 +91 93922 51739
               </p>
               <div className="con-card-actions">
-                <a href="tel:+919392251739" className="con-btn-primary">Call Now</a>
-                <a href="https://wa.me/919392251739" target="_blank" rel="noopener noreferrer" className="con-btn-secondary">WhatsApp</a>
+                <a href="tel:+919392251739" className="con-btn-primary" onClick={() => gtag.event("phone_click", { phone_number: "+919392251739", button_location: "contact_page_card" })}>Call Now</a>
+                <a href="https://wa.me/919392251739" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("whatsapp_click", { button_location: "contact_page_card" })}>WhatsApp</a>
               </div>
             </div>
 
@@ -298,8 +308,8 @@ export default function ContactClient() {
                 info@digitalmarketingtenx.com
               </p>
               <div className="con-card-actions">
-                <a href="mailto:info@digitalmarketingtenx.com" className="con-btn-primary">Send Email</a>
-                <a href="https://digitalmarketingtenx.com" target="_blank" rel="noopener noreferrer" className="con-btn-secondary">Visit Website</a>
+                <a href="mailto:info@digitalmarketingtenx.com" className="con-btn-primary" onClick={() => gtag.event("email_click", { email_address: "info@digitalmarketingtenx.com", button_location: "contact_page_card" })}>Send Email</a>
+                <a href="https://digitalmarketingtenx.com" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("website_click", { destination: "digitalmarketingtenx.com" })}>Visit Website</a>
               </div>
             </div>
 
