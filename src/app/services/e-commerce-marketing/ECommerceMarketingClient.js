@@ -248,7 +248,7 @@ export default function ECommerceMarketingClient() {
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#ffffff", color: "#000000" }}>W</span> Wix eCommerce</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#000000", color: "#ffffff" }}>S</span> Squarespace Commerce</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#eef2ff", color: "#0064e0" }}>M</span> Meta Ads</div>
-            <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#fff5ee", color: "#ff6b00" }}>G</span> Google Ads</div>
+            <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#fff5ee", color: "#a13c00" }}>G</span> Google Ads</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#fffbeb", color: "#fbbc05" }}>A</span> GA4</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#eafaf1", color: "#34a853" }}>M</span> Merchant Center</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#ffebee", color: "#ff5a5f" }}>K</span> Klaviyo</div>
@@ -262,7 +262,7 @@ export default function ECommerceMarketingClient() {
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#ffffff", color: "#000000" }}>W</span> Wix eCommerce</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#000000", color: "#ffffff" }}>S</span> Squarespace Commerce</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#eef2ff", color: "#0064e0" }}>M</span> Meta Ads</div>
-            <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#fff5ee", color: "#ff6b00" }}>G</span> Google Ads</div>
+            <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#fff5ee", color: "#a13c00" }}>G</span> Google Ads</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#fffbeb", color: "#fbbc05" }}>A</span> GA4</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#eafaf1", color: "#34a853" }}>M</span> Merchant Center</div>
             <div className="ecom-ticker-item"><span className="ecom-logo-icon" style={{ background: "#ffebee", color: "#ff5a5f" }}>K</span> Klaviyo</div>
@@ -503,7 +503,7 @@ export default function ECommerceMarketingClient() {
 
               <div className="ecom-service-card">
                 <div className="ecom-service-header">
-                  <div className="ecom-service-icon-box" style={{ background: "rgba(255, 107, 0, 0.1)", color: "#ff6b00" }}>🛒</div>
+                  <div className="ecom-service-icon-box" style={{ background: "rgba(255, 107, 0, 0.1)", color: "#a13c00" }}>🛒</div>
                   <h3>Google Shopping & PMax</h3>
                 </div>
                 <p>Command high-intent traffic with Google Shopping. We set up, manage, and scale Performance Max campaigns, optimizing negative targets and search assets.</p>
@@ -632,7 +632,7 @@ export default function ECommerceMarketingClient() {
               </div>
 
               {/* Step 4: Feed Optimization */}
-              <div className="ecom-process-card" style={{ "--theme-color": "#ff6b00", "--theme-bg": "#fff7ed" }}>
+              <div className="ecom-process-card" style={{ "--theme-color": "#a13c00", "--theme-bg": "#fff7ed" }}>
                 <div className="ecom-process-step-num">04</div>
                 <div className="ecom-process-circle">
                   <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--theme-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -648,7 +648,7 @@ export default function ECommerceMarketingClient() {
               </div>
 
               {/* Step 5: Campaign Setup */}
-              <div className="ecom-process-card" style={{ "--theme-color": "#ec4899", "--theme-bg": "#fdf2f8" }}>
+              <div className="ecom-process-card" style={{ "--theme-color": "#be185d", "--theme-bg": "#fdf2f8" }}>
                 <div className="ecom-process-step-num">05</div>
                 <div className="ecom-process-circle">
                   <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--theme-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -821,7 +821,7 @@ export default function ECommerceMarketingClient() {
                 <p>Banish checkout bugs and high friction layouts to improve conversion rates.</p>
               </div>
 
-              <div className="ecom-benefit-card" style={{ borderLeft: "4px solid #ff6b00" }}>
+              <div className="ecom-benefit-card" style={{ borderLeft: "4px solid #a13c00" }}>
                 <h3>Lower CPA</h3>
                 <p>Lower your average Cost Per Acquisition using search asset optimization and negative filtering.</p>
               </div>
@@ -836,7 +836,7 @@ export default function ECommerceMarketingClient() {
                 <p>Increase cart checkouts using cross-sell templates, bundlers, and checkout incentives.</p>
               </div>
 
-              <div className="ecom-benefit-card" style={{ borderLeft: "4px solid #3b82f6" }}>
+              <div className="ecom-benefit-card" style={{ borderLeft: "4px solid #1d4ed8" }}>
                 <h3>Customer Retention</h3>
                 <p>Ensure customers buy again and again with customized post-purchase winback automations.</p>
               </div>

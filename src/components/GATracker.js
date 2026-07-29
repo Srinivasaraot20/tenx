@@ -1,12 +1,15 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import * as gtag from "@/lib/gtag";
+import useScrollTracking from "@/hooks/useScrollTracking";
 
-export default function GATracker() {
+function Tracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  useScrollTracking(pathname);
 
   useEffect(() => {
     if (pathname) {
@@ -19,4 +22,12 @@ export default function GATracker() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+export default function GATracker() {
+  return (
+    <Suspense fallback={null}>
+      <Tracker />
+    </Suspense>
+  );
 }

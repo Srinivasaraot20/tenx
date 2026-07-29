@@ -1,9 +1,9 @@
 /* ─── SOCIAL MEDIA MARKETING PAGE — DESIGN SYSTEM ─── */
 
 :root {
-  --smm-orange: #ff6b00;
+  --smm-orange: #a13c00;
   --smm-purple: #7c3aed;
-  --smm-pink: #ec4899;
+  --smm-pink: #be185d;
   --smm-blue: #2563eb;
   --smm-green: #10b981;
   --smm-dark: #0f172a;
@@ -450,7 +450,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  background: linear-gradient(135deg, #7c3aed, #be185d);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1336,13 +1336,13 @@
 .smm-step-purple .smm-proc-card { border-top-color: #a855f7; }
 .smm-step-purple .smm-proc-step-badge { background: rgba(168, 85, 247, 0.08); color: #a855f7; }
 
-.smm-step-pink .smm-proc-circle { border: 2.5px solid #ec4899; color: #ec4899; }
-.smm-step-pink .smm-proc-card { border-top-color: #ec4899; }
-.smm-step-pink .smm-proc-step-badge { background: rgba(236, 72, 153, 0.08); color: #ec4899; }
+.smm-step-pink .smm-proc-circle { border: 2.5px solid #be185d; color: #be185d; }
+.smm-step-pink .smm-proc-card { border-top-color: #be185d; }
+.smm-step-pink .smm-proc-step-badge { background: rgba(236, 72, 153, 0.08); color: #be185d; }
 
-.smm-step-blue .smm-proc-circle { border: 2.5px solid #3b82f6; color: #3b82f6; }
-.smm-step-blue .smm-proc-card { border-top-color: #3b82f6; }
-.smm-step-blue .smm-proc-step-badge { background: rgba(59, 130, 246, 0.08); color: #3b82f6; }
+.smm-step-blue .smm-proc-circle { border: 2.5px solid #1d4ed8; color: #1d4ed8; }
+.smm-step-blue .smm-proc-card { border-top-color: #1d4ed8; }
+.smm-step-blue .smm-proc-step-badge { background: rgba(59, 130, 246, 0.08); color: #1d4ed8; }
 
 .smm-step-violet .smm-proc-circle { border: 2.5px solid #8b5cf6; color: #8b5cf6; }
 .smm-step-violet .smm-proc-card { border-top-color: #8b5cf6; }
@@ -1896,9 +1896,9 @@
   color: var(--smm-dark);
   transition: all 0.2s ease;
 }
-.smm-faq-trigger:hover { color: #ff6b00; }
-.smm-faq-card.open { border-color: #ff6b00; box-shadow: 0 4px 20px rgba(255, 107, 0, 0.05); }
-.smm-faq-card.open .smm-faq-trigger { color: #ff6b00; }
+.smm-faq-trigger:hover { color: #a13c00; }
+.smm-faq-card.open { border-color: #a13c00; box-shadow: 0 4px 20px rgba(255, 107, 0, 0.05); }
+.smm-faq-card.open .smm-faq-trigger { color: #a13c00; }
 .smm-faq-chevron { width: 10px; height: 6px; transition: transform 0.3s ease; flex-shrink: 0; }
 .smm-faq-chevron.rotated { transform: rotate(180deg); }
 .smm-faq-answer {
@@ -1991,3 +1991,62 @@
   .smm-calc-result-num { font-size: clamp(16px, 3vw, 20px); }
 }
 
+
+/* ==============================================================
+   MOBILE & TABLET RESPONSIVE OVERRIDES (ADDED PER USER REQUEST)
+   ============================================================== */
+
+/* Desktop Grid Defaults */
+@media (min-width: 1025px) {
+  .smm-services-grid,
+  .smm-ind-grid,
+  .smm-benefits-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+/* Tablet & Mobile (2 Cards Per Row) */
+@media (max-width: 1024px) {
+  .smm-services-grid,
+  .smm-ind-grid,
+  .smm-benefits-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+/* Common Card Alignments */
+.smm-svc-card,
+.smm-ind-card,
+.smm-benefits-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.smm-svc-card:hover,
+.smm-ind-card:hover,
+.smm-benefits-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08) !important;
+}
+
+/* Center inner icons (Targeting any emoji or icon spans inside the card) */
+.smm-svc-card .smm-icon,
+.smm-svc-card > span:first-child,
+.smm-ind-card .smm-icon,
+.smm-ind-card > span:first-child,
+.smm-benefits-card .smm-icon,
+.smm-benefits-card > span:first-child {
+  margin: 0 auto 16px auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

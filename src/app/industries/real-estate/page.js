@@ -15,7 +15,7 @@ export default function RealEstatePage() {
       <main>
         <section className="hero-section" style={{ padding: "100px 20px", textAlign: "center", backgroundColor: "#f8f9fa" }}>
           <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-            <span style={{ color: "#ff6b00", fontWeight: "bold", textTransform: "uppercase" }}>Industry Spotlight</span>
+            <span style={{ color: "#a13c00", fontWeight: "bold", textTransform: "uppercase" }}>Industry Spotlight</span>
             <h1 style={{ fontSize: "3rem", margin: "20px 0" }}>Digital Marketing for Real Estate Agents in Hyderabad</h1>
             <p style={{ fontSize: "1.2rem", color: "#555", marginBottom: "30px" }}>
               Generate high-quality property leads, increase site visits, and boost sales with AI-powered Real Estate SEO, Facebook Ads for Builders, and localized Google Ads campaigns tailored for the Hyderabad market.

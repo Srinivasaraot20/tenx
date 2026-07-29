@@ -366,7 +366,7 @@ export default function WhatsAppAutomationPage() {
 
               {/* Floating Widgets */}
               <div className="wa-floating-hero-card delivered">
-                <div className="wa-flow-icon-circle" style={{ backgroundColor: "#dcfce7", color: "#16a34a" }}>✔</div>
+                <div className="wa-flow-icon-circle" style={{ backgroundColor: "#dcfce7", color: "#15803d" }}>✔</div>
                 <div className="wa-flow-text-info">
                   <h5>Campaign Broadcast</h5>
                   <p>98.4% Message Read Rate</p>
@@ -446,7 +446,7 @@ export default function WhatsAppAutomationPage() {
                   <p>Respond to customer inquiries in seconds and improve conversion rates.</p>
                 </div>
                 <div className="wa-why-card wa-glass-card">
-                  <div className="wa-why-card-icon" style={{ backgroundColor: "#fdf2f8", color: "#ec4899" }}>🎯</div>
+                  <div className="wa-why-card-icon" style={{ backgroundColor: "#fdf2f8", color: "#be185d" }}>🎯</div>
                   <h3>Smart Lead Qualification</h3>
                   <p>Automatically qualify leads and collect customer information using interactive WhatsApp flows.</p>
                 </div>
@@ -565,7 +565,7 @@ export default function WhatsAppAutomationPage() {
                   <p>Deliver answers, catalog brochures, and reports instantly.</p>
                 </div>
                 <div className="wa-benefit-card wa-glass-card">
-                  <div className="wa-benefit-icon" style={{ backgroundColor: "#fdf2f8", color: "#ec4899" }}>📈</div>
+                  <div className="wa-benefit-icon" style={{ backgroundColor: "#fdf2f8", color: "#be185d" }}>📈</div>
                   <h3>Higher Lead Conversion</h3>
                   <p>Qualify and nurture contacts automatically for higher conversions.</p>
                 </div>

@@ -1,5 +1,5 @@
 :root {
-  --seo-primary: #ff6b00;
+  --seo-primary: #a13c00;
   --seo-primary-hover: #e55d00;
   --seo-primary-rgb: 255, 107, 0;
   --seo-dark: #0f172a;
@@ -15,7 +15,7 @@
   --seo-success: #10b981;
   --seo-error: #ef4444;
   --seo-warning: #f59e0b;
-  --seo-blue: #3b82f6;
+  --seo-blue: #1d4ed8;
   --seo-purple: #8b5cf6;
 }
 
@@ -254,7 +254,7 @@
 }
 
 .seo-hero-content h1 span.gradient-text {
-  background: linear-gradient(90deg, #ff6b00 0%, #ec4899 45%, #2563eb 100%);
+  background: linear-gradient(90deg, #a13c00 0%, #be185d 45%, #2563eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -524,7 +524,7 @@
 }
 
 .seo-sidebar-item.active {
-  color: #ff6b00;
+  color: #a13c00;
   background-color: rgba(255, 107, 0, 0.1);
 }
 
@@ -1730,7 +1730,7 @@
 }
 
 .seo-faq-item.open {
-  border-color: #ff6b00;
+  border-color: #a13c00;
   box-shadow: 0 4px 20px rgba(255, 107, 0, 0.05);
 }
 
@@ -1753,7 +1753,7 @@
 }
 
 .seo-faq-question-btn:hover {
-  color: #ff6b00;
+  color: #a13c00;
 }
 
 .seo-faq-question-btn .chevron-icon {
@@ -2193,7 +2193,7 @@
 .why-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  border-color: var(--seo-primary, #3b82f6);
+  border-color: var(--seo-primary, #1d4ed8);
 }
 
 .why-card h3 {
@@ -2225,4 +2225,78 @@
   .why-choose-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==============================================================
+   MOBILE & TABLET RESPONSIVE OVERRIDES (ADDED PER USER REQUEST)
+   ============================================================== */
+
+/* Desktop defaults */
+@media (min-width: 1025px) {
+  .seo-why-grid,
+  .seo-services-grid,
+  .seo-roadmap-grid,
+  .seo-tools-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+/* Tablet & Mobile (2 Cards Per Row) */
+@media (max-width: 1024px) {
+  .seo-why-grid,
+  .seo-services-grid,
+  .seo-roadmap-grid,
+  .seo-tools-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+/* Common Card Alignments */
+.seo-why-card,
+.seo-service-card,
+.seo-step-card,
+.seo-tool-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.seo-why-card:hover,
+.seo-service-card:hover,
+.seo-step-card:hover,
+.seo-tool-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08) !important;
+}
+
+/* Center inner icons */
+.seo-why-icon,
+.seo-service-icon,
+.seo-step-icon,
+.seo-tool-logo,
+.seo-why-card > span:first-child,
+.seo-service-card > span:first-child,
+.seo-step-card > span:first-child,
+.seo-tool-card > span:first-child,
+.seo-why-card img,
+.seo-service-card img,
+.seo-step-card img,
+.seo-tool-card img {
+  margin: 0 auto 16px auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.seo-step-num {
+  margin: 0 auto 12px auto !important;
+  text-align: center !important;
 }

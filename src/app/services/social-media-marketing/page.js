@@ -158,7 +158,7 @@ export default function SocialMediaMarketingPage() {
         </svg>
       ),
       color: "#f0fdf4",
-      text: "#16a34a",
+      text: "#15803d",
       desc: "Moderate user comments, reply to direct messages instantly, and host interactive polls to keep fans engaged."
     },
     {
@@ -269,7 +269,7 @@ export default function SocialMediaMarketingPage() {
       </svg>
     )},
     { name: "WhatsApp", icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
       </svg>
     )},
@@ -458,7 +458,7 @@ export default function SocialMediaMarketingPage() {
             </div>
             <div className="smm-hero-trust-item">
               <div className="smm-hero-trust-icon" style={{ background: "rgba(236,72,153,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#be185d" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
               </div>
               <div>
                 <div className="smm-trust-item-title">Higher Engagement</div>
@@ -467,7 +467,7 @@ export default function SocialMediaMarketingPage() {
             </div>
             <div className="smm-hero-trust-item">
               <div className="smm-hero-trust-icon" style={{ background: "rgba(255,107,0,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 9 11 13 15 22 22 3"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 9 11 13 15 22 22 3"/></svg>
               </div>
               <div>
                 <div className="smm-trust-item-title">Lead Generation</div>

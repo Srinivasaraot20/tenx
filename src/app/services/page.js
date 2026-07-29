@@ -227,7 +227,7 @@ export default function ServicesPage() {
     },
     {
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M22 2l-8 8"></path>
           <path d="M22 2c-3 0-6.5 2.5-8 4.5L9.5 11l-3 3c-1.5 1.5-2 3.5-2.5 5.5.5 0 2.5-.5 4-2l3-3 4.5-4.5c2-1.5 4.5-5 4.5-8z"></path>
           <path d="M11.5 9.5l3 3"></path>
@@ -235,13 +235,13 @@ export default function ServicesPage() {
         </svg>
       ),
       iconBg: "#fff5ee",
-      lineColor: "#ff6b00",
+      lineColor: "#a13c00",
       title: "Fast Execution",
       desc: "Our agile workflow ensures campaign setup, landing pages, and integrations are deployed within days, not months."
     },
     {
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#15803d" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
           <rect x="9" y="9" width="6" height="6"></rect>
           <line x1="9" y1="1" x2="9" y2="4"></line>
@@ -252,11 +252,11 @@ export default function ServicesPage() {
           <line x1="20" y1="15" x2="23" y2="15"></line>
           <line x1="1" y1="9" x2="4" y2="9"></line>
           <line x1="1" y1="15" x2="4" y2="15"></line>
-          <text x="12" y="15" fontSize="7.5" fontWeight="950" textAnchor="middle" fill="#16a34a" stroke="none" fontFamily="'Inter', sans-serif">AI</text>
+          <text x="12" y="15" fontSize="7.5" fontWeight="950" textAnchor="middle" fill="#15803d" stroke="none" fontFamily="'Inter', sans-serif">AI</text>
         </svg>
       ),
       iconBg: "#f0fdf4",
-      lineColor: "#16a34a",
+      lineColor: "#15803d",
       title: "AI-Powered Automation",
       desc: "We utilize advanced AI utilities for copywriting at scale, lead nurture workflows, and automated communication."
     },
@@ -464,7 +464,7 @@ export default function ServicesPage() {
       tagClass: "tag-green",
       iconBg: "#f0fdf4",
       icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#15803d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
           <circle cx="12" cy="10" r="3"></circle>
         </svg>
@@ -559,7 +559,7 @@ export default function ServicesPage() {
       tagClass: "tag-green",
       iconBg: "#f0fdf4",
       icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#15803d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <line x1="18" y1="20" x2="18" y2="10"></line>
           <line x1="12" y1="20" x2="12" y2="4"></line>
           <line x1="6" y1="20" x2="6" y2="14"></line>
@@ -614,9 +614,9 @@ export default function ServicesPage() {
           <div className="services-hero-grid">
             <div className="services-hero-content">
               <span className="badge-premium">🚀 Our Digital Marketing Services</span>
-              <h1>
-                Digital Marketing Solutions<br />
-                <span className="w-text-orange">That Accelerate</span><br />
+              <h1 className="services-hero-title">
+                Digital Marketing Solutions <br className="hide-mobile" />
+                <span className="w-text-orange">That Accelerate</span> <br className="hide-mobile" />
                 <span className="w-text-purple">Business Growth</span>
               </h1>
               <p>

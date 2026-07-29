@@ -86,16 +86,14 @@ export default function Header() {
     <>
       <nav className="header-nav">
         <Link href="/" className="logo" onClick={handleLinkClick}>
-          <picture>
-            <source srcSet="/logo.webp" type="image/webp" />
-            <img 
-              src="/logo.webp" 
-              alt="Digital Marketing TenX" 
-              width={56} 
-              height={56} 
-              className="logo-img-file"
-            />
-          </picture>
+          <Image
+            src="/logo.webp"
+            alt="Digital Marketing TenX Logo"
+            width={56}
+            height={56}
+            className="logo-img-file"
+            priority
+          />
           <span className="brand-name">
             Digital Marketing <span className="brand-highlight">TenX</span>
           </span>
@@ -160,7 +158,7 @@ export default function Header() {
         </div>
 
         <button className="btn-primary desktop-only-btn" onClick={() => {
-          gtag.event({ action: "book_consultation_click", category: "Engagement", label: "Header Button" });
+          gtag.event("book_consultation_click", { button_location: "header_desktop" });
           window.dispatchEvent(new CustomEvent("trigger-consultation-modal"));
         }}>📅 Book Free Consultation</button>
 
@@ -185,10 +183,7 @@ export default function Header() {
       <div className={`ga-mobile-drawer ${isMobileMenuOpen ? "open" : ""}`}>
         <div className="drawer-header">
           <div className="logo">
-            <picture>
-              <source srcSet="/logo.webp" type="image/webp" />
-              <img src="/logo.webp" alt="TenX" width={40} height={40} />
-            </picture>
+            <Image src="/logo.webp" alt="TenX Logo" width={40} height={40} />
             <span className="brand-name" style={{ fontWeight: 800, fontSize: "15px" }}>TenX Menu</span>
           </div>
           <button className="drawer-close-btn" onClick={handleLinkClick}>✕</button>
@@ -265,28 +260,27 @@ export default function Header() {
           {/* Contact quick actions */}
           <div className="drawer-actions">
             <button className="btn-primary w-full" onClick={() => { 
-              gtag.event({ action: "book_consultation_click", category: "Engagement", label: "Mobile Menu Button" });
+              gtag.event("book_consultation_click", { button_location: "header_mobile" });
               handleLinkClick(); 
               window.dispatchEvent(new CustomEvent("trigger-consultation-modal")); 
             }}>📅 Book Free Consultation</button>
-            <a href="tel:+919392251739" className="action-link phone-action" onClick={() => gtag.event({ action: "phone_call_click", category: "Contact", label: "Mobile Menu Phone" })}>
+            <a href="tel:+919392251739" className="action-link phone-action" onClick={() => gtag.event("phone_click", { phone_number: "+919392251739", button_location: "header_mobile" })}>
               <span className="icon">📞</span>
               <span>+91 93922 51739</span>
             </a>
             <a href="https://wa.me/919392251739" className="action-link whatsapp-action" target="_blank" rel="noopener noreferrer" onClick={() => {
-              gtag.event({ action: "whatsapp_click", category: "Contact", label: "Mobile Menu WhatsApp" });
+              gtag.event("whatsapp_click", { button_location: "header_mobile" });
               handleLinkClick();
             }}>
               💬 WhatsApp Chat
             </a>
           </div>
 
-          {/* Social icons */}
           <div className="drawer-socials">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-            <a href="#">LN</a>
-            <a href="#">IG</a>
+            <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="Facebook" onClick={() => gtag.event("social_click", { platform: "facebook" })}>FB</a>
+            <a href="https://x.com/DigitalTenx9" target="_blank" rel="noopener noreferrer" aria-label="X" onClick={() => gtag.event("social_click", { platform: "twitter" })}>X</a>
+            <a href="https://linkedin.com/in/digitalmarketing-tenx-8278b440b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => gtag.event("social_click", { platform: "linkedin" })}>LN</a>
+            <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" onClick={() => gtag.event("social_click", { platform: "instagram" })}>IG</a>
           </div>
         </div>
       </div>

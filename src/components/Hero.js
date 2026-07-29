@@ -63,7 +63,7 @@ export default function Hero() {
       <section className="hero">
         <div className="hero-content">
           <h1 className="animate-fade-in-up delay-100">
-            <span style={{ background: "linear-gradient(135deg, #ff6b00 0%, #d946ef 50%, #3b82f6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", display: "inline-block" }}>AI-Powered</span><br />
+            <span style={{ color: "#000" }}>AI-Powered</span><br />
             Digital Marketing Agency in Hyderabad
           </h1>
           <p className="animate-fade-in-up delay-200">
@@ -71,10 +71,10 @@ export default function Hero() {
           </p>
           <div className="hero-btns animate-fade-in-up delay-300">
             <button className="btn-primary" onClick={() => {
-              gtag.event({ action: "book_consultation_click", category: "Engagement", label: "Hero CTA" });
+              gtag.event("book_consultation_click", { button_location: "hero_section" });
               window.dispatchEvent(new CustomEvent("trigger-consultation-modal"));
             }}>📅 Book a Free Consultation</button>
-            <Link href="/services" className="btn-primary" onClick={() => gtag.event({ action: "services_view", category: "Navigation", label: "Hero CTA" })}>Explore Our Services</Link>
+            <Link href="/services" className="btn-primary" onClick={() => gtag.event("service_cta_click", { service_name: "all_services", button_location: "hero_section" })}>Explore Our Services</Link>
           </div>
           <div className="hero-trust animate-fade-in-up delay-400" style={{ marginTop: "1rem", fontSize: "0.9rem", color: "#666", fontWeight: "600" }}>
             SEO • Google Ads • Web Development • Social Media Marketing • Performance Marketing

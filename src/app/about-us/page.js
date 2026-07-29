@@ -120,15 +120,15 @@ export default function AboutUsPage() {
         <section className="about-hero-new">
           <div className="about-hero-container">
             <div className="about-hero-left">
-              <h1>We Drive Digital Growth. You Achieve <span style={{color: "#ff6b00"}}>More.</span></h1>
+              <h1>We Drive Digital Growth. You Achieve <span style={{color: "#a13c00"}}>More.</span></h1>
               <p className="hero-desc">
                 Digital Marketing TenX is a top digital marketing company in Hyderabad, helping businesses grow through SEO, Google Ads, social media marketing, web development, and AI-powered digital strategies. We combine data, creativity, and technology to drive measurable growth and long-term business success.
               </p>
               
               <div className="hero-stats-grid">
                 <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#ff6b00"}}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#a13c00"}}>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                   </div>
                   <div className="stat-text">
                     <h3>Result Driven</h3>
@@ -136,8 +136,8 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(59,130,246,0.1)", color: "#3b82f6"}}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg>
+                  <div className="stat-icon-wrapper" style={{background: "rgba(59,130,246,0.1)", color: "#1d4ed8"}}>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg>
                   </div>
                   <div className="stat-text">
                     <h3>Data Backed</h3>
@@ -146,7 +146,7 @@ export default function AboutUsPage() {
                 </div>
                 <div className="stat-card">
                   <div className="stat-icon-wrapper" style={{background: "rgba(139,92,246,0.1)", color: "#8b5cf6"}}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
                   </div>
                   <div className="stat-text">
                     <h3>AI Powered</h3>
@@ -154,8 +154,8 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#ff6b00"}}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#a13c00"}}>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                   </div>
                   <div className="stat-text">
                     <h3>Expert Team</h3>
@@ -173,7 +173,7 @@ export default function AboutUsPage() {
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: "8px"}}><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                   Book Free Consultation
                 </Link>
-                <Link href="/services" className="btn-outline" style={{borderColor: "#ff6b00", color: "#ff6b00"}}>
+                <Link href="/services" className="btn-outline" style={{borderColor: "#a13c00", color: "#a13c00"}}>
                   Explore Services
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginLeft: "8px"}}><polyline points="9 18 15 12 9 6"/></svg>
                 </Link>
@@ -200,7 +200,7 @@ export default function AboutUsPage() {
                 <div className="graphic-footer-icons">
                   <div className="dashed-line"></div>
                   <div className="gf-icon-wrap">
-                     <div className="gf-icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+                     <div className="gf-icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
                      <span>SEO</span>
                   </div>
                   <div className="gf-icon-wrap">
@@ -223,25 +223,25 @@ export default function AboutUsPage() {
 
         {/* 2. Trusted / Results Focused */}
         <section className="about-approach">
-          <div className="sec-header text-center" style={{marginBottom: "40px"}}>
+          <div className="sec-header">
             <span className="eyebrow">TRUSTED BY GROWING BUSINESSES</span>
             <h2>Results-Focused Approach</h2>
             <p>Data-driven strategies built around your business goals. Helping businesses build stronger digital presence and achieve measurable growth.</p>
           </div>
           <div className="approach-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "0 20px"}}>
-            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0"}}>
+            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "14px", border: "1px solid #eee"}}>
               <h3 style={{fontSize: "1.2rem", fontWeight: "700", marginBottom: "10px", color: "#0f172a"}}>Full-Funnel Marketing</h3>
               <p style={{color: "#475569", fontSize: "0.95rem"}}>From awareness to conversion, we build strategies for every stage of your customer journey.</p>
             </div>
-            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0"}}>
+            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "14px", border: "1px solid #eee"}}>
               <h3 style={{fontSize: "1.2rem", fontWeight: "700", marginBottom: "10px", color: "#0f172a"}}>AI-Powered Efficiency</h3>
               <p style={{color: "#475569", fontSize: "0.95rem"}}>We use AI and automation to improve speed, insights, and marketing performance.</p>
             </div>
-            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0"}}>
+            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "14px", border: "1px solid #eee"}}>
               <h3 style={{fontSize: "1.2rem", fontWeight: "700", marginBottom: "10px", color: "#0f172a"}}>Transparent Communication</h3>
               <p style={{color: "#475569", fontSize: "0.95rem"}}>Clear updates, honest reporting, and complete visibility into your campaigns.</p>
             </div>
-            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0"}}>
+            <div className="approach-card" style={{padding: "24px", background: "#f8fafc", borderRadius: "14px", border: "1px solid #eee"}}>
               <h3 style={{fontSize: "1.2rem", fontWeight: "700", marginBottom: "10px", color: "#0f172a"}}>Long-Term Growth</h3>
               <p style={{color: "#475569", fontSize: "0.95rem"}}>We focus on sustainable strategies that create lasting business growth.</p>
             </div>
@@ -249,7 +249,7 @@ export default function AboutUsPage() {
         </section>
 
         {/* 3. Our Story */}
-        <section className="about-story" style={{padding: "80px 20px", background: "#fff"}}>
+        <section className="about-story" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff"}}>
           <div className="story-container" style={{maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "60px", alignItems: "center"}}>
             <div className="story-image-wrap" style={{position: "relative", width: "100%", borderRadius: "24px", overflow: "hidden"}}>
               <Image 
@@ -261,7 +261,7 @@ export default function AboutUsPage() {
               />
             </div>
             <div className="story-content">
-              <h2 style={{fontSize: "2.5rem", fontWeight: "800", color: "#0f172a", marginBottom: "20px"}}>Our Story — A Performance Marketing Agency</h2>
+              <h2>Our Story — A Performance Marketing Agency</h2>
               <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7", marginBottom: "16px"}}>
                 Digital Marketing TenX was founded in 2021 with a clear vision, to help businesses achieve sustainable growth through data-driven digital marketing. As a top digital marketing company in Hyderabad, we focus on strategies that generate qualified leads, increase brand visibility, and deliver measurable business results.
               </p>
@@ -276,16 +276,16 @@ export default function AboutUsPage() {
         </section>
 
         {/* 4. Mission & Vision */}
-        <section className="about-mission" style={{padding: "60px 20px", background: "#f8fafc"}}>
+        <section className="about-mission" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#f8fafc"}}>
           <div className="mission-vision-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px", maxWidth: "1000px", margin: "0 auto"}}>
-            <div className="mv-card" style={{padding: "40px", background: "#fff", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)"}}>
-              <h2 style={{fontSize: "2rem", fontWeight: "800", color: "#ff6b00", marginBottom: "16px"}}>Our Mission</h2>
+            <div className="mv-card" style={{padding: "40px", background: "#fff", borderRadius: "14px", boxShadow: "0 4px 12px rgba(0,0,0,0.02)"}}>
+              <h2>Our Mission</h2>
               <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
                 Our mission is to help businesses of all sizes achieve sustainable growth through innovative digital marketing strategies. We deliver data-driven SEO, Google Ads, social media marketing, website development, and AI-powered solutions that increase online visibility, generate quality leads, and maximize return on investment (ROI).
               </p>
             </div>
-            <div className="mv-card" style={{padding: "40px", background: "#fff", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)"}}>
-              <h2 style={{fontSize: "2rem", fontWeight: "800", color: "#3b82f6", marginBottom: "16px"}}>Our Vision</h2>
+            <div className="mv-card" style={{padding: "40px", background: "#fff", borderRadius: "14px", boxShadow: "0 4px 12px rgba(0,0,0,0.02)"}}>
+              <h2>Our Vision</h2>
               <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
                 Our vision is to become one of the top digital marketing companies in Hyderabad, empowering businesses with innovative technology, transparent partnerships, and performance-driven marketing solutions. We strive to help brands build a strong digital presence, stay ahead of the competition, and achieve long-term success in the evolving digital landscape.
               </p>
@@ -294,17 +294,16 @@ export default function AboutUsPage() {
         </section>
 
         {/* 5. Core Values */}
-        <section className="about-values" style={{padding: "80px 20px", background: "#fff"}}>
-          <div className="sec-header text-center" style={{marginBottom: "40px", maxWidth: "800px", margin: "0 auto 40px"}}>
-            <span className="eyebrow" style={{display: "block", color: "#ff6b00", fontWeight: "700", letterSpacing: "1px", marginBottom: "8px"}}>OUR CORE VALUES</span>
-            <h2 style={{fontSize: "2.5rem", fontWeight: "800", color: "#0f172a", marginBottom: "16px"}}>The Values That Drive Our Success</h2>
-            <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
-              At Digital Marketing TenX, our core values shape every strategy, campaign, and client partnership. From innovation and transparency to integrity and measurable results, these principles help us deliver digital marketing solutions that drive sustainable business growth.
+        <section className="about-values" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff"}}>
+          <div className="sec-header">
+            <span className="eyebrow">OUR CORE VALUES</span>
+            <h2>The Values That Drive Our Success</h2>
+            <p>At Digital Marketing TenX, our core values shape every strategy, campaign, and client partnership. From innovation and transparency to integrity and measurable results, these principles help us deliver digital marketing solutions that drive sustainable business growth.
             </p>
           </div>
           <div className="values-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "1200px", margin: "0 auto"}}>
             {coreValues.map((cv, idx) => (
-              <div key={idx} className="value-card" style={{padding: "32px", background: "#f8fafc", borderRadius: "16px", border: "1px solid #e2e8f0"}}>
+              <div key={idx} className="value-card" style={{padding: "32px", background: "#f8fafc", borderRadius: "14px", border: "1px solid #eee"}}>
                 <h3 style={{fontSize: "1.25rem", fontWeight: "800", color: "#0f172a", marginBottom: "12px"}}>{cv.title}</h3>
                 <p style={{color: "#475569", fontSize: "1rem", lineHeight: "1.6"}}>{cv.desc}</p>
               </div>
@@ -313,13 +312,13 @@ export default function AboutUsPage() {
         </section>
 
         {/* 6. Why Choose Us (Premium White Theme) */}
-        <section className="about-why-choose" style={{padding: "60px 20px", background: "#fff", color: "#0f172a"}}>
+        <section className="about-why-choose" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff", color: "#0f172a"}}>
           <div className="why-choose-container" style={{maxWidth: "1200px", margin: "0 auto"}}>
             
             <div className="why-choose-header" style={{textAlign: "center", maxWidth: "800px", margin: "0 auto 50px"}}>
-              <span className="eyebrow" style={{color: "#3b82f6", fontWeight: "700", letterSpacing: "1px", display: "inline-block", marginBottom: "12px", background: "rgba(59,130,246,0.1)", padding: "6px 12px", borderRadius: "30px", fontSize: "0.85rem"}}>WHY CHOOSE US</span>
-              <h2 style={{fontSize: "2.5rem", fontWeight: "800", marginBottom: "20px", lineHeight: "1.2", color: "#0f172a"}}>
-                Why Businesses Choose <br/><span style={{color: "#ff6b00"}}>Digital Marketing TenX</span>
+              <span className="eyebrow">WHY CHOOSE US</span>
+              <h2>
+                Why Businesses Choose <br/><span style={{color: "#a13c00"}}>Digital Marketing TenX</span>
               </h2>
               <p style={{color: "#475569", fontSize: "1.1rem", lineHeight: "1.7", margin: "0 auto"}}>
                 Businesses choose Digital Marketing TenX because we combine <strong>strategy, creativity, technology, and data</strong> to deliver measurable results. As a trusted digital marketing company in Hyderabad, we create customized marketing solutions that help businesses <strong>increase visibility, generate qualified leads, and achieve sustainable long-term growth.</strong>
@@ -335,9 +334,9 @@ export default function AboutUsPage() {
                     <div key={idx} className="why-item" style={{
                       background: "#fff", 
                       padding: "24px", 
-                      borderRadius: "16px", 
-                      border: "1px solid #f1f5f9",
-                      boxShadow: "0 4px 20px rgba(0,0,0,0.03)",
+                      borderRadius: "14px", 
+                      border: "1px solid #eee",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.02)",
                       display: "flex",
                       gap: "16px",
                       transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -347,7 +346,7 @@ export default function AboutUsPage() {
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.03)'; }}
                     >
                       <div className="why-icon" style={{
-                        width: "48px", height: "48px", borderRadius: "12px", background: "rgba(59,130,246,0.05)", 
+                        width: "48px", height: "48px", borderRadius: "14px", background: "rgba(59,130,246,0.05)", 
                         display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", flexShrink: 0
                       }}>
                         {icons[idx]}
@@ -368,7 +367,7 @@ export default function AboutUsPage() {
                 background: "#f8fafc", 
                 padding: "40px", 
                 borderRadius: "24px", 
-                border: "1px solid #e2e8f0",
+                border: "1px solid #eee",
                 boxShadow: "0 20px 40px -10px rgba(0,0,0,0.05)",
                 position: "relative",
                 overflow: "hidden"
@@ -411,17 +410,17 @@ export default function AboutUsPage() {
         </section>
 
         {/* 7. Our Expertise */}
-        <section className="about-expertise" style={{padding: "80px 20px", background: "#f8fafc"}}>
-          <div className="sec-header text-center" style={{marginBottom: "40px", maxWidth: "800px", margin: "0 auto 40px"}}>
-            <span className="eyebrow" style={{display: "block", color: "#ff6b00", fontWeight: "700", letterSpacing: "1px", marginBottom: "8px"}}>OUR EXPERTISE</span>
-            <h2 style={{fontSize: "2.5rem", fontWeight: "800", color: "#0f172a", marginBottom: "16px"}}>Our Digital Marketing Expertise</h2>
+        <section className="about-expertise" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#f8fafc"}}>
+          <div className="sec-header">
+            <span className="eyebrow">OUR EXPERTISE</span>
+            <h2>Our Digital Marketing Expertise</h2>
             <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
               We combine strategy, creativity, technology, and data to deliver comprehensive digital marketing solutions that help businesses increase visibility, generate qualified leads, and achieve sustainable growth.
             </p>
           </div>
           <div className="expertise-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "1200px", margin: "0 auto"}}>
             {expertise.map((exp, idx) => (
-              <div key={idx} className="expertise-card" style={{padding: "32px", background: "#fff", borderRadius: "16px", boxShadow: "0 4px 20px rgba(0,0,0,0.03)"}}>
+              <div key={idx} className="expertise-card" style={{padding: "32px", background: "#fff", borderRadius: "14px", boxShadow: "0 4px 12px rgba(0,0,0,0.02)"}}>
                 <h3 style={{fontSize: "1.25rem", fontWeight: "800", color: "#0f172a", marginBottom: "12px"}}>{exp.title}</h3>
                 <p style={{color: "#475569", fontSize: "1rem", lineHeight: "1.6"}}>{exp.desc}</p>
               </div>
@@ -430,17 +429,17 @@ export default function AboutUsPage() {
         </section>
 
         {/* 8. Our Team & Culture */}
-        <section className="about-team" style={{padding: "80px 20px", background: "#fff"}}>
-          <div className="sec-header text-center" style={{marginBottom: "40px", maxWidth: "800px", margin: "0 auto 40px"}}>
-            <span className="eyebrow" style={{display: "block", color: "#ff6b00", fontWeight: "700", letterSpacing: "1px", marginBottom: "8px"}}>OUR TEAM & CULTURE</span>
-            <h2 style={{fontSize: "2.5rem", fontWeight: "800", color: "#0f172a", marginBottom: "16px"}}>The People Behind Your Digital Success</h2>
+        <section className="about-team" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff"}}>
+          <div className="sec-header">
+            <span className="eyebrow">OUR TEAM & CULTURE</span>
+            <h2>The People Behind Your Digital Success</h2>
             <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
               At Digital Marketing TenX, our strength lies in our people. Our team of digital marketing strategists, SEO specialists, Google Ads experts, web developers, designers, and content creators work together to deliver innovative solutions that help businesses achieve sustainable growth.
             </p>
           </div>
           <div className="team-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "1200px", margin: "0 auto"}}>
             {team.map((t, idx) => (
-              <div key={idx} className="team-card" style={{padding: "32px", background: "#f8fafc", borderRadius: "16px", border: "1px solid #e2e8f0"}}>
+              <div key={idx} className="team-card" style={{padding: "32px", background: "#f8fafc", borderRadius: "14px", border: "1px solid #eee"}}>
                 <h3 style={{fontSize: "1.25rem", fontWeight: "800", color: "#0f172a", marginBottom: "12px"}}>{t.title}</h3>
                 <p style={{color: "#475569", fontSize: "1rem", lineHeight: "1.6"}}>{t.desc}</p>
               </div>
@@ -449,11 +448,11 @@ export default function AboutUsPage() {
         </section>
 
         {/* 9. Founder Message */}
-        <section className="about-founder" style={{padding: "80px 20px", background: "#fff"}}>
+        <section className="about-founder" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff"}}>
           <div className="founder-container" style={{maxWidth: "800px", margin: "0 auto"}}>
-            <div className="sec-header text-center" style={{marginBottom: "32px"}}>
-              <span className="eyebrow" style={{display: "block", color: "#ff6b00", fontWeight: "700", letterSpacing: "1px", marginBottom: "8px"}}>OUR FOUNDER</span>
-              <h2 style={{fontSize: "2.5rem", fontWeight: "800", color: "#0f172a"}}>A Message From Our Founder</h2>
+            <div className="sec-header">
+              <span className="eyebrow">OUR FOUNDER</span>
+              <h2>A Message From Our Founder</h2>
             </div>
             
             <div className="founder-message" style={{color: "#475569", fontSize: "1.1rem", lineHeight: "1.8"}}>
@@ -476,10 +475,10 @@ export default function AboutUsPage() {
         </section>
 
         {/* 10. FAQs */}
-        <section className="about-faqs" style={{padding: "80px 20px", background: "#fff"}}>
-          <div className="sec-header text-center" style={{marginBottom: "40px", maxWidth: "800px", margin: "0 auto 40px"}}>
-            <span className="eyebrow" style={{display: "block", color: "#ff6b00", fontWeight: "700", letterSpacing: "1px", marginBottom: "8px"}}>FREQUENTLY ASKED QUESTIONS</span>
-            <h2 style={{fontSize: "2.5rem", fontWeight: "800", color: "#0f172a", marginBottom: "16px"}}>Frequently Asked Questions About Digital Marketing Services</h2>
+        <section className="about-faqs" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff"}}>
+          <div className="sec-header">
+            <span className="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+            <h2>Frequently Asked Questions About Digital Marketing Services</h2>
             <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
               Find answers to the most common questions about Digital Marketing TenX, our digital marketing services, and how we help businesses achieve sustainable online growth.
             </p>

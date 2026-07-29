@@ -115,7 +115,7 @@ function IconDocument() {
 
 function IconCampaigns() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
       <circle cx="9" cy="7" r="4" />
       <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
@@ -146,7 +146,7 @@ function IconRetention() {
 
 function IconGrowth() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
       <polyline points="17 6 23 6 23 12" />
     </svg>
@@ -166,7 +166,7 @@ function IconKeywords() {
 
 function IconVisitors() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#be185d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="12" cy="12" r="10" />
       <circle cx="12" cy="12" r="6" />
       <circle cx="12" cy="12" r="2" />
@@ -190,7 +190,7 @@ function IconRankingsMatters() {
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3" y="13" width="4" height="7" rx="1" fill="#e0f2fe" />
       <rect x="10" y="9" width="4" height="11" rx="1" fill="#e0f2fe" />
-      <rect x="17" y="5" width="4" height="15" rx="1" fill="#ffedd5" stroke="#ff6b00" strokeWidth="2.2" />
+      <rect x="17" y="5" width="4" height="15" rx="1" fill="#ffedd5" stroke="#a13c00" strokeWidth="2.2" />
       <path d="M 2,17 L 8,11 L 13,13 L 20,4" />
       <polyline points="15 4 20 4 20 9" />
     </svg>
@@ -205,7 +205,7 @@ function IconTrafficMatters() {
       <path d="M 5,22 A 10,10 0 0 1 2,19" />
       <path d="M 19,22 A 10,10 0 0 0 22,19" />
       <circle cx="12" cy="12" r="7" fill="#e0f2fe" />
-      <circle cx="12" cy="12" r="3" fill="#3b82f6" stroke="#3b82f6" />
+      <circle cx="12" cy="12" r="3" fill="#1d4ed8" stroke="#1d4ed8" />
       <line x1="21" y1="3" x2="14" y2="10" stroke="#1e293b" strokeWidth="2.2" />
       <line x1="19" y1="2" x2="21" y2="4" stroke="#1e293b" strokeWidth="2.2" />
       <line x1="20" y1="1" x2="22" y2="3" stroke="#1e293b" strokeWidth="2.2" />
@@ -222,8 +222,8 @@ function IconVisibilityMatters() {
       <line x1="12" y1="3" x2="12" y2="21" />
       <line x1="6" y1="8" x2="12" y2="3" />
       <line x1="18" y1="8" x2="12" y2="3" />
-      <line x1="6" y1="8" x2="12" y2="21" stroke="#3b82f6" />
-      <line x1="18" y1="8" x2="12" y2="21" stroke="#3b82f6" />
+      <line x1="6" y1="8" x2="12" y2="21" stroke="#1d4ed8" />
+      <line x1="18" y1="8" x2="12" y2="21" stroke="#1d4ed8" />
       <line x1="12" y1="0" x2="12" y2="1.5" />
       <line x1="5" y1="2" x2="7" y2="4" />
       <line x1="19" y1="2" x2="17" y2="4" />
@@ -235,9 +235,9 @@ function IconSalesMatters() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
       <polygon points="6,12 18,12 14,17 14,22 10,22 10,17" fill="#fff7ed" stroke="#1e293b" strokeWidth="2.2" />
-      <circle cx="7" cy="6" r="4.5" fill="#ffedd5" stroke="#ff6b00" strokeWidth="2.2" />
-      <path d="M 7,4.5 C 6.5,4.5 6,5 6,5.5 C 6,6.5 8,6.5 8,7.5 C 8,8 7.5,8.5 7,8.5" stroke="#ff6b00" strokeWidth="1.5" />
-      <line x1="7" y1="3.5" x2="7" y2="8.5" stroke="#ff6b00" strokeWidth="1.5" />
+      <circle cx="7" cy="6" r="4.5" fill="#ffedd5" stroke="#a13c00" strokeWidth="2.2" />
+      <path d="M 7,4.5 C 6.5,4.5 6,5 6,5.5 C 6,6.5 8,6.5 8,7.5 C 8,8 7.5,8.5 7,8.5" stroke="#a13c00" strokeWidth="1.5" />
+      <line x1="7" y1="3.5" x2="7" y2="8.5" stroke="#a13c00" strokeWidth="1.5" />
       <path d="M 13,9 L 17,5 L 21,5" stroke="#1e293b" strokeWidth="2.2" />
       <polyline points="18,3 21,5 19,8" stroke="#1e293b" strokeWidth="2.2" />
     </svg>
@@ -512,7 +512,7 @@ Please contact me for the audit. Thank you!`;
         "Schema & structured markup",
         "Canonical tags management"
       ],
-      color: "#3b82f6",
+      color: "#1d4ed8",
       bg: "rgba(59, 130, 246, 0.08)"
     },
     {
@@ -527,7 +527,7 @@ Please contact me for the audit. Thank you!`;
         "LSI & entity optimization",
         "User experience audit"
       ],
-      color: "#ff6b00",
+      color: "#a13c00",
       bg: "rgba(255, 107, 0, 0.08)"
     },
     {
@@ -572,7 +572,7 @@ Please contact me for the audit. Thank you!`;
         "Opportunity mapping",
         "Semantic search topic modeling"
       ],
-      color: "#ec4899",
+      color: "#be185d",
       bg: "rgba(236, 72, 153, 0.08)"
     },
     {
@@ -709,9 +709,9 @@ Please contact me for the audit. Thank you!`;
       bg: "rgba(0, 82, 204, 0.06)",
       icon: (
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="18" r="12" stroke="#ff6b00" strokeWidth="2.5" fill="rgba(255,107,0,0.06)" />
-          <path d="M12 24 L18 10 L24 24" stroke="#ff6b00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          <line x1="14" y1="20" x2="22" y2="20" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="18" cy="18" r="12" stroke="#a13c00" strokeWidth="2.5" fill="rgba(255,107,0,0.06)" />
+          <path d="M12 24 L18 10 L24 24" stroke="#a13c00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <line x1="14" y1="20" x2="22" y2="20" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" />
         </svg>
       )
     },

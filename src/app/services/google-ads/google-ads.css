@@ -5,7 +5,7 @@
   --ga-red: #EA4335;
   --ga-yellow: #FBBC05;
   --ga-green: #34A853;
-  --ga-orange: #ff6b00;
+  --ga-orange: #a13c00;
   --ga-orange-hover: #e55d00;
   --ga-orange-bg: rgba(255, 107, 0, 0.07);
   --ga-purple: #7c3aed;
@@ -59,14 +59,14 @@
 .ga-hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(251, 188, 5, 0.08); border: 1px solid rgba(251, 188, 5, 0.25); color: #b45309; padding: 6px 14px; border-radius: 30px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; }
 .ga-hero h1 {  font-size: clamp(1.81rem, 5.8vw, 3.62rem); font-weight: 800; line-height: 1.1; letter-spacing: -2px; color: var(--ga-text-dark); margin-bottom: 22px; }
 
-.ga-text-orange { color: #ff6b00; }
+.ga-text-orange { color: #a13c00; }
 .ga-text-purple { color: #4f46e5; }
 
 .ga-hero p { font-size: 17px; color: #555; max-width: 520px; width: 100%; line-height: 1.7; margin-bottom: 34px; }
 .ga-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
 
 .ga-btn-orange {
-  background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
+  background: linear-gradient(135deg, #a13c00 0%, #ff8533 100%);
   color: #fff;
   padding: 14px 28px;
   font-size: 14px;
@@ -299,7 +299,7 @@
   letter-spacing: -0.5px;
 }
 .mytrip-blue { color: #a1a1aa; }
-.mytrip-orange { color: #ff6b00; opacity: 0.7; }
+.mytrip-orange { color: #a13c00; opacity: 0.7; }
 .ga-brand-logo-text.makemytrip:hover .mytrip-blue { color: #52525b; }
 .ga-brand-logo-text.makemytrip:hover .mytrip-orange { opacity: 1; }
 
@@ -318,7 +318,7 @@
   text-transform: lowercase;
 }
 .pb-dot {
-  color: #ff6b00;
+  color: #a13c00;
   font-weight: 800;
 }
 .ga-brand-logo-text.oyo {
@@ -578,7 +578,7 @@
   font-size: 5.5px;
   font-weight: 800;
   color: #fff;
-  background: #3b82f6;
+  background: #1d4ed8;
   padding: 2px 6px;
   border-radius: 20px;
   margin-top: 2px;
@@ -683,7 +683,7 @@
 }
 .local-status {
   font-size: 6.5px;
-  color: #16a34a;
+  color: #15803d;
 }
 
 /* --- Right column content styling --- */
@@ -721,7 +721,7 @@
   margin-bottom: 16px;
 }
 .ga-on-text {
-  color: #ff6b00;
+  color: #a13c00;
 }
 .ga-earth-text {
   background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
@@ -873,7 +873,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 107, 0, 0.2);
-  color: #ff6b00;
+  color: #a13c00;
   font-size: 11px;
   font-weight: 800;
   padding: 6px 14px;
@@ -883,7 +883,7 @@
   letter-spacing: 0.5px;
 }
 .ga-mastered-gradient-text {
-  background: linear-gradient(135deg, #ff6b00 0%, #4f46e5 100%);
+  background: linear-gradient(135deg, #a13c00 0%, #4f46e5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -946,7 +946,7 @@
   border-radius: 100px;
   border: 1px solid rgba(255, 107, 0, 0.2);
   background: rgba(255, 107, 0, 0.04);
-  color: #ff6b00;
+  color: #a13c00;
   font-size: 10.5px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -1036,7 +1036,7 @@
   text-transform: uppercase;
 }
 .ga-text-orange-gradient {
-  background: linear-gradient(135deg, #ff6b00 0%, #ff8e3c 100%);
+  background: linear-gradient(135deg, #a13c00 0%, #ff8e3c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 850;
@@ -1565,7 +1565,7 @@
 .ga-results-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap:24px; }
 .ga-result-card { background:#fff; border:1px solid var(--ga-border); border-radius:20px; padding:32px 28px; text-align:center; transition:all .35s ease; }
 .ga-result-card:hover { transform:translateY(-6px); box-shadow:0 20px 40px rgba(66,133,244,.08); border-color:var(--ga-blue); }
-.ga-result-num {  font-size: clamp(2rem, 5vw, 3.2rem); font-weight:800; line-height:1.1; background:linear-gradient(135deg,#ff6b00 0%,#ea4335 60%,#4285f4 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; display:inline-block; margin-bottom:8px; }
+.ga-result-num {  font-size: clamp(2rem, 5vw, 3.2rem); font-weight:800; line-height:1.1; background:linear-gradient(135deg,#a13c00 0%,#ea4335 60%,#4285f4 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; display:inline-block; margin-bottom:8px; }
 .ga-result-label { font-size:13px; font-weight:700; color:var(--ga-text-dark); margin-bottom:6px; }
 .ga-result-sub { font-size:11.5px; color:var(--ga-text-light); }
 
@@ -1697,7 +1697,7 @@
 .ga-cta-glow-1 { position:absolute; max-width: 400px; width: 100%; min-height: 400px; height: auto; border-radius:50%; background:rgba(66,133,244,.05); filter:blur(80px); top:-100px; left:-80px; pointer-events:none; }
 .ga-cta-glow-2 { position:absolute; max-width: 400px; width: 100%; min-height: 400px; height: auto; border-radius:50%; background:rgba(255,107,0,.04); filter:blur(80px); bottom:-80px; right:-60px; pointer-events:none; }
 .ga-cta-content { position:relative; z-index:2; max-width: 680px; width: 100%; margin:0 auto; }
-.ga-cta-badge { display:inline-flex; align-items:center; gap:8px; color:#ff6b00; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px; }
+.ga-cta-badge { display:inline-flex; align-items:center; gap:8px; color:#a13c00; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px; }
 .ga-cta-card h2 { font-size: clamp(1.25rem, 4.0vw, 2.50rem); font-weight:800; color:#0f172a; line-height:1.2; margin-bottom:18px; letter-spacing:-.8px; }
 .ga-cta-card p { font-size:16px; color:#4b5563; line-height:1.7; margin-bottom:36px; }
 .ga-cta-btns { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
@@ -1709,8 +1709,8 @@
 
 .btn-outline-orange {
   background: #ffffff !important;
-  border: 1.5px solid #ff6b00 !important;
-  color: #ff6b00 !important;
+  border: 1.5px solid #a13c00 !important;
+  color: #a13c00 !important;
   cursor: pointer;
   box-shadow: 0 4px 14px rgba(255, 107, 0, 0.05) !important;
   transition: all 0.3s ease !important;
@@ -1895,7 +1895,7 @@
 .ga-mock-avatar {
   width: 18px;
   height: 18px;
-  background: #ff6b00;
+  background: #a13c00;
   color: #fff;
   border-radius: 50%;
   display: flex;

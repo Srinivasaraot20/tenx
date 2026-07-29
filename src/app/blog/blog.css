@@ -1,5 +1,5 @@
 :root {
-  --brand: #ff6b00;
+  --brand: #a13c00;
   --brand-dark: #e55d00;
   --brand-light: rgba(255, 107, 0, 0.08);
   --muted: #64748b;
@@ -315,7 +315,7 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background: #ff6b00;
+  background: #a13c00;
   color: #fff;
   padding: 6px 16px;
   border-radius: 8px;
@@ -348,7 +348,7 @@
 }
 
 .featured-body h2 a:hover {
-  color: #ff6b00;
+  color: #a13c00;
 }
 
 .featured-meta-top {
@@ -360,7 +360,7 @@
 }
 
 .category-badge, .cat {
-  background: #ff6b00;
+  background: #a13c00;
   color: #fff;
   padding: 5px 14px;
   border-radius: 6px;
@@ -417,9 +417,9 @@
   align-items: center;
   gap: 6px;
   padding: 10px 24px;
-  border: 2px solid #ff6b00;
+  border: 2px solid #a13c00;
   border-radius: 8px;
-  color: #ff6b00;
+  color: #a13c00;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -427,7 +427,7 @@
 }
 
 .featured-read-btn:hover {
-  background: #ff6b00;
+  background: #a13c00;
   color: #fff;
 }
 
@@ -841,7 +841,7 @@
 }
 
 .newsletter-success {
-  color: #16a34a;
+  color: #15803d;
   font-size: 13px;
   margin-top: 8px;
 }
@@ -922,20 +922,25 @@
 
 .related-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .service-card {
-  display: block;
-  background: var(--glass);
-  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 16px;
   padding: 24px;
   text-decoration: none;
   color: inherit;
-  transition: var(--transition);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  height: 100%;
+  width: 100%;
 }
 
 .service-card:hover {
@@ -945,7 +950,8 @@
 }
 
 .service-icon {
-  margin-bottom: 12px;
+  margin: 0 auto 16px auto;
+  display: block;
 }
 
 .service-card h3 {
@@ -965,6 +971,8 @@
   font-size: 13px;
   font-weight: 700;
   color: var(--brand);
+  margin-top: auto;
+  display: inline-block;
 }
 
 /* ── Buttons (blog scope) ── */
@@ -1023,7 +1031,7 @@
     grid-template-columns: 1fr;
   }
   .related-services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1055,6 +1063,8 @@
   }
   .related-services-grid {
     grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 

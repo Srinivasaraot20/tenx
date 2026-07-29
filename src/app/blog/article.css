@@ -1,5 +1,5 @@
 :root {
-  --brand: #ff6b00;
+  --brand: #a13c00;
   --brand-light: rgba(255, 107, 0, 0.08);
   --muted: #64748b;
   --dark: #0f172a;
@@ -135,7 +135,7 @@
 
 .article-hero .cat-badge {
   align-self: flex-start;
-  background: #ff6b00;
+  background: #a13c00;
   color: #fff;
   padding: 6px 14px;
   border-radius: 999px;
@@ -435,7 +435,7 @@
 }
 
 .article-cta-inner {
-  background: linear-gradient(135deg, #ff6b00 0%, #ff8c33 100%);
+  background: linear-gradient(135deg, #a13c00 0%, #ff8c33 100%);
   border-radius: var(--radius);
   padding: 40px;
   text-align: center;
@@ -855,7 +855,7 @@
   height: 48px;
   border-radius: 50%;
   background: #fff5ee;
-  color: #ff6b00;
+  color: #a13c00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -884,7 +884,7 @@
 }
 
 .admin-badge {
-  background: #ff6b00;
+  background: #a13c00;
   color: #fff;
   font-size: 10px;
   padding: 2px 8px;
@@ -893,7 +893,7 @@
 }
 
 .comment-stars {
-  color: #ff6b00;
+  color: #a13c00;
   font-size: 14px;
   margin-bottom: 8px;
 }

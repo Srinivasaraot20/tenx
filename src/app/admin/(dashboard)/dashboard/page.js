@@ -91,8 +91,8 @@ export default function AdminDashboard() {
   if (!data) return null;
 
   const { stats, recentActivity, chartData, pieData, statusDistribution } = data;
-  const PIE_COLORS = ['#f97316', '#3b82f6'];
-  const STATUS_COLORS = ['#3b82f6', '#f59e0b', '#8b5cf6', '#10b981'];
+  const PIE_COLORS = ['#f97316', '#1d4ed8'];
+  const STATUS_COLORS = ['#1d4ed8', '#f59e0b', '#8b5cf6', '#10b981'];
 
   return (
     <div className="space-y-8 pb-10">

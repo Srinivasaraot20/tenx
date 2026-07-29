@@ -1,15 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function SocialShare({ url, title, compact = false }) {
   const [copied, setCopied] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState("");
 
-  const shareUrl = encodeURIComponent(url || (typeof window !== "undefined" ? window.location.href : ""));
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, []);
+
+  const shareUrl = encodeURIComponent(url || currentUrl);
   const shareTitle = encodeURIComponent(title || "");
 
   function copyLink() {
-    const link = url || window.location.href;
+    const link = url || currentUrl;
     navigator.clipboard?.writeText(link);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

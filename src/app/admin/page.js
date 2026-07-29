@@ -361,7 +361,7 @@ export default function AdminPage() {
                                 </div>
                                 <div className="admin-detail-item">
                                   <label>Website URL</label>
-                                  <span>{l.website ? <a href={l.website.startsWith("http") ? l.website : `https://${l.website}`} target="_blank" rel="noreferrer" style={{ color: "#ff6b00", textDecoration: "underline" }}>{l.website}</a> : "N/A"}</span>
+                                  <span>{l.website ? <a href={l.website.startsWith("http") ? l.website : `https://${l.website}`} target="_blank" rel="noreferrer" style={{ color: "#a13c00", textDecoration: "underline" }}>{l.website}</a> : "N/A"}</span>
                                 </div>
                                 <div className="admin-detail-item">
                                   <label>Business Location</label>

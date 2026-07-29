@@ -13,10 +13,10 @@
   --wa-accent-green-border: rgba(16, 185, 129, 0.25);
   
   /* Brand Highlights */
-  --wa-accent-orange: #ff6b00;
+  --wa-accent-orange: #a13c00;
   --wa-accent-purple: #7c3aed;
   --wa-accent-blue: #2563eb;
-  --wa-accent-pink: #ec4899;
+  --wa-accent-pink: #be185d;
   
   /* Glow colors */
   --wa-glow-green: rgba(16, 185, 129, 0.04);
@@ -26,7 +26,7 @@
   --wa-text-dark: #1a1a2e;
   --wa-text-muted: #555555;
   --wa-text-light: #64748b;
-  --wa-success: #16a34a;
+  --wa-success: #15803d;
 }
 
 .wa-page-container {
@@ -1609,7 +1609,7 @@
   align-items: center;
   gap: 6px;
   background: #f0fdf4;
-  color: #16a34a;
+  color: #15803d;
   font-size: clamp(10px, 2vw, 12px);
   font-weight: 800;
   padding: 4px 12px;
