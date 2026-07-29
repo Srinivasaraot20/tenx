@@ -13,12 +13,27 @@ export const pageview = (url) => {
 };
 
 // https://developers.google.com/analytics/devguides/collection/ga4/events?client_type=gtag
-export const event = ({ action, category, label, value }) => {
+export const event = (eventName, params = {}) => {
   if (isProduction && typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", action, {
-      event_category: category,
-      event_label: label,
-      value: value,
+    // If called with older object signature {action, category, label, value}
+    if (typeof eventName === "object" && eventName.action) {
+      window.gtag("event", eventName.action, {
+        event_category: eventName.category,
+        event_label: eventName.label,
+        value: eventName.value,
+        ...params
+      });
+      return;
+    }
+
+    // Modern GA4 custom event tracking
+    const device_type = window.innerWidth <= 768 ? "Mobile" : window.innerWidth <= 1024 ? "Tablet" : "Desktop";
+    const page_url = window.location.pathname;
+
+    window.gtag("event", eventName, {
+      device_type,
+      page_url,
+      ...params,
     });
   }
 };
