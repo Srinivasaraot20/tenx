@@ -7,11 +7,11 @@ export default function About() {
         
         {/* Centered ABOUT US with lines */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "12px" }}>
-          <div style={{ width: "40px", height: "2px", background: "#ff6b00" }}></div>
-          <span className="eyebrow" style={{ color: "#ff6b00", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
+          <span className="eyebrow" style={{ color: "#a13c00", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
             ABOUT US
           </span>
-          <div style={{ width: "40px", height: "2px", background: "#ff6b00" }}></div>
+          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
         </div>
 
         {/* Heading */}
@@ -20,7 +20,7 @@ export default function About() {
         </h2>
 
         {/* Small Underbar */}
-        <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#ff6b00", margin: "16px 0 20px" }}></div>
+        <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#a13c00", margin: "16px 0 20px" }}></div>
 
         {/* Paragraph */}
         <p style={{ fontSize: "15px", color: "#64748b", lineHeight: "1.8", marginBottom: "16px", maxWidth: "900px" }}>
@@ -45,21 +45,7 @@ export default function About() {
             alignItems: "center",
             gap: "20px"
           }}>
-            <div style={{
-              position: "absolute",
-              top: "16px",
-              right: "16px",
-              background: "#ff6b00",
-              color: "#fff",
-              fontSize: "11px",
-              fontWeight: "800",
-              width: "28px",
-              height: "22px",
-              borderRadius: "6px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}>01</div>
+
             <div style={{
               width: "90px",
               height: "90px",
@@ -71,13 +57,10 @@ export default function About() {
               flexShrink: 0,
               position: "relative"
             }}>
-              <Image 
-                src="/feat-data-driven.webp" 
-                alt="Data Driven Strategies" 
-                width={56}
-                height={56}
-                style={{ objectFit: "contain" }}
-              />
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="M18 9l-5 5-4-4-6 6" />
+              </svg>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Data-Driven Strategies</h3>
@@ -99,21 +82,7 @@ export default function About() {
             alignItems: "center",
             gap: "20px"
           }}>
-            <div style={{
-              position: "absolute",
-              top: "16px",
-              right: "16px",
-              background: "#ec4899",
-              color: "#fff",
-              fontSize: "11px",
-              fontWeight: "800",
-              width: "28px",
-              height: "22px",
-              borderRadius: "6px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}>02</div>
+
             <div style={{
               width: "90px",
               height: "90px",
@@ -125,13 +94,11 @@ export default function About() {
               flexShrink: 0,
               position: "relative"
             }}>
-              <Image 
-                src="/feat-creative-solutions.webp" 
-                alt="Creative Marketing Solutions" 
-                width={56}
-                height={56}
-                style={{ objectFit: "contain" }}
-              />
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#be185d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2a7 7 0 0 0-7 7c0 2 1 3 2 4l1 3h8l1-3c1-1 2-2 2-4a7 7 0 0 0-7-7z" />
+                <path d="M9 21h6" />
+                <path d="M12 11v-4" />
+              </svg>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Creative Marketing Solutions</h3>
@@ -153,21 +120,7 @@ export default function About() {
             alignItems: "center",
             gap: "20px"
           }}>
-            <div style={{
-              position: "absolute",
-              top: "16px",
-              right: "16px",
-              background: "#3b82f6",
-              color: "#fff",
-              fontSize: "11px",
-              fontWeight: "800",
-              width: "28px",
-              height: "22px",
-              borderRadius: "6px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}>03</div>
+
             <div style={{
               width: "90px",
               height: "90px",
@@ -179,13 +132,11 @@ export default function About() {
               flexShrink: 0,
               position: "relative"
             }}>
-              <Image 
-                src="/feat-business-growth.webp" 
-                alt="Business Growth Focused" 
-                width={56}
-                height={56}
-                style={{ objectFit: "contain" }}
-              />
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M12 12l-8 8" />
+                <path d="M12 2s-1 7-1 9c0 2 1 3 3 3s3-1 3-3c0-2-1-9-1-9z" />
+                <path d="M9 15h6" />
+              </svg>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Business Growth Focused</h3>
@@ -207,21 +158,7 @@ export default function About() {
             alignItems: "center",
             gap: "20px"
           }}>
-            <div style={{
-              position: "absolute",
-              top: "16px",
-              right: "16px",
-              background: "#7c3aed",
-              color: "#fff",
-              fontSize: "11px",
-              fontWeight: "800",
-              width: "28px",
-              height: "22px",
-              borderRadius: "6px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}>04</div>
+
             <div style={{
               width: "90px",
               height: "90px",
@@ -233,13 +170,13 @@ export default function About() {
               flexShrink: 0,
               position: "relative"
             }}>
-              <Image 
-                src="/feat-expert-team.webp" 
-                alt="Dedicated Expert Team" 
-                width={56}
-                height={56}
-                style={{ objectFit: "contain" }}
-              />
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M9 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M13 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <circle cx="17" cy="7" r="3" />
+              </svg>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Dedicated Expert Team</h3>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { RELATED_SERVICES } from "@/data/categories";
+import * as gtag from "@/lib/gtag";
 
 export default function RelatedServices({ services }) {
   const items = services
@@ -15,7 +16,7 @@ export default function RelatedServices({ services }) {
       </div>
       <div className="related-services-grid">
         {items.map((service) => (
-          <Link key={service.href} href={service.href} className="service-card">
+          <Link key={service.href} href={service.href} className="service-card" onClick={() => gtag.event("service_cta_click", { service_name: service.title, button_location: "related_services" })}>
             <Image
               src={service.icon}
               alt={service.title}

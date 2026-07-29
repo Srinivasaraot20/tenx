@@ -7,7 +7,7 @@ export default function Process() {
       title: "Discovery",
       desc: "We understand your business, goals, target audience, competitors, and current digital marketing challenges.",
       class: "step-orange",
-      color: "#cc5500",
+      color: "#a13c00",
       bgColor: "rgba(255, 107, 0, 0.06)",
       circleIcon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -49,7 +49,7 @@ export default function Process() {
       title: "Analysis",
       desc: "We monitor important performance metrics, analyze campaign data, and identify opportunities for improvement.",
       class: "step-blue",
-      color: "#3b82f6",
+      color: "#1d4ed8",
       bgColor: "rgba(59, 130, 246, 0.06)",
       circleIcon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>

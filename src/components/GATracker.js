@@ -3,10 +3,13 @@
 import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import * as gtag from "@/lib/gtag";
+import useScrollTracking from "@/hooks/useScrollTracking";
 
 function Tracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  useScrollTracking(pathname);
 
   useEffect(() => {
     if (pathname) {

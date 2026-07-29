@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import * as gtag from "@/lib/gtag";
 
 export default function BlogFilters({ categories = [], authors = [], tags = [], onChange }) {
   const [q, setQ] = useState("");
@@ -14,6 +15,8 @@ export default function BlogFilters({ categories = [], authors = [], tags = [], 
       const newValue = category === value ? "" : value;
       setCategory(newValue);
       next.category = newValue;
+      
+      gtag.event("blog_category_click", { category: newValue || "All" });
     }
     onChange?.(next);
   }

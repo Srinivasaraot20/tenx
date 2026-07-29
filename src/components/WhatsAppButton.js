@@ -65,12 +65,7 @@ Please contact me. Thank you!`;
       : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedText}`;
 
     // Track analytics click
-    gtag.event({
-      action: "whatsapp_click",
-      category: "Engagement",
-      label: "Floating WhatsApp Button",
-      value: 1
-    });
+    gtag.event("whatsapp_click", { button_location: "floating" });
     if (window.fbq) {
       window.fbq("track", "Contact", {
         content_name: "Floating WhatsApp Button"

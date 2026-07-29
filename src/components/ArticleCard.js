@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import * as gtag from "@/lib/gtag";
 
 function getBookmarks() {
   try {
@@ -81,6 +82,7 @@ export default function ArticleCard({ article, compact = false }) {
   function onShare(e) {
     e.preventDefault();
     e.stopPropagation();
+    gtag.event("blog_share", { article_title: article.title, slug: article.slug });
     const url = `${window.location.origin}/blog/${article.slug}`;
     if (navigator.share) {
       navigator.share({ title: article.title, url }).catch(() => {});
@@ -130,7 +132,7 @@ export default function ArticleCard({ article, compact = false }) {
         </div>
       </div>
       <div className="article-card-footer">
-        <Link href={`/blog/${article.slug}`} className="btn-read-more">
+        <Link href={`/blog/${article.slug}`} className="btn-read-more" onClick={() => gtag.event("blog_read_more", { article_title: article.title, slug: article.slug })}>
           Read More →
         </Link>
         {!compact && (
