@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Eye, EyeOff, Loader2, Lock, User } from "lucide-react";
+import * as gtag from "@/lib/gtag";
 
 const loginSchema = z.object({
   username: z.string().min(1, "Username is required"),
@@ -34,6 +35,7 @@ export default function AdminLogin() {
 
   const onSubmit = async (data) => {
     setError("");
+    gtag.event("admin_login_click", { action_type: "submit_login" });
     try {
       const res = await signIn("credentials", {
         redirect: false,
@@ -42,12 +44,15 @@ export default function AdminLogin() {
       });
 
       if (res?.error) {
+        gtag.event("admin_login_failed", { error_message: "Invalid username or password" });
         setError("Invalid username or password");
       } else {
+        gtag.event("admin_login_success", { status: "logged_in" });
         router.push("/admin/dashboard");
         router.refresh();
       }
     } catch (error) {
+      gtag.event("admin_login_failed", { error_message: "Unexpected error" });
       setError("An unexpected error occurred. Please try again.");
     }
   };
