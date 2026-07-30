@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ChartNoAxesColumnIncreasing, Lightbulb, Rocket, Users } from "lucide-react";
 
 export default function About() {
   return (
@@ -191,3 +192,4 @@ export default function About() {
     </section>
   );
 }
+
