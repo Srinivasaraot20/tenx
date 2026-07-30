@@ -711,7 +711,7 @@ export default function ServicesPage() {
               {services.map((svc, idx) => (
                 <div className="service-card glass-card" key={idx} id={svc.id}>
                   <div className="service-icon-box" style={{ backgroundColor: svc.bgColor }}>
-                    <Image src={svc.icon} alt={svc.title} width={30} height={30} style={{ objectFit: "contain" }} />
+                    <Image src={svc.icon} alt="" width={30} height={30} style={{ objectFit: "contain" }} />
                   </div>
                   <h3>{svc.title}</h3>
                   <p className="service-desc">{svc.desc}</p>

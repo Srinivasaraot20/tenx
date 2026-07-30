@@ -277,13 +277,14 @@ export default function Header() {
           </div>
 
           <div className="drawer-socials">
-            <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="Facebook" onClick={() => gtag.event("social_click", { platform: "facebook" })}>FB</a>
-            <a href="https://x.com/DigitalTenx9" target="_blank" rel="noopener noreferrer" aria-label="X" onClick={() => gtag.event("social_click", { platform: "twitter" })}>X</a>
-            <a href="https://linkedin.com/in/digitalmarketing-tenx-8278b440b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => gtag.event("social_click", { platform: "linkedin" })}>LN</a>
-            <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" onClick={() => gtag.event("social_click", { platform: "instagram" })}>IG</a>
+            <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="FB - Facebook" onClick={() => gtag.event("social_click", { platform: "facebook" })}>FB</a>
+            <a href="https://x.com/DigitalTenx9" target="_blank" rel="noopener noreferrer" aria-label="X - Twitter" onClick={() => gtag.event("social_click", { platform: "twitter" })}>X</a>
+            <a href="https://linkedin.com/in/digitalmarketing-tenx-8278b440b" target="_blank" rel="noopener noreferrer" aria-label="LN - LinkedIn" onClick={() => gtag.event("social_click", { platform: "linkedin" })}>LN</a>
+            <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="IG - Instagram" onClick={() => gtag.event("social_click", { platform: "instagram" })}>IG</a>
           </div>
         </div>
       </div>
     </>
   );
 }
+

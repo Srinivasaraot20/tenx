@@ -23,12 +23,12 @@ export default function Footer() {
           </Link>
           <p>Transform your digital presence with AI-powered marketing, high-performance web solutions, and intelligent automation that increase traffic, generate qualified leads, and accelerate business growth.</p>
           <div className="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="Facebook" onClick={() => gtag.event("social_click", { platform: "facebook", button_location: "footer" })}>f</a>
-            <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" onClick={() => gtag.event("social_click", { platform: "instagram", button_location: "footer" })}>📸</a>
-            <a href="https://linkedin.com/in/digitalmarketing-tenx-8278b440b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => gtag.event("social_click", { platform: "linkedin", button_location: "footer" })}>in</a>
-            <a href="https://x.com/DigitalTenx9" target="_blank" rel="noopener noreferrer" aria-label="X" onClick={() => gtag.event("social_click", { platform: "twitter", button_location: "footer" })}>✕</a>
-            <a href="https://medium.com/@digitalmarketingtenx" target="_blank" rel="noopener noreferrer" aria-label="Medium" onClick={() => gtag.event("social_click", { platform: "medium", button_location: "footer" })}>M</a>
-            <a href="https://www.quora.com/profile/DIGITAL-MARKEING-TEN-X" target="_blank" rel="noopener noreferrer" aria-label="Quora" onClick={() => gtag.event("social_click", { platform: "quora", button_location: "footer" })}>Q</a>
+            <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="f - Facebook" onClick={() => gtag.event("social_click", { platform: "facebook", button_location: "footer" })}>f</a>
+            <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="IG - Instagram" onClick={() => gtag.event("social_click", { platform: "instagram", button_location: "footer" })}>📸</a>
+            <a href="https://linkedin.com/in/digitalmarketing-tenx-8278b440b" target="_blank" rel="noopener noreferrer" aria-label="in - LinkedIn" onClick={() => gtag.event("social_click", { platform: "linkedin", button_location: "footer" })}>in</a>
+            <a href="https://x.com/DigitalTenx9" target="_blank" rel="noopener noreferrer" aria-label="X - Twitter" onClick={() => gtag.event("social_click", { platform: "twitter", button_location: "footer" })}>✕</a>
+            <a href="https://medium.com/@digitalmarketingtenx" target="_blank" rel="noopener noreferrer" aria-label="M - Medium" onClick={() => gtag.event("social_click", { platform: "medium", button_location: "footer" })}>M</a>
+            <a href="https://www.quora.com/profile/DIGITAL-MARKEING-TEN-X" target="_blank" rel="noopener noreferrer" aria-label="Q - Quora" onClick={() => gtag.event("social_click", { platform: "quora", button_location: "footer" })}>Q</a>
           </div>
         </div>
         <div>
@@ -102,3 +102,4 @@ export default function Footer() {
     </>
   );
 }
+
