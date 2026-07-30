@@ -612,23 +612,25 @@ export default function ServicesPage() {
           <div className="radial-glow glow-orange-right"></div>
 
           <div className="services-hero-grid">
-            <div className="services-hero-content">
-              <span className="badge-premium">🚀 Our Digital Marketing Services</span>
-              <h1 className="services-hero-title">
-                Digital Marketing Solutions <br className="hide-mobile" />
-                <span className="w-text-orange">That Accelerate</span> <br className="hide-mobile" />
-                <span className="w-text-purple">Business Growth</span>
-              </h1>
-              <p>
-                Whether you're looking to generate qualified leads, improve search visibility, build a high-performing website, or automate customer engagement, our team delivers tailored digital solutions designed to drive measurable growth and long-term success.
-              </p>
-              <div className="services-hero-buttons">
-                <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
-                  📅 Book Free Consultation
-                </button>
-                <Link href="/" className="btn-outline">
-                  ▶ View Our Portfolio
-                </Link>
+            <div className="services-hero-left">
+              <div className="services-hero-content">
+                <span className="badge-premium">🚀 Our Digital Marketing Services</span>
+                <h1 className="services-hero-title">
+                  Digital Marketing Solutions <br className="hide-mobile" />
+                  <span className="w-text-orange">That Accelerate</span> <br className="hide-mobile" />
+                  <span className="w-text-purple">Business Growth</span>
+                </h1>
+                <p>
+                  Whether you're looking to generate qualified leads, improve search visibility, build a high-performing website, or automate customer engagement, our team delivers tailored digital solutions designed to drive measurable growth and long-term success.
+                </p>
+                <div className="services-hero-buttons">
+                  <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
+                    📅 Book Free Consultation
+                  </button>
+                  <Link href="/" className="btn-outline">
+                    ▶ View Our Portfolio
+                  </Link>
+                </div>
               </div>
 
               {/* 3 Strategic Service Highlights */}
