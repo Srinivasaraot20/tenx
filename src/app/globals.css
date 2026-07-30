@@ -457,7 +457,7 @@ a{text-decoration:none;color:inherit}
 
 /* ── INDUSTRIES ── */
 .industries{padding:var(--space-fluid-section-py) var(--space-fluid-section-px) clamp(10px, 2vw, 15px);background:#f9f9fb;overflow:hidden}
-.ind-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(min(240px, 100%), 1fr));max-width:1200px;margin:0 auto;gap:var(--space-fluid-gap-sm)}
+.ind-grid{display:grid;grid-template-columns:repeat(4, 1fr);max-width:1200px;margin:0 auto;gap:var(--space-fluid-gap-sm)}
 .ind-card{
   background:#fff;
   border-radius:12px;
@@ -2996,3 +2996,28 @@ body.modal-open-lock {
   }
 }
 
+
+/* Industries We Serve - Mobile First Responsive Fixes */
+@media (max-width: 1023px) {
+  .ind-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ind-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ind-card {
+    padding: 16px 12px;
+  }
+  .ind-card h3 {
+    font-size: 1.1rem;
+  }
+  .ind-card p {
+    font-size: 0.9rem;
+  }
+}
