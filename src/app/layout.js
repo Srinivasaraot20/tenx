@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import GATracker from "@/components/GATracker";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema } from "@/components/schema/SchemaComponents";
 import "./globals.css";
 
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
   // Inject schemas
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-WCSWVPMT" />
       <head>
         {process.env.NODE_ENV === "production" && process.env.NEXT_PUBLIC_GA_ID && (
           <>
@@ -57,9 +58,16 @@ export default function RootLayout({ children }) {
         <WebSiteSchema />
       </head>
       <body suppressHydrationWarning className={inter.className}>
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WCSWVPMT"
+            height="0" 
+            width="0" 
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <GATracker />
         {children}
-        
       </body>
     </html>
   );
