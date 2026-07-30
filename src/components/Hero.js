@@ -62,26 +62,26 @@ export default function Hero() {
     <>
       <section className="hero">
         <div className="hero-content">
-          <h1 className="animate-fade-in-up delay-100">
+          <h1 className="">
             <span style={{ color: "#000" }}>AI-Powered</span><br />
             Digital Marketing Agency in Hyderabad
           </h1>
-          <p className="animate-fade-in-up delay-200">
+          <p className="">
             Digital Marketing TenX is a results-driven digital marketing agency in Hyderabad helping businesses improve their online visibility, generate qualified leads, and achieve sustainable growth. From SEO and Google Ads to social media marketing, website development, and performance marketing, we create data-driven strategies tailored to your business goals.
           </p>
-          <div className="hero-btns animate-fade-in-up delay-300">
+          <div className="hero-btns">
             <button className="btn-primary" onClick={() => {
               gtag.event("book_consultation_click", { button_location: "hero_section" });
               window.dispatchEvent(new CustomEvent("trigger-consultation-modal"));
             }}>📅 Book a Free Consultation</button>
             <Link href="/services" className="btn-primary" onClick={() => gtag.event("service_cta_click", { service_name: "all_services", button_location: "hero_section" })}>Explore Our Services</Link>
           </div>
-          <div className="hero-trust animate-fade-in-up delay-400" style={{ marginTop: "1rem", fontSize: "0.9rem", color: "#666", fontWeight: "600" }}>
+          <div className="hero-trust" style={{ marginTop: "1rem", fontSize: "0.9rem", color: "#666", fontWeight: "600" }}>
             SEO • Google Ads • Web Development • Social Media Marketing • Performance Marketing
           </div>
         </div>
 
-        <div className="hero-visual animate-fade-in-right delay-200">
+        <div className="hero-visual">
           <div className="globe-wrap">
             <Image 
               src="/mark.webp" 
@@ -101,3 +101,4 @@ export default function Hero() {
     </>
   );
 }
+

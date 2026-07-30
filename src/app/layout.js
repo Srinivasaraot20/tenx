@@ -7,7 +7,7 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600", "700"],
   display: "swap",
   preload: true,
 });
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === "production" && process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}

@@ -1,19 +1,21 @@
 
+import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 
-import About from "@/components/About";
-import Services from "@/components/Services";
-import DigitalGrowthFramework from "@/components/DigitalGrowthFramework";
-import Challenges from "@/components/Challenges";
-import Industries from "@/components/Industries";
-import Process from "@/components/Process";
-import WhyUs from "@/components/WhyUs";
-import RecentBlogs from "@/components/RecentBlogs";
-import SEOContent from "@/components/SEOContent";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+// Lazy load below-the-fold components
+const About = dynamic(() => import("@/components/About"));
+const Services = dynamic(() => import("@/components/Services"));
+const DigitalGrowthFramework = dynamic(() => import("@/components/DigitalGrowthFramework"));
+const Challenges = dynamic(() => import("@/components/Challenges"));
+const Industries = dynamic(() => import("@/components/Industries"));
+const Process = dynamic(() => import("@/components/Process"));
+const WhyUs = dynamic(() => import("@/components/WhyUs"));
+const RecentBlogs = dynamic(() => import("@/components/RecentBlogs"));
+const SEOContent = dynamic(() => import("@/components/SEOContent"));
+const CTA = dynamic(() => import("@/components/CTA"));
+const Footer = dynamic(() => import("@/components/Footer"));
+const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton"));
 
 // Export metadata for Google & Bing search engine optimization + OpenGraph Social cards
 export const metadata = {
