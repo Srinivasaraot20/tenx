@@ -376,13 +376,13 @@ export const metadata = {
     "Top 10 Digital Marketing Agency in Hyderabad"
 ],
 
-  title: "Best AI-Powered Digital Marketing Agency in Hyderabad | Digital TenX",
+  title: "Top AI Digital Marketing Agency in Hyderabad | TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
   alternates: {
     canonical: "https://tenx-sigma.vercel.app/",
   },
   openGraph: {
-    title: "Best AI-Powered Digital Marketing Agency in Hyderabad | Digital TenX",
+    title: "Top AI Digital Marketing Agency in Hyderabad | TenX",
     description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
     url: "https://tenx-sigma.vercel.app/",
     type: "website",
