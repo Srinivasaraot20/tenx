@@ -69,6 +69,9 @@ export default function Hero() {
           <p className="">
             Digital Marketing TenX is a results-driven digital marketing agency in Hyderabad helping businesses improve their online visibility, generate qualified leads, and achieve sustainable growth. From SEO and Google Ads to social media marketing, website development, and performance marketing, we create data-driven strategies tailored to your business goals.
           </p>
+          <div style={{ backgroundColor: "#f9f9ff", padding: "16px", borderRadius: "8px", marginBottom: "24px", borderLeft: "4px solid var(--primary)", textAlign: "left", fontSize: "0.95rem", color: "#334155" }}>
+            <strong>Executive Summary:</strong> We provide end-to-end digital marketing solutions, including SEO, paid ads, and web development, to help businesses scale.
+          </div>
           <div className="hero-btns">
             <button className="btn-primary" onClick={() => {
               gtag.event("book_consultation_click", { button_location: "hero_section" });

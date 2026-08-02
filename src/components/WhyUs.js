@@ -142,9 +142,44 @@ export default function WhyUs() {
         </h2>
 
         {/* Subtitle */}
-        <p style={{ fontSize: "16px", color: "#64748b", maxWidth: "800px", textAlign: "center", margin: "0 0 48px 0", lineHeight: "1.6" }}>
+        <p style={{ fontSize: "16px", color: "#64748b", maxWidth: "800px", textAlign: "center", margin: "0 0 32px 0", lineHeight: "1.6" }}>
           We combine data-driven strategy, AI-powered technology, and digital marketing expertise to help businesses achieve measurable results and sustainable growth.
         </p>
+
+        {/* Comparison Table */}
+        <div style={{ width: "100%", maxWidth: "800px", marginBottom: "48px", overflowX: "auto" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", background: "#fff", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 20px rgba(0,0,0,0.05)" }}>
+            <thead>
+              <tr style={{ background: "#f8fafc", borderBottom: "2px solid #e2e8f0" }}>
+                <th style={{ padding: "16px", textAlign: "left", color: "#0f172a", fontWeight: "700" }}>Feature</th>
+                <th style={{ padding: "16px", textAlign: "center", color: "#a13c00", fontWeight: "800" }}>Digital TenX</th>
+                <th style={{ padding: "16px", textAlign: "center", color: "#64748b", fontWeight: "600" }}>Traditional Agencies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ borderBottom: "1px solid #f1f5f9" }}>
+                <td style={{ padding: "16px", color: "#334155" }}>Marketing Approach</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#15803d", fontWeight: "600" }}>Data & AI-Driven</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#94a3b8" }}>Guesswork</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #f1f5f9" }}>
+                <td style={{ padding: "16px", color: "#334155" }}>Reporting</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#15803d", fontWeight: "600" }}>100% Transparent</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#94a3b8" }}>Vague & Confusing</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #f1f5f9" }}>
+                <td style={{ padding: "16px", color: "#334155" }}>Primary Focus</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#15803d", fontWeight: "600" }}>Measurable ROI</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#94a3b8" }}>Vanity Metrics</td>
+              </tr>
+              <tr>
+                <td style={{ padding: "16px", color: "#334155" }}>Campaign Strategy</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#15803d", fontWeight: "600" }}>Customized</td>
+                <td style={{ padding: "16px", textAlign: "center", color: "#94a3b8" }}>One-Size-Fits-All</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         {/* Grid Container */}
         <div className="why-grid-layout" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "24px", width: "100%" }}>
