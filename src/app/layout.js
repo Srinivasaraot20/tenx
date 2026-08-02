@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import GATracker from "@/components/GATracker";
-import { GoogleAnalytics } from '@next/third-parties/google';
 import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema } from "@/components/schema/SchemaComponents";
 import "./globals.css";
 
@@ -39,8 +39,20 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning className={inter.className}>
         <GATracker />
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-63N4N1Y1RV"
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-63N4N1Y1RV');
+          `}
+        </Script>
       </body>
-      <GoogleAnalytics gaId="G-63N4N1Y1RV" />
     </html>
   );
 }

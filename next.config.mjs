@@ -13,6 +13,7 @@ const nextConfig = {
   turbopack: {},
   experimental: {
     optimizeCss: true,
+    optimizePackageImports: ['lucide-react'],
   },
   async headers() {
     return [
