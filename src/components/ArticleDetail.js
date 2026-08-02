@@ -33,14 +33,24 @@ export default function ArticleDetail({ article, author }) {
     });
     setToc(items);
 
+    let ticking = false;
     function onScroll() {
-      const el = contentRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const total = el.scrollHeight - window.innerHeight;
-      const scrolled = Math.min(Math.max(window.scrollY - el.offsetTop + 200, 0), total);
-      const pct = total > 0 ? Math.round((scrolled / total) * 100) : 0;
-      setProgress(Math.min(pct, 100));
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const el = contentRef.current;
+          if (!el) {
+            ticking = false;
+            return;
+          }
+          const rect = el.getBoundingClientRect();
+          const total = el.scrollHeight - window.innerHeight;
+          const scrolled = Math.min(Math.max(window.scrollY - el.offsetTop + 200, 0), total);
+          const pct = total > 0 ? Math.round((scrolled / total) * 100) : 0;
+          setProgress(Math.min(pct, 100));
+          ticking = false;
+        });
+        ticking = true;
+      }
     }
 
     window.addEventListener("scroll", onScroll, { passive: true });
