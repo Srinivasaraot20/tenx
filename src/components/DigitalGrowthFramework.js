@@ -9,7 +9,7 @@ export default function DigitalGrowthFramework() {
       subtitle: "Start With a Clear Direction",
       desc: "We understand your business, target audience, competitors, and growth objectives to create a digital marketing strategy tailored to your goals.",
       bg: "#fff5ee",
-      color: "#a13c00"
+      color: "#8c3300"
     },
     {
       num: "02",
@@ -17,7 +17,7 @@ export default function DigitalGrowthFramework() {
       subtitle: "Use Smarter Tools & AI-Powered Solutions",
       desc: "We use modern digital marketing tools, AI-powered solutions, analytics, and automation to improve efficiency, identify opportunities, and make smarter marketing decisions.",
       bg: "#eff6ff",
-      color: "#1d4ed8"
+      color: "#1e3a8a"
     },
     {
       num: "03",
@@ -25,7 +25,7 @@ export default function DigitalGrowthFramework() {
       subtitle: "Turn Strategy Into Action",
       desc: "From SEO and Google Ads to social media marketing, website development, content, and performance marketing, we execute strategies designed to connect your business with the right audience.",
       bg: "#f0fdf4",
-      color: "#15803d"
+      color: "#14532d"
     },
     {
       num: "04",
@@ -33,7 +33,7 @@ export default function DigitalGrowthFramework() {
       subtitle: "Measure, Learn & Improve",
       desc: "We track performance, analyze data, and continuously optimize campaigns and strategies to improve visibility, leads, conversions, and overall marketing performance.",
       bg: "#fdf2f8",
-      color: "#db2777"
+      color: "#9d174d"
     }
   ];
 

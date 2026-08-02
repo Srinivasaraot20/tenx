@@ -68,7 +68,7 @@ export default function WhyUs() {
       title: "Proven ROI",
       desc: "We focus on measurable performance and strategies designed to improve leads, conversions, revenue, and overall return on investment.",
       bg: "#fffbeb",
-      badgeColor: "#d97706",
+      badgeColor: "#92400e",
       badgeBg: "#fffbeb",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d97706" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

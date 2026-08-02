@@ -322,7 +322,7 @@ a{text-decoration:none;color:inherit}
   transform: scale(1.18) rotate(5deg);
 }
 .svc-card h3{font-size:var(--font-fluid-small);font-weight:700;margin-bottom:8px}
-.svc-card p{font-size:clamp(11px, 0.95vw, 12px);color:#777;line-height:1.6;margin-bottom:12px}
+.svc-card p{font-size:clamp(11px, 0.95vw, 12px);color:#555;line-height:1.6;margin-bottom:12px}
 .svc-card .arrow{
   color:#a13c00;
   font-size:18px;
