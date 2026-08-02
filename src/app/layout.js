@@ -12,8 +12,11 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Best Digital Marketing Agency in Hyderabad | Digital TenX",
+  title: "Best AI-Powered Digital Marketing Agency in Hyderabad | Digital TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
+  alternates: {
+    canonical: "https://tenx-sigma.vercel.app/",
+  },
   icons: {
     icon: [
       { url: "/favicon-16x16.webp", sizes: "16x16", type: "image/webp" },

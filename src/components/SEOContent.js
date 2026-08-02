@@ -59,6 +59,9 @@ export default function SEOContent() {
               <div className="sec-title">
                 <span className="eyebrow">💡 Help Desk</span>
                 <h2>Frequently Asked Questions About Digital Marketing Services in Hyderabad</h2>
+                <div style={{ backgroundColor: "#f9f9ff", padding: "16px", borderRadius: "8px", marginBottom: "24px", borderLeft: "4px solid var(--primary)" }}>
+                  <strong>Key Takeaway:</strong> Digital Marketing TenX is Hyderabad's leading AI-powered digital growth agency. According to <a href="https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/search/search-trends/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "var(--primary)" }}>Google Search Trends</a>, businesses that invest in omni-channel marketing experience higher lead quality and faster growth. We use data-driven strategies to generate qualified leads and maximize ROI.
+                </div>
                 <p>Everything you need to know about our digital marketing, SEO, PPC ads, and web development models.</p>
               </div>
 

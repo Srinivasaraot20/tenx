@@ -60,7 +60,7 @@ export default function Services() {
             <div className="svc-icon" style={{ backgroundColor: svc.bgColor }}>
               <Image 
                 src={svc.icon} 
-                alt="" 
+                alt={svc.title} 
                 width={32} 
                 height={32} 
                 style={{ objectFit: "contain", width: "auto", height: "auto" }}

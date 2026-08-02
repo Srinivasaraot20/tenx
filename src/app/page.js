@@ -1,4 +1,3 @@
-
 import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -377,15 +376,15 @@ export const metadata = {
     "Top 10 Digital Marketing Agency in Hyderabad"
 ],
 
-  title: "Best Digital Marketing Agency in Hyderabad | Digital TenX",
+  title: "Best AI-Powered Digital Marketing Agency in Hyderabad | Digital TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
   alternates: {
-    canonical: "https://digitalmarketingtenx.com",
+    canonical: "https://tenx-sigma.vercel.app/",
   },
   openGraph: {
-    title: "Best Digital Marketing Agency in Hyderabad | Digital TenX",
+    title: "Best AI-Powered Digital Marketing Agency in Hyderabad | Digital TenX",
     description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
-    url: "https://digitalmarketingtenx.com",
+    url: "https://tenx-sigma.vercel.app/",
     type: "website",
     images: [
       {
@@ -407,6 +406,7 @@ export default function Home() {
         title={metadata.title} 
         description={metadata.description}
         url="/" 
+        breadcrumbs={[{ name: "Home", url: "/" }]}
       />
       <Header />
       <main>
