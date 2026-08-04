@@ -210,7 +210,7 @@ a{text-decoration:none;color:inherit}
 .hero-badge{display:inline-block;background:#fff5ee;color:#a13c00;font-size:var(--font-fluid-small);font-weight:600;padding:5px clamp(10px, 1.5vw, 16px);border-radius:20px;margin-bottom:clamp(12px, 2vw, 20px);border:1px solid #ffd6b0}
 .hero-content{flex:1 1 50%;max-width:750px;display:flex;flex-direction:column;justify-content:center}
 .hero h1{font-size:calc(var(--font-fluid-h1) * 1.15);font-weight:900;line-height:1.15;max-width:100%;margin-bottom:16px}
-.hero h1 span{background:linear-gradient(135deg, #a13c00 0%, #d946ef 50%, #1d4ed8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block}
+.hero h1 span{color:#1d4ed8;display:inline-block}
 .hero p{font-size:calc(var(--font-fluid-p) * 1.05);color:#555;max-width:100%;line-height:1.6;margin-bottom:clamp(16px, 2vw, 24px)}
 .hero-btns{display:flex;gap:var(--space-fluid-gap-sm);flex-wrap:wrap;margin-bottom:8px}
 
