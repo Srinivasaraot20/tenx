@@ -96,9 +96,6 @@ export default function Header() {
             className="logo-img-file"
             priority
           />
-          <span className="brand-name">
-            Digital Marketing <span className="brand-highlight">TenX</span>
-          </span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -186,7 +183,6 @@ export default function Header() {
         <div className="drawer-header">
           <div className="logo">
             <Image src="/logo.webp" alt="TenX Logo" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '40px' }} />
-            <span className="brand-name" style={{ fontWeight: 800, fontSize: "15px" }}>TenX Menu</span>
           </div>
           <button className="drawer-close-btn" onClick={handleLinkClick}>✕</button>
         </div>

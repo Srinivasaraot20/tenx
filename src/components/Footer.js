@@ -19,9 +19,6 @@ export default function Footer() {
               style={{ width: 'auto', height: '56px' }}
               className="logo-img-file footer-logo"
             />
-            <span className="brand-name footer-brand-name">
-              Digital Marketing <span className="brand-highlight">TenX</span>
-            </span>
           </Link>
           <p>Transform your digital presence with AI-powered marketing, high-performance web solutions, and intelligent automation that increase traffic, generate qualified leads, and accelerate business growth.</p>
           <div className="social-links">
