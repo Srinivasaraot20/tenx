@@ -12,21 +12,15 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Top AI Digital Marketing Agency in Hyderabad | TenX",
+  title: "Best Digital Marketing Agency in Hyderabad | TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
   alternates: {
     canonical: "https://tenx-sigma.vercel.app/",
   },
   icons: {
-    icon: [
-      { url: "/favicon-16x16.webp", sizes: "16x16", type: "image/webp" },
-      { url: "/favicon-32x32.webp", sizes: "32x32", type: "image/webp" },
-      { url: "/favicon-48x48.webp", sizes: "48x48", type: "image/webp" },
-      { url: "/favicon-64x64.webp", sizes: "64x64", type: "image/webp" },
-      { url: "/icon.webp", sizes: "512x512", type: "image/webp" }
-    ],
-    shortcut: "/favicon.webp",
-    apple: "/apple-icon.webp",
+    icon: "/logo.webp",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
   },
 };
 

@@ -1,13 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import * as gtag from "@/lib/gtag";
+import { servicePricing } from "../../config/pricing";
 import "./contact.css";
 
 export default function ContactClient() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const serviceId = searchParams ? searchParams.get("service") : null;
+  const packageId = searchParams ? searchParams.get("package") : null;
+
+  const [selectedPackageInfo, setSelectedPackageInfo] = useState(null);
+
   const [formData, setFormData] = useState({
     fullName: "",
     companyName: "",
@@ -55,6 +62,42 @@ export default function ContactClient() {
       });
     }
   };
+
+  useEffect(() => {
+    if (serviceId && packageId && servicePricing[serviceId]) {
+      const serviceData = servicePricing[serviceId];
+      const packageData = serviceData.packages[packageId];
+      if (packageData) {
+        setSelectedPackageInfo({
+          serviceName: serviceData.title,
+          packageName: packageData.name,
+          price: packageData.price,
+          period: packageData.period || ""
+        });
+        
+        const serviceKeyMap = {
+          "seo": "seo",
+          "google-ads": "googleAds",
+          "website-design": "websiteDesign",
+          "social-media": "socialMedia",
+          "ecommerce": "ecommerce",
+          "whatsapp-automation": "whatsappAutomation"
+        };
+        
+        const key = serviceKeyMap[serviceId];
+        if (key) {
+          setFormData(prev => ({
+            ...prev,
+            services: {
+              ...prev.services,
+              [key]: true
+            },
+            projectDescription: `[Selected Package: ${serviceData.title} - ${packageData.name} (${packageData.price}${packageData.period || ""})]\n\n`
+          }));
+        }
+      }
+    }
+  }, [serviceId, packageId]);
 
   const handleServiceCheckboxChange = (serviceKey) => {
     setFormData((prev) => ({
@@ -190,6 +233,10 @@ export default function ContactClient() {
     }
   ];
 
+  const whatsappHref = selectedPackageInfo 
+    ? `https://wa.me/919392251739?text=${encodeURIComponent(`Hi Digital Marketing TenX,\n\nI'm interested in your ${selectedPackageInfo.serviceName}.\n\nPackage: ${selectedPackageInfo.packageName}\nPrice: ${selectedPackageInfo.price}${selectedPackageInfo.period}\n\nPlease share more details.`)}`
+    : "https://wa.me/919392251739";
+
   return (
     <div className="contact-page-content">
       {/* 1. HERO SECTION */}
@@ -200,19 +247,37 @@ export default function ContactClient() {
           <div className="con-hero-grid">
             <div className="con-hero-content">
               <span className="con-hero-eyebrow">📞 Contact Digital Marketing TenX</span>
-              <h1>Your Growth Journey <span>Starts Here</span></h1>
+              <h1>Contact <span>Digital Marketing TenX</span></h1>
+              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #a13c00", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
+                <strong>Expert Digital Marketing Solutions for Business Growth:</strong> Looking for expert digital marketing? Our team at Digital Marketing TenX provides scalable SEO, Google Ads, and Web Development strategies for startups, SMEs, and enterprise brands across Hyderabad and globally.
+              </div>
               <p>
-                Every successful business begins with the right strategy. At Digital Marketing TenX, we combine creativity, technology, AI, and performance marketing to help businesses increase visibility, generate qualified leads, and achieve long-term growth.
+                Every successful business begins with the right strategy. We combine creativity, technology, AI, and performance marketing to help businesses increase visibility, generate qualified leads, and achieve long-term growth.
               </p>
-              <p>
-                Whether you're a startup, local business, e-commerce brand, healthcare provider, educational institution, or enterprise, we're ready to create a tailored digital marketing strategy designed around your goals.
-              </p>
-              <p>Let's build something extraordinary together.</p>
-              <div className="con-hero-buttons">
+              
+              <div className="what-happens-next" style={{ marginTop: "24px", padding: "20px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
+                <h3 style={{ fontSize: "1.1rem", fontWeight: "700", marginBottom: "12px", color: "#0f172a" }}>What Happens Next?</h3>
+                <ul style={{ listStyleType: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <li style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.95rem", color: "#475569" }}>
+                    <span style={{ background: "#e0f2fe", color: "#0369a1", fontWeight: "bold", padding: "2px 8px", borderRadius: "6px" }}>1</span>
+                    <span><strong>Submit Your Request:</strong> Fill out the form or WhatsApp us. We respond within 2 hours from our Hyderabad office.</span>
+                  </li>
+                  <li style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.95rem", color: "#475569" }}>
+                    <span style={{ background: "#e0f2fe", color: "#0369a1", fontWeight: "bold", padding: "2px 8px", borderRadius: "6px" }}>2</span>
+                    <span><strong>Free Audit:</strong> Our team reviews your current <Link href="/services" style={{color: "#a13c00", textDecoration: "underline"}}>marketing services</Link> and digital presence.</span>
+                  </li>
+                  <li style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.95rem", color: "#475569" }}>
+                    <span style={{ background: "#e0f2fe", color: "#0369a1", fontWeight: "bold", padding: "2px 8px", borderRadius: "6px" }}>3</span>
+                    <span><strong>Growth Strategy Session:</strong> Jump on a free call to discuss a tailored roadmap. <Link href="/about-us" style={{color: "#a13c00", textDecoration: "underline"}}>Learn more about us</Link>.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="con-hero-buttons" style={{ marginTop: "30px" }}>
                 <button onClick={triggerConsultation} className="con-btn-primary">
                   📅 Book a Free Consultation
                 </button>
-                <a href="https://wa.me/919392251739" target="_blank" rel="noopener noreferrer" className="con-btn-secondary">
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="con-btn-secondary">
                   💬 Chat with Our Experts on WhatsApp
                 </a>
               </div>
@@ -293,7 +358,7 @@ export default function ContactClient() {
               </p>
               <div className="con-card-actions">
                 <a href="tel:+919392251739" className="con-btn-primary" onClick={() => gtag.event("phone_click", { phone_number: "+919392251739", button_location: "contact_page_card" })}>Call Now</a>
-                <a href="https://wa.me/919392251739" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("whatsapp_click", { button_location: "contact_page_card" })}>WhatsApp</a>
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("whatsapp_click", { button_location: "contact_page_card" })}>WhatsApp</a>
               </div>
             </div>
 
@@ -348,6 +413,32 @@ export default function ContactClient() {
         <div className="con-wrap">
           <div className="con-form-container">
             <h3>Request a Free Consultation</h3>
+
+            {selectedPackageInfo && (
+              <div style={{
+                background: "var(--con-light)",
+                border: "1px solid var(--con-primary)",
+                borderRadius: "12px",
+                padding: "20px",
+                marginBottom: "30px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px"
+              }}>
+                <div style={{ fontSize: "14px", color: "var(--con-text-muted)", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+                  Selected Service
+                </div>
+                <div style={{ fontSize: "20px", fontWeight: "700", color: "var(--con-text-dark)" }}>
+                  {selectedPackageInfo.serviceName}
+                </div>
+                <div style={{ display: "flex", alignItems: "baseline", gap: "10px", marginTop: "4px", flexWrap: "wrap" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "600", color: "var(--con-primary)" }}>{selectedPackageInfo.packageName} Package</span>
+                  <span style={{ fontSize: "18px", fontWeight: "800", color: "var(--con-text-dark)" }}>
+                    {selectedPackageInfo.price}<span style={{ fontSize: "14px", fontWeight: "600", color: "var(--con-text-muted)" }}>{selectedPackageInfo.period}</span>
+                  </span>
+                </div>
+              </div>
+            )}
             
             {errors.form && (
               <div className="p-3 mb-4 text-sm font-medium text-red-800 bg-red-100 rounded-lg">
@@ -798,7 +889,7 @@ export default function ContactClient() {
             {faqs.map((faq, i) => (
               <div key={i} className={`seo-faq-item ${faqActiveIndex === i ? "open" : ""}`}>
                 <button className="seo-faq-question-btn" onClick={() => toggleFaq(i)}>
-                  <span>{faq.q}</span>
+                  <h3 style={{ fontSize: "inherit", fontWeight: "inherit", margin: 0, padding: 0 }}>{faq.q}</h3>
                   <svg className="chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>

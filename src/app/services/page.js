@@ -718,19 +718,24 @@ export default function ServicesPage() {
                   
                   <div className="service-divider"></div>
 
-                  <h4 className="service-sub-title">What's Included</h4>
-                  <ul className="service-list">
-                    {svc.included.map((item, itemIdx) => (
-                      <li key={itemIdx}>{item}</li>
-                    ))}
-                  </ul>
+                  <div className="w-full" style={{ textAlign: "left", width: "100%", alignSelf: "flex-start" }}>
+                    <h4 className="service-sub-title text-left" style={{ textAlign: "left" }}>What's Included</h4>
+                    <ul className="space-y-2 mb-5" style={{ listStyle: "none", padding: 0, margin: "0 0 20px 0" }}>
+                      {svc.included.map((item, itemIdx) => (
+                        <li key={itemIdx} className="flex items-start gap-2" style={{ fontSize: "13px", color: "var(--text-dark)", fontWeight: "500", textAlign: "left" }}>
+                          <span style={{ color: "var(--primary-orange)" }}>•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
 
-                  <h4 className="service-sub-title" style={{ marginTop: "10px" }}>Benefits</h4>
-                  <ul className="benefits-list">
-                    {svc.benefits.map((benefit, benIdx) => (
-                      <li key={benIdx}>✔ {benefit}</li>
-                    ))}
-                  </ul>
+                    <h4 className="service-sub-title text-left" style={{ textAlign: "left", marginTop: "10px" }}>Benefits</h4>
+                    <ul className="benefits-list" style={{ justifyContent: "flex-start" }}>
+                      {svc.benefits.map((benefit, benIdx) => (
+                        <li key={benIdx}>✔ {benefit}</li>
+                      ))}
+                    </ul>
+                  </div>
 
                   <Link href={svc.ctaLink} className="service-card-cta">
                     {svc.ctaText}

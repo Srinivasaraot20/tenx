@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import ContactClient from "./ContactClient";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -57,14 +58,14 @@ export const metadata = {
     "start your digital marketing project"
 ],
 
-  title: "Contact Digital Marketing TenX | Digital Marketing Agency in Hyderabad",
-  description: "Contact Digital Marketing TenX for expert SEO, Google Ads, Website Development, Social Media Marketing, AI Automation, and E-Commerce Marketing. Visit our Hyderabad office or book a free consultation today.",
+  title: "Contact Digital Marketing TenX | Top Agency in Hyderabad",
+  description: "Contact Digital Marketing TenX in Hyderabad. We offer expert SEO, Google Ads, Web Development, and AI Automation. Book a free consultation today.",
   alternates: {
     canonical: "https://digitalmarketingtenx.com/contact",
   },
   openGraph: {
-    title: "Contact Digital Marketing TenX | Digital Marketing Agency in Hyderabad",
-    description: "Contact Digital Marketing TenX for expert SEO, Google Ads, Website Development, Social Media Marketing, AI Automation, and E-Commerce Marketing. Visit our Hyderabad office or book a free consultation today.",
+    title: "Contact Digital Marketing TenX | Top Agency in Hyderabad",
+    description: "Contact Digital Marketing TenX in Hyderabad. We offer expert SEO, Google Ads, Web Development, and AI Automation. Book a free consultation today.",
     url: "https://digitalmarketingtenx.com/contact",
     type: "website",
     images: [
@@ -130,7 +131,9 @@ export default function ContactPage() {
 
       <Header />
       <main>
-        <ContactClient />
+        <Suspense fallback={<div style={{padding: "100px 0", textAlign: "center"}}>Loading form...</div>}>
+          <ContactClient />
+        </Suspense>
       </main>
       <Footer />
       <WhatsAppButton />

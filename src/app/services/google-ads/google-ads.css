@@ -2165,3 +2165,16 @@
 .ga-hero-visual-card img, .ga-section img, .ga-wrap img { max-width: 100%; height: auto; }
 
 .ga-cta-btn, .ga-primary-btn, .ga-secondary-btn { max-width: 100%; }
+
+/* ---- MOBILE OVERRIDE ---- */
+@media (max-width: 767px) {
+  .ga-features-attributes-row {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px;
+  }
+  .ga-attrib-item {
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -9,6 +9,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import ServiceHero from "@/components/ServiceHero";
+import PricingTable from "@/components/services/PricingTable";
 
 import "./seo-services.css";
 
@@ -1493,6 +1494,18 @@ Please contact me for the audit. Thank you!`;
           </div>
         </div>
       )}
+
+      <PricingTable 
+        title="SEO Packages That Grow With Your Business"
+        subtitle="Choose the right SEO plan to improve your Google rankings, increase organic traffic, and generate consistent leads."
+        serviceName="SEO Services"
+        serviceId="seo"
+        packages={[
+          { id: "basic", name: "Basic", price: "₹8,000", period: "/month" },
+          { id: "growth", name: "Growth", price: "₹15,000", period: "/month", popular: true },
+          { id: "premium", name: "Premium", price: "₹25,000+", period: "/month" }
+        ]}
+      />
 
       <CTA 
         title="Ready to Grow Your Organic Traffic?"

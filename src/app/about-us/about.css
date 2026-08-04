@@ -3166,7 +3166,16 @@ font-size: 0.9rem;
 
 @media (max-width: 600px) {
   .hero-stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .hero-stats-grid .stat-card {
+    padding: 8px 10px;
+    min-width: 0;
+  }
+  .hero-stats-grid .stat-card p {
+    font-size: 0.65rem;
+    word-break: break-word;
   }
   .about-hero-new {
     padding-top: 30px;

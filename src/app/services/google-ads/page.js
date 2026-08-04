@@ -6,6 +6,8 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { openWhatsAppQuote } from "@/lib/whatsappQuote";
+import PricingTable from "@/components/services/PricingTable";
 import "./google-ads.css";
 
 function getIncludedIcon(title, color) {
@@ -1626,6 +1628,18 @@ export default function GoogleAdsPage() {
         </div>
       </section>
 
+      {/* SECTION 12.5: PRICING */}
+      <PricingTable 
+        title="Google Ads Management Packages"
+        subtitle="Reach high-intent customers and maximize your advertising ROI with professionally managed Google Ads campaigns."
+        serviceName="Google Ads"
+        serviceId="google-ads"
+        packages={[
+          { id: "basic", name: "Basic", price: "₹7,000", period: "/month" },
+          { id: "growth", name: "Growth", price: "₹12,000", period: "/month", popular: true },
+          { id: "premium", name: "Premium", price: "₹20,000+", period: "/month" }
+        ]}
+      />
 
       {/* ── 13. FAQ ── */}
       <section className="seo-section">

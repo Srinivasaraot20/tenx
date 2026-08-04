@@ -13,8 +13,10 @@ export default function Footer() {
             <Image
               src="/logo.webp"
               alt="Digital Marketing TenX Logo"
-              width={56}
-              height={56}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: 'auto', height: '56px' }}
               className="logo-img-file footer-logo"
             />
             <span className="brand-name footer-brand-name">

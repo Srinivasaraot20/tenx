@@ -6,6 +6,8 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { openWhatsAppQuote } from "@/lib/whatsappQuote";
+import PricingTable from "@/components/services/PricingTable";
 import "./e-commerce-marketing.css";
 
 // Reusable Animated Counter component for metrics
@@ -934,8 +936,18 @@ export default function ECommerceMarketingClient() {
           </div>
         </section>
 
-
-
+        {/* SECTION 12.5: PRICING */}
+        <PricingTable 
+          title="E-Commerce Marketing Packages"
+          subtitle="Scale your online store with performance-driven marketing strategies designed to increase traffic, conversions, and revenue."
+          serviceName="E-Commerce Marketing"
+          serviceId="ecommerce"
+          packages={[
+            { id: "basic", name: "Basic", price: "₹25,000" },
+            { id: "growth", name: "Growth", price: "₹45,000", popular: true },
+            { id: "premium", name: "Premium", price: "₹75,000+" }
+          ]}
+        />
 
         {/* ─── 13. FAQ SECTION ─── */}
         <section className="ecom-section ecom-section-white">

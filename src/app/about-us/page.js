@@ -120,10 +120,14 @@ export default function AboutUsPage() {
         <section className="about-hero-new">
           <div className="about-hero-container">
             <div className="about-hero-left">
-              <h1>We Drive Digital Growth. You Achieve <span style={{color: "#a13c00"}}>More.</span></h1>
+              <h1>Top Digital Marketing Company in Hyderabad Driving Real <span style={{color: "#a13c00"}}>Growth.</span></h1>
               <p className="hero-desc">
                 Digital Marketing TenX is a top digital marketing company in Hyderabad, helping businesses grow through SEO, Google Ads, social media marketing, web development, and AI-powered digital strategies. We combine data, creativity, and technology to drive measurable growth and long-term business success.
               </p>
+              
+              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #a13c00", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
+                <strong>Driving Business Growth Through Digital Marketing:</strong> Digital Marketing TenX provides data-driven SEO, Google Ads, and social media solutions for startups, SMEs, and enterprise brands. Our tailored strategies help businesses across Hyderabad and globally increase organic traffic, generate qualified leads, and maximize marketing ROI.
+              </div>
               
               <div className="hero-stats-grid">
                 <div className="stat-card">
@@ -325,6 +329,35 @@ export default function AboutUsPage() {
               </p>
             </div>
 
+            <div style={{overflowX: "auto", marginBottom: "40px"}}>
+              <table style={{width: "100%", minWidth: "600px", borderCollapse: "collapse", background: "#f8fafc", borderRadius: "8px", overflow: "hidden", textAlign: "left"}}>
+                <thead>
+                  <tr style={{background: "#e2e8f0"}}>
+                    <th style={{padding: "16px", color: "#334155", fontWeight: "700"}}>Features</th>
+                    <th style={{padding: "16px", color: "#a13c00", fontWeight: "700"}}>Digital Marketing TenX</th>
+                    <th style={{padding: "16px", color: "#64748b", fontWeight: "700"}}>Traditional Agencies</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style={{borderBottom: "1px solid #e2e8f0"}}>
+                    <td style={{padding: "16px", color: "#334155"}}>Strategy</td>
+                    <td style={{padding: "16px", color: "#0f172a", fontWeight: "600"}}>Data-Driven & AI-Powered</td>
+                    <td style={{padding: "16px", color: "#64748b"}}>Guesswork & Outdated Methods</td>
+                  </tr>
+                  <tr style={{borderBottom: "1px solid #e2e8f0"}}>
+                    <td style={{padding: "16px", color: "#334155"}}>Pricing</td>
+                    <td style={{padding: "16px", color: "#0f172a", fontWeight: "600"}}>Transparent & ROI Focused</td>
+                    <td style={{padding: "16px", color: "#64748b"}}>Hidden Fees & Vanity Metrics</td>
+                  </tr>
+                  <tr>
+                    <td style={{padding: "16px", color: "#334155"}}>Support</td>
+                    <td style={{padding: "16px", color: "#0f172a", fontWeight: "600"}}>Proactive & Dedicated</td>
+                    <td style={{padding: "16px", color: "#64748b"}}>Reactive & Slow</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "50px", alignItems: "start"}}>
               <div className="why-choose-left">
                 <div className="why-list-grid" style={{display: "grid", gridTemplateColumns: "1fr", gap: "16px"}}>
@@ -460,7 +493,7 @@ export default function AboutUsPage() {
                 At Digital Marketing TenX, we started with one simple goal, to help businesses grow through honest, transparent, and result-driven digital marketing. From day one, our focus has never been just on increasing website traffic or running campaigns. Our mission has always been to create strategies that generate real business growth, qualified leads, and long-term success.
               </p>
               <p style={{marginBottom: "20px"}}>
-                As the digital landscape continues to evolve, we embrace innovation, data-driven decision-making, and AI-powered solutions to deliver measurable results for every client. We believe every business is unique, which is why we take the time to understand your goals before building customized marketing strategies.
+                As the digital landscape continues to evolve—and with <a href="https://www.hubspot.com/marketing-statistics" target="_blank" rel="noopener noreferrer" style={{color: "#a13c00", textDecoration: "underline", fontWeight: "600"}}>industry statistics</a> showing that generating traffic and leads is the top challenge for marketers—we embrace innovation, data-driven decision-making, and AI-powered solutions to deliver measurable results for every client. We believe every business is unique, which is why we take the time to understand your goals before building customized marketing strategies.
               </p>
               <p style={{marginBottom: "20px"}}>
                 Our greatest achievement is the trust our clients place in us. Every project we undertake is treated as a long-term partnership built on transparency, accountability, and continuous improvement.
@@ -493,7 +526,7 @@ export default function AboutUsPage() {
                   aria-expanded={openFaqIndex === idx}
                   aria-controls={`faq-answer-${idx}`}
                 >
-                  <span>{faq.q}</span>
+                  <h3 style={{ fontSize: "inherit", fontWeight: "inherit", margin: 0, padding: 0 }}>{faq.q}</h3>
                   <svg className="chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>

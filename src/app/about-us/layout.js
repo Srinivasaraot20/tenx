@@ -140,6 +140,25 @@ export default function AboutLayout({ children }) {
     }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://digitalmarketingtenx.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "https://digitalmarketingtenx.com/about-us"
+      }
+    ]
+  };
+
   const faqDataSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -197,6 +216,10 @@ export default function AboutLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqDataSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
       {children}

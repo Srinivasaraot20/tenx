@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { openWhatsAppQuote } from "@/lib/whatsappQuote";
+import PricingTable from "@/components/services/PricingTable";
 import "./social-media-marketing.css";
 
 // Reusable Animated Counter component
@@ -648,6 +649,18 @@ export default function SocialMediaMarketingPage() {
           ))}
         </div>
       </section>
+
+      <PricingTable 
+        title="Social Media Marketing Packages"
+        subtitle="Build your brand, engage your audience, and generate more opportunities with professionally managed social media campaigns."
+        serviceName="Social Media Marketing"
+        serviceId="social-media"
+        packages={[
+          { id: "basic", name: "Basic", price: "₹6,000", period: "/month" },
+          { id: "growth", name: "Growth", price: "₹12,000", period: "/month", popular: true },
+          { id: "premium", name: "Premium", price: "₹20,000+", period: "/month" }
+        ]}
+      />
 
       {/* 15. FAQS ACCORDION */}
       <section className="smm-section smm-faq-section">

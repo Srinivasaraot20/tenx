@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { openWhatsAppQuote } from "@/lib/whatsappQuote";
+import PricingTable from "@/components/services/PricingTable";
 import "./website-design.css";
 
 // Reusable Animated Counter component for metrics
@@ -819,79 +820,20 @@ export default function WebsiteDesignPage() {
 
         {/* SECTION 11: TESTIMONIALS (REMOVED) */}
 
-        {/* SECTION 12: PRICING PACKAGES */}
-        <section className="w-section w-section-white">
-          <div className="w-grid-content">
-            <div className="w-title-centered" style={{ maxWidth: "800px" }}>
-              <span className="eyebrow">AFFORDABLE WEBSITE SOLUTIONS</span>
-              <h2>Choose the Right Website Design & Development Package in Hyderabad</h2>
-              <p>
-                Whether you're a startup, small business, or enterprise, Digital Marketing TenX offers flexible website packages tailored to your goals. As a leading Website Design and Development Company in Hyderabad, we build responsive, SEO-optimized, and high-performing websites that help you attract customers, generate leads, and grow your business.
-              </p>
-            </div>
 
-            <div className="w-pricing-grid">
-              {/* Column 1: Starter */}
-              <div className="w-price-card w-glass-card">
-                <span className="w-price-badge">Starter</span>
-                <h3>High-Converting Landing Page</h3>
-                <p className="w-price-desc">Perfect for newly launched startups, target ad campaigns, or single product validations.</p>
-                <div className="w-price-amount">₹14,999 <span>/ fixed</span></div>
-                <ul className="w-price-features-list">
-                  <li>Single-page custom Figma design</li>
-                  <li>Responsive code architecture</li>
-                  <li>Technical SEO foundations configured</li>
-                  <li>WhatsApp & CRM lead integration</li>
-                  <li>Sub-second loading optimizations</li>
-                  <li>1 week delivery timeline</li>
-                </ul>
-                <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("High-Converting Landing Page")}>
-                  📅 Get Started Now
-                </button>
-              </div>
 
-              {/* Column 2: Featured Business */}
-              <div className="w-price-card w-glass-card featured">
-                <span className="w-price-badge" style={{ backgroundColor: "var(--w-accent-orange)", color: "#fff" }}>Recommended</span>
-                <h3>Premium Corporate Website</h3>
-                <p className="w-price-desc">Ideal for expanding small and medium companies looking to establish market authority.</p>
-                <div className="w-price-amount">₹29,999 <span>/ fixed</span></div>
-                <ul className="w-price-features-list">
-                  <li>Up to 7 custom structured pages</li>
-                  <li>Bespoke Figma UI/UX prototypes</li>
-                  <li>Headless CMS (WordPress / Sanity) integration</li>
-                  <li>Full blog & news layouts configured</li>
-                  <li>Google Analytics 4 & tracking pixels</li>
-                  <li>3 weeks delivery timeline</li>
-                  <li>1 month post-launch support</li>
-                </ul>
-                <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("Premium Corporate Website")}>
-                  📅 Get Started Now
-                </button>
-              </div>
-
-              {/* Column 3: Enterprise */}
-              <div className="w-price-card w-glass-card">
-                <span className="w-price-badge" style={{ backgroundColor: "rgba(124, 58, 237, 0.08)", color: "var(--w-accent-purple)" }}>Enterprise</span>
-                <h3>Custom SaaS & Web Platform</h3>
-                <p className="w-price-desc">Tailored for SaaS products, database tools, e-commerce networks, or complex dashboards.</p>
-                <div className="w-price-amount">₹59,999+ <span>/ custom scope</span></div>
-                <ul className="w-price-features-list">
-                  <li>Fully custom React / Node / MERN stack code</li>
-                  <li>Unlimited database scale & dynamic views</li>
-                  <li>Client portals, admin logs, or secure checkouts</li>
-                  <li>Third-party API integrations (Payment, ERP)</li>
-                  <li>Dedicated DevOps setup (Vercel/AWS)</li>
-                  <li>Custom sprint delivery timeline</li>
-                  <li>3 months priority tech support</li>
-                </ul>
-                <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("Custom SaaS & Web Platform")}>
-                  📅 Get Started Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* SECTION 12.5: PRICING */}
+        <PricingTable 
+          title="Website Design Packages"
+          subtitle="Professional, responsive, SEO-friendly websites designed to turn visitors into customers."
+          serviceName="Website Design"
+          serviceId="website-design"
+          packages={[
+            { id: "basic", name: "Basic", price: "₹10,000" },
+            { id: "growth", name: "Growth", price: "₹20,000", popular: true },
+            { id: "premium", name: "Premium", price: "₹30,000+" }
+          ]}
+        />
 
         {/* SECTION 13: FAQ ACCORDION */}
         <section className="w-section w-section-light">

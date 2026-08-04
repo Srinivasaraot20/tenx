@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { openWhatsAppQuote } from "@/lib/whatsappQuote";
+import PricingTable from "@/components/services/PricingTable";
 import "./whatsapp-automation.css";
 
 // Reusable Animated Counter component for stats
@@ -1001,6 +1002,19 @@ export default function WhatsAppAutomationPage() {
         </section>
 
         {/* SECTION 11 & 12 REMOVED */}
+
+        {/* SECTION 12.5: PRICING */}
+        <PricingTable 
+          title="WhatsApp Automation Packages"
+          subtitle="Automate customer communication, lead follow-ups, notifications, and support with scalable WhatsApp solutions."
+          serviceName="WhatsApp Automation"
+          serviceId="whatsapp-automation"
+          packages={[
+            { id: "basic", name: "Basic", price: "₹4,999", period: "/month" },
+            { id: "growth", name: "Growth", price: "₹9,999", period: "/month", popular: true },
+            { id: "premium", name: "Premium", price: "₹19,999+", period: "/month" }
+          ]}
+        />
 
         {/* SECTION 13: FAQ ACCORDION */}
         <section className="seo-section">
