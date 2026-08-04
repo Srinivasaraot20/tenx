@@ -86,7 +86,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       
       <TestimonialsSlider data={service.testimonials} />
       
-      <PricingTable data={service.pricing} />
+      <PricingTable 
+        title={`${service.title} Packages`} 
+        subtitle="Choose the right plan to accelerate your business growth."
+        packages={service.pricing as any} 
+        serviceName={service.title} 
+        serviceId={service.slug} 
+      />
       
       <FAQAccordion data={service.faqs} />
       
