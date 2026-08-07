@@ -71,22 +71,7 @@ export default function About() {
             gap: "20px"
           }}>
 
-            <div style={{
-              width: "90px",
-              height: "90px",
-              borderRadius: "50%",
-              background: "#fff5ee",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              position: "relative"
-            }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 3v18h18" />
-                <path d="M18 9l-5 5-4-4-6 6" />
-              </svg>
-            </div>
+
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Data-Driven Strategies</h3>
               <p style={{ margin: "0", fontSize: "14px", color: "#64748b", lineHeight: "1.5" }}>
@@ -108,23 +93,7 @@ export default function About() {
             gap: "20px"
           }}>
 
-            <div style={{
-              width: "90px",
-              height: "90px",
-              borderRadius: "50%",
-              background: "#fdf2f8",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              position: "relative"
-            }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#be185d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2a7 7 0 0 0-7 7c0 2 1 3 2 4l1 3h8l1-3c1-1 2-2 2-4a7 7 0 0 0-7-7z" />
-                <path d="M9 21h6" />
-                <path d="M12 11v-4" />
-              </svg>
-            </div>
+
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Creative Marketing Solutions</h3>
               <p style={{ margin: "0", fontSize: "14px", color: "#64748b", lineHeight: "1.5" }}>
@@ -146,23 +115,7 @@ export default function About() {
             gap: "20px"
           }}>
 
-            <div style={{
-              width: "90px",
-              height: "90px",
-              borderRadius: "50%",
-              background: "#eff6ff",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              position: "relative"
-            }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M12 12l-8 8" />
-                <path d="M12 2s-1 7-1 9c0 2 1 3 3 3s3-1 3-3c0-2-1-9-1-9z" />
-                <path d="M9 15h6" />
-              </svg>
-            </div>
+
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Business Growth Focused</h3>
               <p style={{ margin: "0", fontSize: "14px", color: "#64748b", lineHeight: "1.5" }}>
@@ -184,25 +137,7 @@ export default function About() {
             gap: "20px"
           }}>
 
-            <div style={{
-              width: "90px",
-              height: "90px",
-              borderRadius: "50%",
-              background: "#f5f3ff",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              position: "relative"
-            }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M9 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M13 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <circle cx="17" cy="7" r="3" />
-              </svg>
-            </div>
+
             <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
               <h3 style={{ margin: "0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>Dedicated Expert Team</h3>
               <p style={{ margin: "0", fontSize: "14px", color: "#64748b", lineHeight: "1.5" }}>
