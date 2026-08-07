@@ -1,5 +1,5 @@
 :root {
-  --seo-primary: #ff5722;
+  --seo-primary: #a13c00;
   --seo-primary-hover: #e55d00;
   --seo-primary-rgb: 255, 107, 0;
   --seo-dark: #0f172a;
@@ -254,7 +254,7 @@
 }
 
 .seo-hero-content h1 span.gradient-text {
-  background: linear-gradient(90deg, #ff5722 0%, #be185d 45%, #2563eb 100%);
+  background: linear-gradient(90deg, #a13c00 0%, #be185d 45%, #2563eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -524,7 +524,7 @@
 }
 
 .seo-sidebar-item.active {
-  color: #ff5722;
+  color: #a13c00;
   background-color: rgba(255, 107, 0, 0.1);
 }
 
@@ -1730,7 +1730,7 @@
 }
 
 .seo-faq-item.open {
-  border-color: #ff5722;
+  border-color: #a13c00;
   box-shadow: 0 4px 20px rgba(255, 107, 0, 0.05);
 }
 
@@ -1753,7 +1753,7 @@
 }
 
 .seo-faq-question-btn:hover {
-  color: #ff5722;
+  color: #a13c00;
 }
 
 .seo-faq-question-btn .chevron-icon {

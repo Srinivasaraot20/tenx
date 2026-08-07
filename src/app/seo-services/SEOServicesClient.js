@@ -116,7 +116,7 @@ function IconDocument() {
 
 function IconCampaigns() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
       <circle cx="9" cy="7" r="4" />
       <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
@@ -191,7 +191,7 @@ function IconRankingsMatters() {
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3" y="13" width="4" height="7" rx="1" fill="#e0f2fe" />
       <rect x="10" y="9" width="4" height="11" rx="1" fill="#e0f2fe" />
-      <rect x="17" y="5" width="4" height="15" rx="1" fill="#ffedd5" stroke="#ff5722" strokeWidth="2.2" />
+      <rect x="17" y="5" width="4" height="15" rx="1" fill="#ffedd5" stroke="#a13c00" strokeWidth="2.2" />
       <path d="M 2,17 L 8,11 L 13,13 L 20,4" />
       <polyline points="15 4 20 4 20 9" />
     </svg>
@@ -236,9 +236,9 @@ function IconSalesMatters() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
       <polygon points="6,12 18,12 14,17 14,22 10,22 10,17" fill="#fff7ed" stroke="#1e293b" strokeWidth="2.2" />
-      <circle cx="7" cy="6" r="4.5" fill="#ffedd5" stroke="#ff5722" strokeWidth="2.2" />
-      <path d="M 7,4.5 C 6.5,4.5 6,5 6,5.5 C 6,6.5 8,6.5 8,7.5 C 8,8 7.5,8.5 7,8.5" stroke="#ff5722" strokeWidth="1.5" />
-      <line x1="7" y1="3.5" x2="7" y2="8.5" stroke="#ff5722" strokeWidth="1.5" />
+      <circle cx="7" cy="6" r="4.5" fill="#ffedd5" stroke="#a13c00" strokeWidth="2.2" />
+      <path d="M 7,4.5 C 6.5,4.5 6,5 6,5.5 C 6,6.5 8,6.5 8,7.5 C 8,8 7.5,8.5 7,8.5" stroke="#a13c00" strokeWidth="1.5" />
+      <line x1="7" y1="3.5" x2="7" y2="8.5" stroke="#a13c00" strokeWidth="1.5" />
       <path d="M 13,9 L 17,5 L 21,5" stroke="#1e293b" strokeWidth="2.2" />
       <polyline points="18,3 21,5 19,8" stroke="#1e293b" strokeWidth="2.2" />
     </svg>
@@ -528,7 +528,7 @@ Please contact me for the audit. Thank you!`;
         "LSI & entity optimization",
         "User experience audit"
       ],
-      color: "#ff5722",
+      color: "#a13c00",
       bg: "rgba(255, 107, 0, 0.08)"
     },
     {
@@ -710,9 +710,9 @@ Please contact me for the audit. Thank you!`;
       bg: "rgba(0, 82, 204, 0.06)",
       icon: (
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="18" r="12" stroke="#ff5722" strokeWidth="2.5" fill="rgba(255,107,0,0.06)" />
-          <path d="M12 24 L18 10 L24 24" stroke="#ff5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          <line x1="14" y1="20" x2="22" y2="20" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="18" cy="18" r="12" stroke="#a13c00" strokeWidth="2.5" fill="rgba(255,107,0,0.06)" />
+          <path d="M12 24 L18 10 L24 24" stroke="#a13c00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <line x1="14" y1="20" x2="22" y2="20" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" />
         </svg>
       )
     },

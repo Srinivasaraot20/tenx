@@ -8,11 +8,11 @@ export default function About() {
         
         {/* Centered ABOUT US with lines */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "12px" }}>
-          <div style={{ width: "40px", height: "2px", background: "#ff5722" }}></div>
-          <span className="eyebrow" style={{ color: "#ff5722", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
+          <span className="eyebrow" style={{ color: "#a13c00", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
             ABOUT US
           </span>
-          <div style={{ width: "40px", height: "2px", background: "#ff5722" }}></div>
+          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
         </div>
 
         {/* Heading */}
@@ -21,7 +21,7 @@ export default function About() {
         </h2>
 
         {/* Small Underbar */}
-        <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#ff5722", margin: "16px 0 20px" }}></div>
+        <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#a13c00", margin: "16px 0 20px" }}></div>
 
         {/* Paragraph */}
         <p style={{ fontSize: "15px", color: "#64748b", lineHeight: "1.8", marginBottom: "16px", maxWidth: "900px" }}>
@@ -36,16 +36,16 @@ export default function About() {
           <h3 style={{ fontSize: "18px", color: "#0f172a", marginBottom: "12px", fontWeight: "700" }}>Our Digital Growth Checklist:</h3>
           <ul style={{ listStyleType: "none", padding: "0", margin: "0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
             <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> AI-Powered SEO Strategies
+              <span style={{ color: "#a13c00", fontWeight: "bold" }}>✓</span> AI-Powered SEO Strategies
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> High-Converting Google Ads
+              <span style={{ color: "#a13c00", fontWeight: "bold" }}>✓</span> High-Converting Google Ads
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> Targeted Social Media Marketing
+              <span style={{ color: "#a13c00", fontWeight: "bold" }}>✓</span> Targeted Social Media Marketing
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> Performance-Driven Web Design
+              <span style={{ color: "#a13c00", fontWeight: "bold" }}>✓</span> Performance-Driven Web Design
             </li>
           </ul>
         </div>
@@ -82,7 +82,7 @@ export default function About() {
               flexShrink: 0,
               position: "relative"
             }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 3v18h18" />
                 <path d="M18 9l-5 5-4-4-6 6" />
               </svg>

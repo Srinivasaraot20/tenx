@@ -65,7 +65,7 @@ export function generateEmailHtml(formName, data) {
   <body style="margin:0; padding:0; background:#f9f9f9; font-family:Arial,sans-serif;">
     <div style="max-width:600px; margin:40px auto; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
       <!-- Header -->
-      <div style="background:#ff5722; padding:20px; text-align:center; color:#fff;">
+      <div style="background:#a13c00; padding:20px; text-align:center; color:#fff;">
         <h1 style="margin:0; font-size:24px;">Digital Marketing TenX</h1>
         <p style="margin:4px 0 0; font-size:16px;">New Lead Received</p>
       </div>

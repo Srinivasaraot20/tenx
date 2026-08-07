@@ -31,7 +31,7 @@ export default function Challenges() {
           <p style={{ fontSize: "16px", color: "#64748b", maxWidth: "680px", margin: "0 auto", lineHeight: "1.6" }}>
             Helping Businesses Scale with Data-Driven Digital Marketing Solutions
           </p>
-          <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#ff5722", margin: "16px auto 0" }}></div>
+          <div style={{ width: "50px", height: "3px", borderRadius: "2px", background: "#a13c00", margin: "16px auto 0" }}></div>
         </div>
 
         {/* 2-Column Comparison Wrap */}

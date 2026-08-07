@@ -406,13 +406,13 @@ To trigger any request, email our compliance officer at privacy@digitalmarketing
 
           {/* Floating deco icons */}
           <div className="cta-deco-icon cta-deco-1">
-            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
             </svg>
           </div>
           <div className="cta-deco-icon cta-deco-2">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.92 12a2 2 0 0 1 2-2.18h3"></path>
               <polyline points="22 4 12 14.01 9 11.01"></polyline>
             </svg>
@@ -426,7 +426,7 @@ To trigger any request, email our compliance officer at privacy@digitalmarketing
           <div className="cta-deco-icon cta-deco-4">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="9" stroke="#64748b" strokeWidth="2"/>
-              <path d="M12 8v4l3 3" stroke="#ff5722" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M12 8v4l3 3" stroke="#a13c00" strokeWidth="2" strokeLinecap="round"/>
             </svg>
           </div>
 
@@ -464,7 +464,7 @@ To trigger any request, email our compliance officer at privacy@digitalmarketing
                 <Link href="/contact" className="btn-primary">
                   Book Free Consultation
                 </Link>
-                <Link href="/services" className="btn-outline" style={{ color: "#ff5722", borderColor: "#ff5722" }}>
+                <Link href="/services" className="btn-outline" style={{ color: "#a13c00", borderColor: "#a13c00" }}>
                   Explore Services
                 </Link>
               </div>

@@ -1,7 +1,7 @@
 /* ─── SOCIAL MEDIA MARKETING PAGE — DESIGN SYSTEM ─── */
 
 :root {
-  --smm-orange: #ff5722;
+  --smm-orange: #a13c00;
   --smm-purple: #7c3aed;
   --smm-pink: #be185d;
   --smm-blue: #2563eb;
@@ -1896,9 +1896,9 @@
   color: var(--smm-dark);
   transition: all 0.2s ease;
 }
-.smm-faq-trigger:hover { color: #ff5722; }
-.smm-faq-card.open { border-color: #ff5722; box-shadow: 0 4px 20px rgba(255, 107, 0, 0.05); }
-.smm-faq-card.open .smm-faq-trigger { color: #ff5722; }
+.smm-faq-trigger:hover { color: #a13c00; }
+.smm-faq-card.open { border-color: #a13c00; box-shadow: 0 4px 20px rgba(255, 107, 0, 0.05); }
+.smm-faq-card.open .smm-faq-trigger { color: #a13c00; }
 .smm-faq-chevron { width: 10px; height: 6px; transition: transform 0.3s ease; flex-shrink: 0; }
 .smm-faq-chevron.rotated { transform: rotate(180deg); }
 .smm-faq-answer {

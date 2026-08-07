@@ -411,29 +411,29 @@ const services = [
   { title: "YouTube Ads", desc: "Engage audiences with compelling video ads on the world's #2 search engine and largest video platform.", benefits: ["Video storytelling", "Massive reach", "Skip-ad analytics"], color: "#FF0000", bg: "rgba(255,0,0,0.08)" },
   { title: "Remarketing", desc: "Re-engage visitors who've interacted with your brand before and bring them back to convert.", benefits: ["Warm audience", "Higher CVR", "Custom audiences"], color: "#7c3aed", bg: "rgba(124,58,237,0.1)" },
   { title: "Local Service Ads", desc: "Appear at the very top of local searches with a trusted Google Guaranteed badge.", benefits: ["Google Guaranteed", "Local dominance", "Call leads"], color: "#0f9d58", bg: "rgba(15,157,88,0.1)" },
-  { title: "Call-Only Ads", desc: "Drive phone calls directly from Google search results — perfect for service businesses.", benefits: ["Direct calls", "Mobile-first", "High intent"], color: "#ff5722", bg: "rgba(255,107,0,0.1)" },
+  { title: "Call-Only Ads", desc: "Drive phone calls directly from Google search results — perfect for service businesses.", benefits: ["Direct calls", "Mobile-first", "High intent"], color: "#a13c00", bg: "rgba(255,107,0,0.1)" },
   { title: "Discovery Ads", desc: "Reach people browsing YouTube feed, Gmail Promotions and Google Discover at key moments.", benefits: ["Native-style ads", "Intent signals", "Visual formats"], color: "#1a73e8", bg: "rgba(26,115,232,0.1)" },
   { title: "Demand Gen", desc: "Immersive, visually rich campaigns designed to generate demand on Google's most engaging platforms.", benefits: ["Brand building", "Lookalike audiences", "Rich creatives"], color: "#d946ef", bg: "rgba(217,70,239,0.1)" },
 ];
 
 const included = [
   { title: "Keyword Research", desc: "Deep competitor & intent-based keyword analysis", bg: "#f0f4ff", color: "#4285F4" },
-  { title: "Campaign Setup", desc: "Full campaign architecture & ad group structure", bg: "#fff8f0", color: "#ff5722" },
+  { title: "Campaign Setup", desc: "Full campaign architecture & ad group structure", bg: "#fff8f0", color: "#a13c00" },
   { title: "Ad Copywriting", desc: "High-converting headlines & descriptions", bg: "#f0fdf4", color: "#34A853" },
   { title: "Bid Strategy", desc: "ROAS-focused automated and manual bid management", bg: "#faf5ff", color: "#7c3aed" },
   { title: "Audience Segments", desc: "In-market, remarketing & custom intent audiences", bg: "#fff0f0", color: "#EA4335" },
   { title: "Landing Page Audit", desc: "CRO recommendations for higher conversions", bg: "#f0f4ff", color: "#4285F4" },
-  { title: "Conversion Tracking", desc: "GA4, GTM & phone call conversion setup", bg: "#fff8f0", color: "#ff5722" },
+  { title: "Conversion Tracking", desc: "GA4, GTM & phone call conversion setup", bg: "#fff8f0", color: "#a13c00" },
   { title: "A/B Ad Testing", desc: "Continuous ad variant testing & winner scaling", bg: "#f0fdf4", color: "#34A853" },
   { title: "Negative Keywords", desc: "Ongoing irrelevant traffic blocking & savings", bg: "#faf5ff", color: "#7c3aed" },
   { title: "Quality Score Boost", desc: "Ad relevance & landing page experience fixes", bg: "#fff0f0", color: "#EA4335" },
   { title: "Shopping Feed Setup", desc: "Google Merchant Center integration & feed health", bg: "#f0f4ff", color: "#4285F4" },
-  { title: "Dynamic Remarketing", desc: "Product-level re-targeting with user behavior", bg: "#fff8f0", color: "#ff5722" },
+  { title: "Dynamic Remarketing", desc: "Product-level re-targeting with user behavior", bg: "#fff8f0", color: "#a13c00" },
   { title: "Ad Extensions & Assets", desc: "Phone call assets and call-focused ad setup", bg: "#f0fdf4", color: "#34A853" },
   { title: "Monthly Reporting", desc: "Transparent performance dashboard & insights", bg: "#faf5ff", color: "#7c3aed" },
   { title: "Budget Pacing", desc: "Daily budget monitoring & smart pacing control", bg: "#fff0f0", color: "#EA4335" },
   { title: "Competitor Analysis", desc: "Auction insights & competitor ad intelligence", bg: "#f0f4ff", color: "#4285F4" },
-  { title: "Location Targeting", desc: "Hyper-local or national geo-targeting strategy", bg: "#fff8f0", color: "#ff5722" },
+  { title: "Location Targeting", desc: "Hyper-local or national geo-targeting strategy", bg: "#fff8f0", color: "#a13c00" },
   { title: "Ad Schedule", desc: "Day-parting & peak-hour bid adjustments", bg: "#f0fdf4", color: "#34A853" },
   { title: "YouTube Creative", desc: "Video ad script & creative brief support", bg: "#faf5ff", color: "#7c3aed" },
   { title: "Dedicated Manager", desc: "Certified expert managing your account daily", bg: "#fff0f0", color: "#EA4335" },
@@ -441,13 +441,13 @@ const included = [
 
 const workflowSteps = [
   { title: "Discovery & Goal Setting", desc: "We understand your business, revenue targets, audience, and competitors.", color: "#7c3aed", bg: "#faf5ff" },
-  { title: "Account Audit", desc: "We review your existing Google Ads account, tracking, and performance.", color: "#ff5722", bg: "#fff8f0" },
+  { title: "Account Audit", desc: "We review your existing Google Ads account, tracking, and performance.", color: "#a13c00", bg: "#fff8f0" },
   { title: "Keyword Strategy", desc: "We research and prioritize high-intent commercial keywords.", color: "#34A853", bg: "#f0fdf4" },
   { title: "Campaign Architecture", desc: "We build a structured campaign setup with precise targeting.", color: "#4285F4", bg: "#f0f4ff" },
   { title: "Ad Copy Creation", desc: "We create compelling ad copy designed to drive clicks and conversions.", color: "#EA4335", bg: "#fff0f0" },
   { title: "Conversion Setup", desc: "We configure GA4, GTM, conversion tracking, and import conversions.", color: "#7c3aed", bg: "#faf5ff" },
   { title: "Landing Page CRO", desc: "We review landing pages and recommend improvements for better conversions.", color: "#34A853", bg: "#f0fdf4" },
-  { title: "Launch & Monitor", desc: "We launch campaigns and closely monitor initial performance.", color: "#ff5722", bg: "#fff8f0" },
+  { title: "Launch & Monitor", desc: "We launch campaigns and closely monitor initial performance.", color: "#a13c00", bg: "#fff8f0" },
   { title: "Optimization Sprints", desc: "We continuously optimize bids, targeting, keywords, and ad performance.", color: "#4285F4", bg: "#f0f4ff" },
   { title: "Monthly Reporting", desc: "We provide transparent performance reports and ongoing growth insights.", color: "#7c3aed", bg: "#faf5ff" },
 ];
@@ -458,7 +458,7 @@ const whyTenx = [
   { title: "Daily Monitoring", desc: "24/7 campaign watchdogs catching anomalies before they cost you.", color: "#34A853", bg: "rgba(52,168,83,0.1)" },
   { title: "Transparent Reporting", desc: "Real-time dashboard. No jargon, just clear revenue-linked KPIs.", color: "#FBBC05", bg: "rgba(251,188,5,0.15)" },
   { title: "Landing Page CRO", desc: "We don't just drive clicks — we optimize the full funnel to conversion.", color: "#7c3aed", bg: "rgba(124,58,237,0.1)" },
-  { title: "Advanced Segmentation", desc: "Laser-targeted campaigns for each audience segment and intent level.", color: "#ff5722", bg: "rgba(255,107,0,0.1)" },
+  { title: "Advanced Segmentation", desc: "Laser-targeted campaigns for each audience segment and intent level.", color: "#a13c00", bg: "rgba(255,107,0,0.1)" },
   { title: "Budget Guardian", desc: "Zero-waste budget management — every rupee mapped to a conversion goal.", color: "#0f9d58", bg: "rgba(15,157,88,0.1)" },
   { title: "Data-Driven Decisions", desc: "Every optimization backed by statistical significance, not gut feel.", color: "#1a73e8", bg: "rgba(26,115,232,0.1)" },
   { title: "Rapid A/B Testing", desc: "Continuous copy and creative experimentation to always beat your control.", color: "#d946ef", bg: "rgba(217,70,239,0.1)" },
@@ -491,7 +491,7 @@ const industries = [
   { title: "Healthcare", desc: "Patient acquisition campaigns", color: "#34A853", bg: "rgba(52,168,83,0.1)" },
   { title: "Education", desc: "Student enrollment & course leads", color: "#FBBC05", bg: "rgba(251,188,5,0.15)" },
   { title: "E-Commerce", desc: "Shopping & Performance Max ROI", color: "#EA4335", bg: "rgba(234,67,53,0.1)" },
-  { title: "Restaurants", desc: "Local foot traffic & delivery orders", color: "#ff5722", bg: "rgba(255,107,0,0.1)" },
+  { title: "Restaurants", desc: "Local foot traffic & delivery orders", color: "#a13c00", bg: "rgba(255,107,0,0.1)" },
   { title: "Construction", desc: "Project & contractor lead gen", color: "#7c3aed", bg: "rgba(124,58,237,0.1)" },
   { title: "Technology", desc: "SaaS trials, demos & B2B leads", color: "#1a73e8", bg: "rgba(26,115,232,0.1)" },
   { title: "Finance", desc: "Loan, insurance & investment leads", color: "#0f9d58", bg: "rgba(15,157,88,0.1)" },
@@ -607,7 +607,7 @@ const ecosystem = [
     name: "Hotjar",
     logo: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.66 9.53a9 9 0 0 0-7.07-8.5 7.45 7.45 0 0 0-2.6 1.18c-3.18 2.22-4.14 6.5-2.2 9.77a7.5 7.5 0 0 0 10.3 3c4.54-2.62 5.08-7.3 1.57-5.45z" fill="#ff5722" />
+        <path d="M17.66 9.53a9 9 0 0 0-7.07-8.5 7.45 7.45 0 0 0-2.6 1.18c-3.18 2.22-4.14 6.5-2.2 9.77a7.5 7.5 0 0 0 10.3 3c4.54-2.62 5.08-7.3 1.57-5.45z" fill="#a13c00" />
         <path d="M12 22a5 5 0 0 0 5-5c0-2.5-3-5.5-5-5.5s-5 3-5 5.5a5 5 0 0 0 5 2z" fill="#EA4335" />
       </svg>
     ),
@@ -617,9 +617,9 @@ const ecosystem = [
     name: "SEMrush",
     logo: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="12" r="6" fill="#ff5722" />
+        <circle cx="16" cy="12" r="6" fill="#a13c00" />
         <path d="M16 12h-8M16 12l-4-4M16 12l-4 4" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
-        <path d="M10 6L3 12l7 6" stroke="#ff5722" strokeWidth="2" strokeLinecap="round" />
+        <path d="M10 6L3 12l7 6" stroke="#a13c00" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
     bg: "#f3e8fd"
@@ -1174,7 +1174,7 @@ export default function GoogleAdsPage() {
             </div>
 
             <div className="ga-attrib-item">
-              <div className="ga-attrib-icon-wrap" style={{ color: "#ff5722" }}>
+              <div className="ga-attrib-icon-wrap" style={{ color: "#a13c00" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
@@ -1250,7 +1250,7 @@ export default function GoogleAdsPage() {
 
                 <div className="ga-feature-pipeline-card">
                   <div className="ga-pipeline-card-icon-dot orange">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="18" y1="20" x2="18" y2="10" />
                       <line x1="12" y1="20" x2="12" y2="4" />
                       <line x1="6" y1="20" x2="6" y2="14" />
@@ -1362,7 +1362,7 @@ export default function GoogleAdsPage() {
         <div className="ga-wrap">
           <div className="ga-title-center">
             <div className="ga-included-eyebrow-capsule">
-              <span style={{ color: "#ff5722", marginRight: "6px" }}>✦</span>
+              <span style={{ color: "#a13c00", marginRight: "6px" }}>✦</span>
               WHAT'S INCLUDED
             </div>
             <h2>Everything We Do to Maximize Your <span className="ga-text-orange">Google</span> <span className="ga-text-purple">Ads</span></h2>
@@ -1474,7 +1474,7 @@ export default function GoogleAdsPage() {
                 <div className="ga-why-process-grid">
                   {[
                     { title: "Data-Driven", desc: "Every step backed by data & proven tactics.", color: "#7c3aed" },
-                    { title: "Fast Execution", desc: "Launch high-performing campaigns in under 14 days.", color: "#ff5722" },
+                    { title: "Fast Execution", desc: "Launch high-performing campaigns in under 14 days.", color: "#a13c00" },
                     { title: "ROI Focused", desc: "Built to maximize leads, sales & profitability.", color: "#34A853" },
                     { title: "Transparent", desc: "Clear reporting & real-time performance visibility.", color: "#4285F4" },
                     { title: "Expert Team", desc: "Google Ads certified specialists managing your campaigns.", color: "#EA4335" },

@@ -8,7 +8,7 @@
   --glow-blue: rgba(59, 130, 246, 0.04);
   --glow-orange: rgba(255, 107, 0, 0.04);
   --glow-pink: rgba(217, 70, 239, 0.04);
-  --primary-orange: #ff5722;
+  --primary-orange: #a13c00;
   --primary-blue: #1d4ed8;
   --primary-pink: #d946ef;
   --text-dark: #1a1a2e;
@@ -189,7 +189,7 @@
 .btn-primary-split {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, #ff5722 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #a13c00 0%, #7c3aed 100%);
   color: #fff;
   border-radius: 8px;
   font-size: 14px;
@@ -281,7 +281,7 @@
   justify-content: center;
   flex-shrink: 0;
 }
-.s-feat-icon-box.orange { background: rgba(255, 107, 0, 0.08); color: #ff5722; stroke: #ff5722; }
+.s-feat-icon-box.orange { background: rgba(255, 107, 0, 0.08); color: #a13c00; stroke: #a13c00; }
 .s-feat-icon-box.purple { background: rgba(124, 58, 237, 0.08); color: #7c3aed; stroke: #7c3aed; }
 .s-feat-icon-box.green { background: rgba(16, 185, 129, 0.08); color: #10b981; stroke: #10b981; }
 
@@ -366,7 +366,7 @@
   flex-shrink: 0;
 }
 .tag-icon.purple { background: rgba(124, 58, 237, 0.08); color: #7c3aed; }
-.tag-icon.orange { background: rgba(255, 107, 0, 0.08); color: #ff5722; }
+.tag-icon.orange { background: rgba(255, 107, 0, 0.08); color: #a13c00; }
 .tag-icon.blue { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
 .tag-icon.pink { background: rgba(236, 72, 153, 0.08); color: #be185d; }
 .tag-icon.green { background: rgba(16, 185, 129, 0.08); color: #10b981; }
@@ -416,7 +416,7 @@
 }
 .s-stat-icon.purple { background: rgba(124, 58, 237, 0.06); color: #7c3aed; }
 .s-stat-icon.green { background: rgba(16, 185, 129, 0.06); color: #10b981; }
-.s-stat-icon.orange { background: rgba(255, 107, 0, 0.06); color: #ff5722; }
+.s-stat-icon.orange { background: rgba(255, 107, 0, 0.06); color: #a13c00; }
 .s-stat-icon.blue { background: rgba(37, 99, 235, 0.06); color: #2563eb; }
 .s-stat-icon.pink { background: rgba(236, 72, 153, 0.06); color: #be185d; }
 

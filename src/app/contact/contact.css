@@ -3,7 +3,7 @@
   --con-primary: #1d4ed8;       /* Royal Blue */
   --con-primary-light: #1d4ed8; /* Modern Blue */
   --con-primary-bg: #fff5ee;
-  --con-orange: #ff5722;        /* Action Orange */
+  --con-orange: #a13c00;        /* Action Orange */
   --con-orange-hover: #e55d00;
   --con-text-dark: #1a1a2e;     /* Home Page body color */
   --con-text-muted: #555555;    /* Home Page text-muted */
@@ -46,7 +46,7 @@
 .con-eyebrow {
   display: inline-block;
   background: #fff5ee;
-  color: #ff5722;
+  color: #a13c00;
   font-size: 12px;
   font-weight: 600;
   padding: 5px 14px;
@@ -124,7 +124,7 @@
 }
 
 .con-hero-content h1 span {
-  background: linear-gradient(135deg, #ff5722 0%, #d946ef 50%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #a13c00 0%, #d946ef 50%, #1d4ed8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
