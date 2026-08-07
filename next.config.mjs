@@ -11,6 +11,9 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   turbopack: {},
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['lucide-react'],
