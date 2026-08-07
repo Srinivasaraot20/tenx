@@ -27,20 +27,20 @@
     "sqlite3": "^6.0.1",
     "twilio": "^6.0.2",
     "xlsx": "^0.18.5",
-    "zod": "^4.4.3"
+    "zod": "^4.4.3",
+    "@tailwindcss/postcss": "^4.3.2",
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.16",
+    "sharp": "^0.35.2",
+    "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.2",
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.17",
-    "autoprefixer": "^10.5.2",
     "critters": "^0.0.23",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
-    "postcss": "^8.5.16",
     "prisma": "^6.19.3",
-    "sharp": "^0.35.2",
-    "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3"
   }
 }
