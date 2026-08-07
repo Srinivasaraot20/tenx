@@ -398,7 +398,7 @@ export default function WebsiteDesignPage() {
                 <button className="btn-primary" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>
                   Get Free Consultation
                 </button>
-                <Link href="/services" className="btn-primary" style={{background: "#a13c00", color: "#fff", border: "none"}}>
+                <Link href="/services" className="btn-primary" style={{background: "#ff5722", color: "#fff", border: "none"}}>
                   Explore Services
                 </Link>
               </div>
@@ -514,7 +514,7 @@ export default function WebsiteDesignPage() {
                 <p>As an experienced Web Design Company in Hyderabad, we build websites with clean code, proper site architecture, schema markup, and SEO-friendly URLs.</p>
               </div>
               <div className="w-benefit-card">
-                <div className="w-benefit-icon" style={{ background: "rgba(255, 107, 0, 0.1)", color: "#a13c00" }}>⚡</div>
+                <div className="w-benefit-icon" style={{ background: "rgba(255, 107, 0, 0.1)", color: "#ff5722" }}>⚡</div>
                 <h3>Lightning-Fast Performance</h3>
                 <p>Fast-loading websites improve user experience, reduce bounce rates, and help achieve better rankings on Google.</p>
               </div>
@@ -541,7 +541,7 @@ export default function WebsiteDesignPage() {
               </span>
               <h2 style={{ fontSize: "3rem", fontWeight: "900", color: "#0f172a", marginBottom: "24px", lineHeight: "1.2" }}>
                 Everything Your Business<br />
-                <span style={{ color: "#7c3aed" }}>Website</span> <span style={{ color: "#a13c00" }}>Needs</span>
+                <span style={{ color: "#7c3aed" }}>Website</span> <span style={{ color: "#ff5722" }}>Needs</span>
               </h2>
               <p style={{ color: "#475569", fontSize: "1.1rem", lineHeight: "1.6", margin: "0 auto 40px" }}>
                 Build a website that is fast, secure, SEO-ready, and designed to generate leads. Every website we develop includes essential features that improve user experience, search visibility, and business growth.
@@ -592,7 +592,7 @@ export default function WebsiteDesignPage() {
             <div className="w-feature-group-heading" style={{ marginTop: "60px" }}>
               <span className="line orange"></span>
               <span className="dot orange"></span>
-              <h3 style={{ color: "#a13c00" }}>DEVELOPMENT & PERFORMANCE</h3>
+              <h3 style={{ color: "#ff5722" }}>DEVELOPMENT & PERFORMANCE</h3>
               <span className="dot orange"></span>
               <span className="line orange"></span>
             </div>

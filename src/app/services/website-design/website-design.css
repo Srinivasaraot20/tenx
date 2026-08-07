@@ -5,7 +5,7 @@
   --w-white-bg: #ffffff;
   --w-border: rgba(0, 0, 0, 0.08);
   --w-card-bg: rgba(255, 255, 255, 0.85);
-  --w-accent-orange: #a13c00;
+  --w-accent-orange: #ff5722;
   --w-accent-purple: #7c3aed;
   --w-accent-blue: #2563eb;
   --w-accent-green: #10b981;
@@ -274,7 +274,7 @@
 
 /* Heading color utility classes */
 .w-text-orange {
-  color: #a13c00;
+  color: #ff5722;
   font-weight: 900;
 }
 
@@ -285,7 +285,7 @@
 
 /* Hero Button Overrides */
 .w-hero-buttons .btn-primary {
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
   padding: 12px 24px;
   border-radius: 8px;
@@ -366,7 +366,7 @@
 .btn-primary-split {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, #a13c00 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #ff5722 0%, #7c3aed 100%);
   color: #fff;
   border-radius: 8px;
   font-size: 14px;
@@ -432,7 +432,7 @@
 .w-trust-icon-box.trust-purple { background: rgba(124, 58, 237, 0.08); stroke: #7c3aed; color: #7c3aed; }
 .w-trust-icon-box.trust-green { background: rgba(16, 185, 129, 0.08); stroke: #10b981; color: #10b981; }
 .w-trust-icon-box.trust-blue { background: rgba(37, 99, 235, 0.08); stroke: #2563eb; color: #2563eb; }
-.w-trust-icon-box.trust-orange { background: rgba(255, 107, 0, 0.08); stroke: #a13c00; color: #a13c00; }
+.w-trust-icon-box.trust-orange { background: rgba(255, 107, 0, 0.08); stroke: #ff5722; color: #ff5722; }
 
 /* Brand Grayscale SVG Logos styling */
 .w-brand-logo-svg {
@@ -3039,7 +3039,7 @@
   background: rgba(255, 107, 0, 0.2);
 }
 .w-feature-group-heading .dot.orange {
-  background: #a13c00;
+  background: #ff5722;
 }
 .w-feature-group-heading h3 {
   font-size: 1rem;
@@ -3120,7 +3120,7 @@
   gap: 16px;
 }
 .w-f-cta-right .btn-primary {
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -3258,7 +3258,7 @@
   width: 40px;
   height: 40px;
   background: #fff3eb;
-  color: #a13c00;
+  color: #ff5722;
   border-radius: 50%;
   font-size: 20px;
   border: 1px solid #ffdbb8;

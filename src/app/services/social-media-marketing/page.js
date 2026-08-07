@@ -468,7 +468,7 @@ export default function SocialMediaMarketingPage() {
             </div>
             <div className="smm-hero-trust-item">
               <div className="smm-hero-trust-icon" style={{ background: "rgba(255,107,0,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 9 11 13 15 22 22 3"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 9 11 13 15 22 22 3"/></svg>
               </div>
               <div>
                 <div className="smm-trust-item-title">Lead Generation</div>

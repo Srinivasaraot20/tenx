@@ -5,10 +5,10 @@ export default function WhyUs() {
       title: "Data-Driven Strategies",
       desc: "We use data, analytics, and market insights to make smarter marketing decisions that drive measurable business results.",
       bg: "#fff5ee",
-      badgeColor: "#a13c00",
+      badgeColor: "#ff5722",
       badgeBg: "#fff5ee",
       icon: (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <line x1="18" y1="20" x2="18" y2="10" />
           <line x1="12" y1="20" x2="12" y2="4" />
           <line x1="6" y1="20" x2="6" y2="14" />
@@ -129,16 +129,16 @@ export default function WhyUs() {
         
         {/* Eyebrow Choice with Lines */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "12px" }}>
-          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
-          <span className="eyebrow" style={{ color: "#a13c00", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <div style={{ width: "40px", height: "2px", background: "#ff5722" }}></div>
+          <span className="eyebrow" style={{ color: "#ff5722", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
             WHY BUSINESSES CHOOSE US
           </span>
-          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
+          <div style={{ width: "40px", height: "2px", background: "#ff5722" }}></div>
         </div>
 
         {/* Title */}
         <h2 style={{ fontSize: "36px", fontWeight: "800", color: "#0f172a", margin: "0 0 12px 0", textAlign: "center" }}>
-          Why Businesses <span style={{ color: "#a13c00" }}>Partner</span> With Digital Marketing TenX
+          Why Businesses <span style={{ color: "#ff5722" }}>Partner</span> With Digital Marketing TenX
         </h2>
 
         {/* Subtitle */}
@@ -152,7 +152,7 @@ export default function WhyUs() {
             <thead>
               <tr style={{ background: "#f8fafc", borderBottom: "2px solid #e2e8f0" }}>
                 <th style={{ padding: "16px", textAlign: "left", color: "#0f172a", fontWeight: "700" }}>Feature</th>
-                <th style={{ padding: "16px", textAlign: "center", color: "#a13c00", fontWeight: "800" }}>Digital TenX</th>
+                <th style={{ padding: "16px", textAlign: "center", color: "#ff5722", fontWeight: "800" }}>Digital TenX</th>
                 <th style={{ padding: "16px", textAlign: "center", color: "#64748b", fontWeight: "600" }}>Traditional Agencies</th>
               </tr>
             </thead>
@@ -255,7 +255,7 @@ export default function WhyUs() {
               top: "16px",
               right: "16px",
               background: "#fff5ee",
-              color: "#a13c00",
+              color: "#ff5722",
               fontSize: "11px",
               fontWeight: "800",
               width: "28px",
@@ -271,7 +271,7 @@ export default function WhyUs() {
               width: "80px",
               height: "80px",
               borderRadius: "50%",
-              background: "#a13c00",
+              background: "#ff5722",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -295,7 +295,7 @@ export default function WhyUs() {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "8px",
-                background: "#a13c00",
+                background: "#ff5722",
                 color: "#ffffff",
                 fontSize: "13px",
                 fontWeight: "700",

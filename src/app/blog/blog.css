@@ -1,5 +1,5 @@
 :root {
-  --brand: #a13c00;
+  --brand: #ff5722;
   --brand-dark: #e55d00;
   --brand-light: rgba(255, 107, 0, 0.08);
   --muted: #64748b;
@@ -315,7 +315,7 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
   padding: 6px 16px;
   border-radius: 8px;
@@ -348,7 +348,7 @@
 }
 
 .featured-body h2 a:hover {
-  color: #a13c00;
+  color: #ff5722;
 }
 
 .featured-meta-top {
@@ -360,7 +360,7 @@
 }
 
 .category-badge, .cat {
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
   padding: 5px 14px;
   border-radius: 6px;
@@ -417,9 +417,9 @@
   align-items: center;
   gap: 6px;
   padding: 10px 24px;
-  border: 2px solid #a13c00;
+  border: 2px solid #ff5722;
   border-radius: 8px;
-  color: #a13c00;
+  color: #ff5722;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -427,7 +427,7 @@
 }
 
 .featured-read-btn:hover {
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
 }
 
