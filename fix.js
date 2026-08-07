@@ -1,20 +1,19 @@
 const fs = require('fs');
-let content = fs.readFileSync('src/app/api/auth/[...nextauth]/route.js', 'utf8');
-
-// The file looks like:
-// import NextAuth from "next-auth";
-// import CredentialsProvider from "next-auth/providers/credentials";
-// import { PrismaAdapter } from "@next-auth/prisma-adapter";
-// import { PrismaClient } from "@prisma/client";
-// import bcrypt from "bcrypt";
-// 
-// const prisma = new PrismaClient();
-// 
-// export const authOptions = { ... }
-// 
-// const handler = NextAuth(authOptions);
-// export { handler as GET, handler as POST };
-
-content = content.replace(/import CredentialsProvider[\s\S]*?const prisma = new PrismaClient\(\);\n\nexport const authOptions = \{[\s\S]*?  \},\n\};\n/m, 'import { authOptions } from "@/lib/auth";\n');
-
-fs.writeFileSync('src/app/api/auth/[...nextauth]/route.js', content);
+const path = require('path');
+function processDir(dir) {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            processDir(fullPath);
+        } else if (fullPath.endsWith('.js') || fullPath.endsWith('.css')) {
+            let content = fs.readFileSync(fullPath, 'utf8');
+            if (content.includes('<<<<<<< HEAD')) {
+                console.log('Fixing ' + fullPath);
+                content = content.replace(/<<<<<<< HEAD\r?\n([\s\S]*?)\r?\n=======\r?\n[\s\S]*?\r?\n>>>>>>> .*(?:\r?\n)?/g, '$1\n');
+                fs.writeFileSync(fullPath, content, 'utf8');
+            }
+        }
+    }
+}
+processDir(path.join(process.cwd(), 'src'));

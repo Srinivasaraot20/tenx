@@ -1,7 +1,7 @@
 import React from "react";
 import prisma from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/lib/auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 import UsersClient from "./UsersClient";
 
