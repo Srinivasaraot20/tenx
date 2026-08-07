@@ -63,7 +63,7 @@ export default function Hero() {
       <section className="hero">
         <div className="hero-content">
           <h1 className="">
-            <span style={{ color: "#1d4ed8", WebkitTextFillColor: "#1d4ed8", background: "none" }}>AI-Powered</span><br />
+            <span style={{ color: "#000", WebkitTextFillColor: "#000", background: "none" }}>AI-Powered</span><br />
             Digital Marketing Agency in Hyderabad
           </h1>
           <p className="">
