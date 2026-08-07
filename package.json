@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "build": "RAYON_NUM_THREADS=1 UV_THREADPOOL_SIZE=1 next build --webpack && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
     "start": "next start",
     "lint": "eslint"
   },
