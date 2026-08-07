@@ -92,7 +92,7 @@ export default function Header() {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: 'auto', height: '56px' }}
+            style={{ width: 'auto', height: '80px' }}
             className="logo-img-file"
             priority
           />
@@ -182,7 +182,7 @@ export default function Header() {
       <div className={`ga-mobile-drawer ${isMobileMenuOpen ? "open" : ""}`}>
         <div className="drawer-header">
           <div className="logo">
-            <Image src="/logo.webp" alt="TenX Logo" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '40px' }} />
+            <Image src="/logo.webp" alt="TenX Logo" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '60px' }} />
           </div>
           <button className="drawer-close-btn" onClick={handleLinkClick}>✕</button>
         </div>

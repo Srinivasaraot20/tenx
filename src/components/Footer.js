@@ -16,7 +16,7 @@ export default function Footer() {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: 'auto', height: '56px' }}
+              style={{ width: 'auto', height: '80px' }}
               className="logo-img-file footer-logo"
             />
           </Link>

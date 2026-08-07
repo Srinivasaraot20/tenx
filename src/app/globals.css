@@ -33,7 +33,7 @@ a{text-decoration:none;color:inherit}
 .logo{display:flex;align-items:center;gap:var(--space-fluid-gap-sm);font-weight:900;font-size:clamp(1.25rem, 2vw, 1.5rem);color:#1a1a2e;letter-spacing:-0.5px}
 .brand-name{color:#1d4ed8}
 .brand-highlight{background:linear-gradient(135deg, #a13c00 0%, #d946ef 50%, #1d4ed8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block;font-weight:900}
-.logo-img-file{width:clamp(40px, 6vw, 56px);height:clamp(40px, 6vw, 56px);object-fit:cover;object-position:top;display:block}
+.logo-img-file{display:block; max-height: 100%; width: auto; object-fit: contain;}
 .footer-logo{background:#fff;padding:4px;border-radius:8px}
 .footer-brand-name{color:#fff !important}
 .nav-links{display:flex !important;gap:var(--space-fluid-gap-md);font-size:var(--font-fluid-small);font-weight:500;color:#333;align-items:center}
