@@ -15,6 +15,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
+    cpus: 1,
+    workerThreads: false,
     optimizeCss: true,
     optimizePackageImports: ['lucide-react'],
   },
