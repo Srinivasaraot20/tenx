@@ -92,7 +92,7 @@ export default function Header() {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: 'auto', height: '80px' }}
+            style={{ width: 'auto', height: '56px' }}
             className="logo-img-file"
             priority
           />
