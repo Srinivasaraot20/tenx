@@ -4,7 +4,7 @@
   --ecom-purple: #1d4ed8;       /* Aligned to home page blue */
   --ecom-purple-hover: #1e40af; /* Aligned to home page blue hover */
   --ecom-purple-bg: rgba(29, 78, 216, 0.07);
-  --ecom-orange: #a13c00;       /* Aligned to home page primary orange */
+  --ecom-orange: #ff5722;       /* Aligned to home page primary orange */
   --ecom-orange-hover: #e55d00;
   --ecom-orange-bg: rgba(255, 107, 0, 0.07);
   --ecom-green: #10b981;
@@ -1008,7 +1008,7 @@
 .ecom-float-card.fc-roas {
   top: 15px;
   right: -25px;
-  border-left: 3px solid #a13c00;
+  border-left: 3px solid #ff5722;
   animation-delay: 3s;
 }
 
@@ -1189,7 +1189,7 @@
 .buy-btn-large {
   font-size: clamp(8px, 2vw, 10px);
   font-weight: 800;
-  background: #a13c00;
+  background: #ff5722;
   color: #ffffff;
   padding: 2px 6px;
   border-radius: 3px;
@@ -1242,7 +1242,7 @@
 }
 
 .why-text-orange {
-  color: #a13c00;
+  color: #ff5722;
   font-weight: 900;
 }
 
@@ -1296,7 +1296,7 @@
   --card-theme-bg: rgba(16, 185, 129, 0.08);
 }
 .card-orange {
-  --card-theme-color: #a13c00;
+  --card-theme-color: #ff5722;
   --card-theme-bg: rgba(255, 107, 0, 0.08);
 }
 .card-pink {
@@ -1461,7 +1461,7 @@
 }
 
 .ecom-why-cta-wrapper .btn-primary {
-  background: #a13c00;
+  background: #ff5722;
   color: #ffffff;
   border: none;
   padding: 12px 24px;

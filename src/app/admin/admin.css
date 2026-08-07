@@ -56,12 +56,12 @@
   transition: all 0.2s ease;
 }
 .admin-login-card input:focus {
-  border-color: #a13c00;
+  border-color: #ff5722;
   box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
 }
 .admin-login-card button {
   width: 100%;
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -141,7 +141,7 @@
   color: #fff;
 }
 .admin-stat-card.orange {
-  border-left: 4px solid #a13c00;
+  border-left: 4px solid #ff5722;
 }
 .admin-stat-card.green {
   border-left: 4px solid #22c55e;
@@ -182,7 +182,7 @@
 }
 .admin-control-bar input:focus,
 .admin-control-bar select:focus {
-  border-color: #a13c00;
+  border-color: #ff5722;
 }
 
 /* Table Area */
@@ -282,7 +282,7 @@
 .admin-detail-section h4 {
   font-size: 13px;
   font-weight: 800;
-  color: #a13c00;
+  color: #ff5722;
   text-transform: uppercase;
   margin-bottom: 14px;
   letter-spacing: 0.5px;
@@ -352,7 +352,7 @@
   outline: none;
 }
 .admin-add-note button {
-  background: #a13c00;
+  background: #ff5722;
   color: #fff;
   border: none;
   border-radius: 6px;

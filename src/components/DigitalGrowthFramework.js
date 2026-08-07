@@ -41,11 +41,11 @@ export default function DigitalGrowthFramework() {
     <section style={{ padding: "80px 24px", background: "#f8fafc" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "16px" }}>
-          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
-          <span style={{ color: "#a13c00", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <div style={{ width: "40px", height: "2px", background: "#ff5722" }}></div>
+          <span style={{ color: "#ff5722", fontSize: "12px", fontWeight: "700", letterSpacing: "2px", textTransform: "uppercase" }}>
             OUR DIGITAL GROWTH FRAMEWORK
           </span>
-          <div style={{ width: "40px", height: "2px", background: "#a13c00" }}></div>
+          <div style={{ width: "40px", height: "2px", background: "#ff5722" }}></div>
         </div>
 
         <h2 style={{ fontSize: "36px", fontWeight: "900", color: "#0f172a", margin: "0 0 24px 0", textAlign: "center", lineHeight: "1.2" }}>
@@ -109,7 +109,7 @@ export default function DigitalGrowthFramework() {
           boxShadow: "0 4px 20px rgba(0,0,0,0.02)",
           marginBottom: "40px"
         }}>
-          <div style={{ fontSize: "16px", fontWeight: "800", color: "#a13c00", marginBottom: "16px", letterSpacing: "1px" }}>
+          <div style={{ fontSize: "16px", fontWeight: "800", color: "#ff5722", marginBottom: "16px", letterSpacing: "1px" }}>
             Strategy <span style={{color: "#cbd5e1"}}>→</span> Technology <span style={{color: "#cbd5e1"}}>→</span> Execution <span style={{color: "#cbd5e1"}}>→</span> Optimization
           </div>
           <p style={{ fontSize: "18px", fontWeight: "600", color: "#334155", margin: "0" }}>

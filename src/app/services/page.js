@@ -227,7 +227,7 @@ export default function ServicesPage() {
     },
     {
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#a13c00" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M22 2l-8 8"></path>
           <path d="M22 2c-3 0-6.5 2.5-8 4.5L9.5 11l-3 3c-1.5 1.5-2 3.5-2.5 5.5.5 0 2.5-.5 4-2l3-3 4.5-4.5c2-1.5 4.5-5 4.5-8z"></path>
           <path d="M11.5 9.5l3 3"></path>
@@ -235,7 +235,7 @@ export default function ServicesPage() {
         </svg>
       ),
       iconBg: "#fff5ee",
-      lineColor: "#a13c00",
+      lineColor: "#ff5722",
       title: "Fast Execution",
       desc: "Our agile workflow ensures campaign setup, landing pages, and integrations are deployed within days, not months."
     },

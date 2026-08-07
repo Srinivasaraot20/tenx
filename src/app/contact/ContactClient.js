@@ -248,7 +248,7 @@ export default function ContactClient() {
             <div className="con-hero-content">
               <span className="con-hero-eyebrow">📞 Contact Digital Marketing TenX</span>
               <h1>Contact <span>Digital Marketing TenX</span></h1>
-              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #a13c00", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
+              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #ff5722", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
                 <strong>Expert Digital Marketing Solutions for Business Growth:</strong> Looking for expert digital marketing? Our team at Digital Marketing TenX provides scalable SEO, Google Ads, and Web Development strategies for startups, SMEs, and enterprise brands across Hyderabad and globally.
               </div>
               <p>
@@ -264,11 +264,11 @@ export default function ContactClient() {
                   </li>
                   <li style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.95rem", color: "#475569" }}>
                     <span style={{ background: "#e0f2fe", color: "#0369a1", fontWeight: "bold", padding: "2px 8px", borderRadius: "6px" }}>2</span>
-                    <span><strong>Free Audit:</strong> Our team reviews your current <Link href="/services" style={{color: "#a13c00", textDecoration: "underline"}}>marketing services</Link> and digital presence.</span>
+                    <span><strong>Free Audit:</strong> Our team reviews your current <Link href="/services" style={{color: "#ff5722", textDecoration: "underline"}}>marketing services</Link> and digital presence.</span>
                   </li>
                   <li style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.95rem", color: "#475569" }}>
                     <span style={{ background: "#e0f2fe", color: "#0369a1", fontWeight: "bold", padding: "2px 8px", borderRadius: "6px" }}>3</span>
-                    <span><strong>Growth Strategy Session:</strong> Jump on a free call to discuss a tailored roadmap. <Link href="/about-us" style={{color: "#a13c00", textDecoration: "underline"}}>Learn more about us</Link>.</span>
+                    <span><strong>Growth Strategy Session:</strong> Jump on a free call to discuss a tailored roadmap. <Link href="/about-us" style={{color: "#ff5722", textDecoration: "underline"}}>Learn more about us</Link>.</span>
                   </li>
                 </ul>
               </div>

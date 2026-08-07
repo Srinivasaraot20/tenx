@@ -120,18 +120,18 @@ export default function AboutUsPage() {
         <section className="about-hero-new">
           <div className="about-hero-container">
             <div className="about-hero-left">
-              <h1>Top Digital Marketing Company in Hyderabad Driving Real <span style={{color: "#a13c00"}}>Growth.</span></h1>
+              <h1>Top Digital Marketing Company in Hyderabad Driving Real <span style={{color: "#ff5722"}}>Growth.</span></h1>
               <p className="hero-desc">
                 Digital Marketing TenX is a top digital marketing company in Hyderabad, helping businesses grow through SEO, Google Ads, social media marketing, web development, and AI-powered digital strategies. We combine data, creativity, and technology to drive measurable growth and long-term business success.
               </p>
               
-              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #a13c00", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
+              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #ff5722", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
                 <strong>Driving Business Growth Through Digital Marketing:</strong> Digital Marketing TenX provides data-driven SEO, Google Ads, and social media solutions for startups, SMEs, and enterprise brands. Our tailored strategies help businesses across Hyderabad and globally increase organic traffic, generate qualified leads, and maximize marketing ROI.
               </div>
               
               <div className="hero-stats-grid">
                 <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#a13c00"}}>
+                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#ff5722"}}>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                   </div>
                   <div className="stat-text">
@@ -158,7 +158,7 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#a13c00"}}>
+                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#ff5722"}}>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                   </div>
                   <div className="stat-text">
@@ -177,7 +177,7 @@ export default function AboutUsPage() {
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: "8px"}}><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                   Book Free Consultation
                 </Link>
-                <Link href="/services" className="btn-outline" style={{borderColor: "#a13c00", color: "#a13c00"}}>
+                <Link href="/services" className="btn-outline" style={{borderColor: "#ff5722", color: "#ff5722"}}>
                   Explore Services
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginLeft: "8px"}}><polyline points="9 18 15 12 9 6"/></svg>
                 </Link>
@@ -322,7 +322,7 @@ export default function AboutUsPage() {
             <div className="why-choose-header" style={{textAlign: "center", maxWidth: "800px", margin: "0 auto 50px"}}>
               <span className="eyebrow">WHY CHOOSE US</span>
               <h2>
-                Why Businesses Choose <br/><span style={{color: "#a13c00"}}>Digital Marketing TenX</span>
+                Why Businesses Choose <br/><span style={{color: "#ff5722"}}>Digital Marketing TenX</span>
               </h2>
               <p style={{color: "#475569", fontSize: "1.1rem", lineHeight: "1.7", margin: "0 auto"}}>
                 Businesses choose Digital Marketing TenX because we combine <strong>strategy, creativity, technology, and data</strong> to deliver measurable results. As a trusted digital marketing company in Hyderabad, we create customized marketing solutions that help businesses <strong>increase visibility, generate qualified leads, and achieve sustainable long-term growth.</strong>
@@ -334,7 +334,7 @@ export default function AboutUsPage() {
                 <thead>
                   <tr style={{background: "#e2e8f0"}}>
                     <th style={{padding: "16px", color: "#334155", fontWeight: "700"}}>Features</th>
-                    <th style={{padding: "16px", color: "#a13c00", fontWeight: "700"}}>Digital Marketing TenX</th>
+                    <th style={{padding: "16px", color: "#ff5722", fontWeight: "700"}}>Digital Marketing TenX</th>
                     <th style={{padding: "16px", color: "#64748b", fontWeight: "700"}}>Traditional Agencies</th>
                   </tr>
                 </thead>
@@ -493,7 +493,7 @@ export default function AboutUsPage() {
                 At Digital Marketing TenX, we started with one simple goal, to help businesses grow through honest, transparent, and result-driven digital marketing. From day one, our focus has never been just on increasing website traffic or running campaigns. Our mission has always been to create strategies that generate real business growth, qualified leads, and long-term success.
               </p>
               <p style={{marginBottom: "20px"}}>
-                As the digital landscape continues to evolve—and with <a href="https://www.hubspot.com/marketing-statistics" target="_blank" rel="noopener noreferrer" style={{color: "#a13c00", textDecoration: "underline", fontWeight: "600"}}>industry statistics</a> showing that generating traffic and leads is the top challenge for marketers—we embrace innovation, data-driven decision-making, and AI-powered solutions to deliver measurable results for every client. We believe every business is unique, which is why we take the time to understand your goals before building customized marketing strategies.
+                As the digital landscape continues to evolve—and with <a href="https://www.hubspot.com/marketing-statistics" target="_blank" rel="noopener noreferrer" style={{color: "#ff5722", textDecoration: "underline", fontWeight: "600"}}>industry statistics</a> showing that generating traffic and leads is the top challenge for marketers—we embrace innovation, data-driven decision-making, and AI-powered solutions to deliver measurable results for every client. We believe every business is unique, which is why we take the time to understand your goals before building customized marketing strategies.
               </p>
               <p style={{marginBottom: "20px"}}>
                 Our greatest achievement is the trust our clients place in us. Every project we undertake is treated as a long-term partnership built on transparency, accountability, and continuous improvement.
