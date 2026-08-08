@@ -55,3 +55,4 @@ export default function useScrollTracking(pageName = "Unknown Page") {
 
   return null;
 }
+

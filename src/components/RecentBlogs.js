@@ -10,19 +10,7 @@ export default function RecentBlogs() {
 
   return (
     <section className="recent-blogs-section">
-      <div className="process-header" style={{ marginBottom: "40px" }}>
-        <div className="process-eyebrow">
-          <span className="eyebrow-line"></span>
-          OUR BLOG
-          <span className="eyebrow-line"></span>
-        </div>
-        <h2 className="process-title">
-          Digital Marketing Insights, SEO Guides & Business Growth Strategies
-        </h2>
-        <p className="process-subtitle">
-          Explore practical digital marketing guides, SEO strategies, Google Ads insights, social media tips, and AI-powered marketing trends to help your business grow online.
-        </p>
-      </div>
+
 
       <div className="recent-blogs-grid">
         {recentArticles.map((article) => (
@@ -38,3 +26,4 @@ export default function RecentBlogs() {
     </section>
   );
 }
+

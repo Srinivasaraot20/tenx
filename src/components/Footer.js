@@ -20,7 +20,7 @@ export default function Footer() {
               className="logo-img-file footer-logo"
             />
           </Link>
-          <p>Transform your digital presence with AI-powered marketing, high-performance web solutions, and intelligent automation that increase traffic, generate qualified leads, and accelerate business growth.</p>
+          <p style={{ color: "#FFFFFF" }}>Transform your digital presence with AI-powered marketing, high-performance web solutions, and intelligent automation that increase traffic, generate qualified leads, and accelerate business growth.</p>
           <div className="social-links">
             <a href="https://www.facebook.com/profile.php?id=61590692422833" target="_blank" rel="noopener noreferrer" aria-label="f - Facebook" onClick={() => gtag.event("social_click", { platform: "facebook", button_location: "footer" })}>f</a>
             <a href="https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==" target="_blank" rel="noopener noreferrer" aria-label="IG - Instagram" onClick={() => gtag.event("social_click", { platform: "instagram", button_location: "footer" })}>📸</a>
@@ -36,26 +36,7 @@ export default function Footer() {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about-us">About Us</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
-            <li style={{ marginTop: "15px" }}>
-              <Link 
-                href="/admin/login" 
-                style={{ 
-                  display: "inline-flex", 
-                  alignItems: "center",
-                  padding: "6px 14px", 
-                  background: "rgba(255,255,255,0.1)", 
-                  color: "#fff", 
-                  borderRadius: "6px", 
-                  fontSize: "14px", 
-                  fontWeight: "600",
-                  transition: "background 0.2s"
-                }}
-                onMouseOver={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.2)"}
-                onMouseOut={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
-              >
-                🔒 Admin Login
-              </Link>
-            </li>
+            <li><Link href="/admin/login">Company</Link></li>
           </ul>
         </div>
         <div>
@@ -69,30 +50,38 @@ export default function Footer() {
             <li><Link href="/services/whatsapp-automation">WhatsApp Automation</Link></li>
           </ul>
         </div>
-        <div className="footer-resources">
-          <h3>Resources</h3>
-          <ul>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Marketing Guides</a></li>
-          </ul>
-        </div>
-        <div className="footer-legal">
-          <h3>Legal</h3>
-          <ul>
-            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="/terms-and-conditions">Terms &amp; Conditions</Link></li>
-          </ul>
+        <div className="footer-resources-legal-col">
+          <div className="footer-resources">
+            <h3>Resources</h3>
+            <ul>
+              <li><Link href="/blog">Blog</Link></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Marketing Guides</a></li>
+            </ul>
+          </div>
+          <div className="footer-legal" style={{ marginTop: "24px" }}>
+            <h3>Legal</h3>
+            <ul>
+              <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link href="/terms-and-conditions">Terms &amp; Conditions</Link></li>
+            </ul>
+          </div>
         </div>
         <div className="footer-contact">
           <h3>Contact</h3>
-          <div className="contact-item">
-            <a href="tel:+919392251739" className="footer-contact-link" onClick={() => gtag.event("phone_click", { phone_number: "+919392251739", button_location: "footer" })}><span>📞</span><span>+91 93922 51739</span></a>
+          <div className="contact-item desktop-contact-item">
+            <a href="tel:+919392251739" className="footer-contact-link" onClick={() => gtag.event("phone_click", { phone_number: "+919392251739", button_location: "footer" })}><span>📞</span><span className="contact-text-d">+91 93922 51739</span></a>
           </div>
-          <div className="footer-contact-item">
-            <a href="mailto:info@digitalmarketingtenx.com" className="footer-contact-link" onClick={() => gtag.event("email_click", { email_address: "info@digitalmarketingtenx.com", button_location: "footer" })}><span>📧</span><span>info@digitalmarketingtenx.com</span></a>
+          <div className="footer-contact-item desktop-contact-item">
+            <a href="mailto:info@digitalmarketingtenx.com" className="footer-contact-link" onClick={() => gtag.event("email_click", { email_address: "info@digitalmarketingtenx.com", button_location: "footer" })}><span>✉️</span><span className="contact-text-d">info@digitalmarketingtenx.com</span></a>
           </div>
-          <div className="contact-item"><span>📍</span><span>Regus Level 4, Gumidelli Towers, Begumpet, Hyderabad - 500016</span></div>
+          <div className="contact-item desktop-contact-item" style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+            <span style={{ flexShrink: 0 }}>📍</span>
+            <span className="desktop-address-text" style={{ flex: 1, wordBreak: "break-word" }}>
+              <span className="mobile-address">Level 4, Gumidelli Towers, 39–44, Old Patigadda, Prakash Nagar, Begumpet, Hyderabad, Telangana 500016</span>
+              <span className="desktop-address">Level 4, Gumidelli Towers,<br/>39–44, Old Patigadda,<br/>Prakash Nagar, Begumpet,<br/>Hyderabad, Telangana 500016</span>
+            </span>
+          </div>
         </div>
       </footer>
       <div className="footer-bottom">
@@ -101,4 +90,5 @@ export default function Footer() {
     </>
   );
 }
+
 

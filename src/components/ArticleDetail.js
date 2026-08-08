@@ -99,7 +99,7 @@ export default function ArticleDetail({ article, author }) {
               <span>{article.views?.toLocaleString()} views</span>
             </div>
             <SocialShare
-              url={`https://digitalmarketingtenx.com/blog/${article.slug}`}
+              url={`https://www.digitalmarketingtenx.com/blog/${article.slug}`}
               title={article.title}
               compact
             />
@@ -160,3 +160,4 @@ export default function ArticleDetail({ article, author }) {
     </article>
   );
 }
+

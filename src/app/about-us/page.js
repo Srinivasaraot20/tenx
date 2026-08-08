@@ -125,9 +125,7 @@ export default function AboutUsPage() {
                 Digital Marketing TenX is a top digital marketing company in Hyderabad, helping businesses grow through SEO, Google Ads, social media marketing, web development, and AI-powered digital strategies. We combine data, creativity, and technology to drive measurable growth and long-term business success.
               </p>
               
-              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #ff5722", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
-                <strong>Driving Business Growth Through Digital Marketing:</strong> Digital Marketing TenX provides data-driven SEO, Google Ads, and social media solutions for startups, SMEs, and enterprise brands. Our tailored strategies help businesses across Hyderabad and globally increase organic traffic, generate qualified leads, and maximize marketing ROI.
-              </div>
+
               
               <div className="hero-stats-grid">
                 <div className="stat-card">
@@ -283,13 +281,13 @@ export default function AboutUsPage() {
         <section className="about-mission" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#f8fafc"}}>
           <div className="mission-vision-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px", maxWidth: "1000px", margin: "0 auto"}}>
             <div className="mv-card" style={{padding: "40px", background: "#fff", borderRadius: "14px", boxShadow: "0 4px 12px rgba(0,0,0,0.02)"}}>
-              <h2>Our Mission</h2>
+              <h3 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: "800", color: "#0f172a", marginBottom: "16px" }}>Our Mission</h3>
               <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
                 Our mission is to help businesses of all sizes achieve sustainable growth through innovative digital marketing strategies. We deliver data-driven SEO, Google Ads, social media marketing, website development, and AI-powered solutions that increase online visibility, generate quality leads, and maximize return on investment (ROI).
               </p>
             </div>
             <div className="mv-card" style={{padding: "40px", background: "#fff", borderRadius: "14px", boxShadow: "0 4px 12px rgba(0,0,0,0.02)"}}>
-              <h2>Our Vision</h2>
+              <h3 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: "800", color: "#0f172a", marginBottom: "16px" }}>Our Vision</h3>
               <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
                 Our vision is to become one of the top digital marketing companies in Hyderabad, empowering businesses with innovative technology, transparent partnerships, and performance-driven marketing solutions. We strive to help brands build a strong digital presence, stay ahead of the competition, and achieve long-term success in the evolving digital landscape.
               </p>
@@ -321,42 +319,13 @@ export default function AboutUsPage() {
             
             <div className="why-choose-header" style={{textAlign: "center", maxWidth: "800px", margin: "0 auto 50px"}}>
               <span className="eyebrow">WHY CHOOSE US</span>
-              <h2>
-                Why Businesses Choose <br/><span style={{color: "#ff5722"}}>Digital Marketing TenX</span>
-              </h2>
+              <h2>Why Businesses Choose <span style={{color: "#ff5722"}}>Digital Marketing TenX</span></h2>
               <p style={{color: "#475569", fontSize: "1.1rem", lineHeight: "1.7", margin: "0 auto"}}>
                 Businesses choose Digital Marketing TenX because we combine <strong>strategy, creativity, technology, and data</strong> to deliver measurable results. As a trusted digital marketing company in Hyderabad, we create customized marketing solutions that help businesses <strong>increase visibility, generate qualified leads, and achieve sustainable long-term growth.</strong>
               </p>
             </div>
 
-            <div style={{overflowX: "auto", marginBottom: "40px"}}>
-              <table style={{width: "100%", minWidth: "600px", borderCollapse: "collapse", background: "#f8fafc", borderRadius: "8px", overflow: "hidden", textAlign: "left"}}>
-                <thead>
-                  <tr style={{background: "#e2e8f0"}}>
-                    <th style={{padding: "16px", color: "#334155", fontWeight: "700"}}>Features</th>
-                    <th style={{padding: "16px", color: "#ff5722", fontWeight: "700"}}>Digital Marketing TenX</th>
-                    <th style={{padding: "16px", color: "#64748b", fontWeight: "700"}}>Traditional Agencies</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr style={{borderBottom: "1px solid #e2e8f0"}}>
-                    <td style={{padding: "16px", color: "#334155"}}>Strategy</td>
-                    <td style={{padding: "16px", color: "#0f172a", fontWeight: "600"}}>Data-Driven & AI-Powered</td>
-                    <td style={{padding: "16px", color: "#64748b"}}>Guesswork & Outdated Methods</td>
-                  </tr>
-                  <tr style={{borderBottom: "1px solid #e2e8f0"}}>
-                    <td style={{padding: "16px", color: "#334155"}}>Pricing</td>
-                    <td style={{padding: "16px", color: "#0f172a", fontWeight: "600"}}>Transparent & ROI Focused</td>
-                    <td style={{padding: "16px", color: "#64748b"}}>Hidden Fees & Vanity Metrics</td>
-                  </tr>
-                  <tr>
-                    <td style={{padding: "16px", color: "#334155"}}>Support</td>
-                    <td style={{padding: "16px", color: "#0f172a", fontWeight: "600"}}>Proactive & Dedicated</td>
-                    <td style={{padding: "16px", color: "#64748b"}}>Reactive & Slow</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+
 
             <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "50px", alignItems: "start"}}>
               <div className="why-choose-left">
@@ -571,3 +540,4 @@ export default function AboutUsPage() {
     </>
   );
 }
+

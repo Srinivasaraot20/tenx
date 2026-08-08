@@ -124,10 +124,7 @@
 }
 
 .con-hero-content h1 span {
-  background: linear-gradient(135deg, #ff5722 0%, #d946ef 50%, #1d4ed8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+  color: #ff5722;
   font-weight: 900;
 }
 
@@ -655,19 +652,19 @@
 /* ─── 7. WHY CONTACT US ─── */
 .con-why-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
 @media (max-width: 1024px) {
   .con-why-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 580px) {
   .con-why-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }
 }

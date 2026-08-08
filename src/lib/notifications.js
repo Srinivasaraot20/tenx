@@ -107,3 +107,4 @@ export async function sendWhatsAppNotification(enquiry) {
     console.error("Failed to send WhatsApp notification:", error);
   }
 }
+

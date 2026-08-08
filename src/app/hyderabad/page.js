@@ -23,7 +23,7 @@ export const metadata = {
     "Lead Generation Company Hyderabad"
 ],
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/hyderabad"
+    canonical: "https://www.digitalmarketingtenx.com/hyderabad"
   }
 };
 
@@ -42,3 +42,4 @@ export default function LocationPage() {
     </>
   );
 }
+

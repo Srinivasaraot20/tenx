@@ -91,16 +91,16 @@ export const metadata = {
   title: "Best Social Media Marketing Services in Hyderabad | TenX",
   description: "Grow your brand with the best social media marketing services in Hyderabad. Expert Instagram, Facebook, LinkedIn & paid social campaigns that drive leads.",
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/services/social-media-marketing",
+    canonical: "https://www.digitalmarketingtenx.com/services/social-media-marketing",
   },
   openGraph: {
-    title: "Social Media Marketing Services | Grow Your Brand & Generate Leads",
-    description: "Boost your brand with professional Social Media Marketing services. We create engaging content, manage campaigns, grow your audience, and generate qualified leads on Instagram, Facebook, LinkedIn, YouTube, TikTok, and more.",
-    url: "https://digitalmarketingtenx.com/services/social-media-marketing",
+    title: "Best Social Media Marketing Services in Hyderabad | TenX",
+    description: "Grow your brand with the best social media marketing services in Hyderabad. Expert Instagram, Facebook, LinkedIn & paid social campaigns that drive leads.",
+    url: "https://www.digitalmarketingtenx.com/services/social-media-marketing",
     type: "website",
     images: [
       {
-        url: "https://digitalmarketingtenx.com/social-media-marketing-dashboard.webp",
+        url: "https://www.digitalmarketingtenx.com/social-media-marketing-dashboard.webp",
         width: 1200,
         height: 630,
         alt: "Professional Social Media Marketing Dashboard",
@@ -118,8 +118,8 @@ export default function SocialMediaMarketingLayout({ children }) {
     "provider": {
       "@type": "Organization",
       "name": "Digital Marketing TenX",
-      "url": "https://digitalmarketingtenx.com",
-      "logo": "https://digitalmarketingtenx.com/logo.webp"
+      "url": "https://www.digitalmarketingtenx.com",
+      "logo": "https://www.digitalmarketingtenx.com/logo.webp"
     },
     "description": "Professional social media management, creative content creation, brand awareness campaigns, and paid social ads management on Instagram, Facebook, LinkedIn, TikTok, and YouTube.",
     "areaServed": {
@@ -163,19 +163,19 @@ export default function SocialMediaMarketingLayout({ children }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://digitalmarketingtenx.com"
+        "item": "https://www.digitalmarketingtenx.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://digitalmarketingtenx.com/services"
+        "item": "https://www.digitalmarketingtenx.com/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Social Media Marketing",
-        "item": "https://digitalmarketingtenx.com/services/social-media-marketing"
+        "item": "https://www.digitalmarketingtenx.com/services/social-media-marketing"
       }
     ]
   };
@@ -247,3 +247,4 @@ export default function SocialMediaMarketingLayout({ children }) {
     </>
   );
 }
+

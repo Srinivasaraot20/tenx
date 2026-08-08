@@ -15,3 +15,4 @@ export default function BlogHero({ title, subtitle, backgroundImage }) {
     </section>
   );
 }
+

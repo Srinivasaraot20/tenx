@@ -180,6 +180,17 @@
   grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 16px;
 }
+@media (min-width: 1025px) {
+  .ga-features-attributes-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ga-features-attributes-row > .ga-attrib-item {
+    flex: 0 0 calc(33.333% - 10.67px);
+    max-width: calc(33.333% - 10.67px);
+  }
+}
 .ga-attrib-item {
   display: flex;
   align-items: flex-start;

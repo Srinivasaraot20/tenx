@@ -317,3 +317,4 @@ export default function BlogEnquiriesTable({ initialEnquiries }) {
     </div>
   );
 }
+

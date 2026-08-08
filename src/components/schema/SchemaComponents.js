@@ -17,10 +17,10 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Digital Marketing TenX",
-    "url": "https://digitalmarketingtenx.com",
+    "url": "https://www.digitalmarketingtenx.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://digitalmarketingtenx.com/logo.jpeg"
+      "url": "https://www.digitalmarketingtenx.com/logo.jpeg"
     },
     "description": "Digital Marketing TenX is a results-driven digital marketing agency in Hyderabad helping businesses improve their online visibility, generate qualified leads, and achieve sustainable growth.",
     "foundingDate": "2023",
@@ -47,7 +47,7 @@ export function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Digital Marketing TenX (Hyderabad Branch)",
-    "image": "https://digitalmarketingtenx.com/logo.jpeg",
+    "image": "https://www.digitalmarketingtenx.com/logo.jpeg",
     "telephone": "+91-93922-51739",
     "email": "grow@digitalmarketingtenx.com",
     "address": {
@@ -63,7 +63,7 @@ export function LocalBusinessSchema() {
       "latitude": "17.4447",
       "longitude": "78.4664"
     },
-    "url": "https://digitalmarketingtenx.com",
+    "url": "https://www.digitalmarketingtenx.com",
     "priceRange": "₹₹",
     "areaServed": {
       "@type": "City",
@@ -95,14 +95,14 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Digital Marketing TenX",
-    "url": "https://digitalmarketingtenx.com",
+    "url": "https://www.digitalmarketingtenx.com",
     "publisher": {
       "@type": "Organization",
       "name": "Digital Marketing TenX"
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://digitalmarketingtenx.com/?search={search_term_string}",
+      "target": "https://www.digitalmarketingtenx.com/?search={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -111,7 +111,7 @@ export function WebSiteSchema() {
 
 // 4. WebPage & 5. Breadcrumb Schema
 export function PageSchema({ title, description, url, breadcrumbs = [] }) {
-  const fullUrl = `https://digitalmarketingtenx.com${url}`;
+  const fullUrl = `https://www.digitalmarketingtenx.com${url}`;
   
   const webpageSchema = {
     "@context": "https://schema.org",
@@ -128,7 +128,7 @@ export function PageSchema({ title, description, url, breadcrumbs = [] }) {
       "@type": "ListItem",
       "position": index + 1,
       "name": crumb.name,
-      "item": `https://digitalmarketingtenx.com${crumb.url}`
+      "item": `https://www.digitalmarketingtenx.com${crumb.url}`
     }))
   } : null;
 
@@ -185,7 +185,7 @@ export function ArticleSchema({ headline, description, image, authorName, datePu
     "@type": "Article",
     "headline": headline,
     "description": description,
-    "image": image ? (image.startsWith('http') ? image : `https://digitalmarketingtenx.com${image}`) : "https://digitalmarketingtenx.com/og-image.webp",
+    "image": image ? (image.startsWith('http') ? image : `https://www.digitalmarketingtenx.com${image}`) : "https://www.digitalmarketingtenx.com/og-image.webp",
     "author": {
       "@type": "Person",
       "name": authorName || "Digital Marketing TenX Expert"
@@ -195,14 +195,14 @@ export function ArticleSchema({ headline, description, image, authorName, datePu
       "name": "Digital Marketing TenX",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://digitalmarketingtenx.com/logo.jpeg"
+        "url": "https://www.digitalmarketingtenx.com/logo.jpeg"
       }
     },
     "datePublished": datePublished,
     "dateModified": dateModified || datePublished,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://digitalmarketingtenx.com${url}`
+      "@id": `https://www.digitalmarketingtenx.com${url}`
     }
   };
   return <JsonLd schema={schema} />;
@@ -215,7 +215,7 @@ export function ContactPageSchema() {
     "@type": "ContactPage",
     "name": "Contact Digital Marketing TenX",
     "description": "Get in touch with Digital Marketing TenX for SEO, Google Ads, and Digital Marketing Services in Hyderabad.",
-    "url": "https://digitalmarketingtenx.com/contact",
+    "url": "https://www.digitalmarketingtenx.com/contact",
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "Digital Marketing TenX",
@@ -225,3 +225,4 @@ export function ContactPageSchema() {
   };
   return <JsonLd schema={schema} />;
 }
+

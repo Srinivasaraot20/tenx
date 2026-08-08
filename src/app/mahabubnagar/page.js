@@ -16,7 +16,7 @@ export const metadata = {
     "Business Growth Agency Mahabubnagar"
 ],
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/mahabubnagar"
+    canonical: "https://www.digitalmarketingtenx.com/mahabubnagar"
   }
 };
 
@@ -35,3 +35,4 @@ export default function LocationPage() {
     </>
   );
 }
+

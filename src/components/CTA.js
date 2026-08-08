@@ -4,10 +4,11 @@ import { useCallback } from "react";
 import * as gtag from "@/lib/gtag";
 
 export default function CTA({
-  title = "Let's Grow Your Business Together",
-  description = "Partner with Digital Marketing TenX and experience predictable, data-driven revenue and traffic growth.",
-  primaryText = "📅 Book Free Consultation",
-  secondaryText = "💬 Contact Us",
+  eyebrow = "⭐ READY TO GROW?",
+  title = "Get a Free Google Ads Audit — No Commitment",
+  description = "Our experts will analyse your current account, identify wasted spend and map out an actionable growth roadmap — completely free, no strings attached.",
+  primaryText = "📅 Book Consultation",
+  secondaryText = "✉️ Contact Email Us",
   onPrimaryClick,
   onSecondaryClick
 }) {
@@ -31,9 +32,8 @@ export default function CTA({
   return (
     <section className="cta-section">
       <div className="cta-card-wrapper">
-        <div className="cta-grid-bg"></div>
-        
         <div className="cta-card-content">
+          {eyebrow && <span className="cta-eyebrow">{eyebrow}</span>}
           <h2>{title}</h2>
           <p>
             {description}
@@ -57,3 +57,4 @@ export default function CTA({
     </section>
   );
 }
+

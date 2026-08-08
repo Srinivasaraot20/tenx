@@ -17,3 +17,4 @@ export async function POST(req){
 export async function GET(){
   return NextResponse.json({ ok:true, events: EVENTS.slice(-100) });
 }
+

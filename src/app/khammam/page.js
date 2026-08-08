@@ -17,7 +17,7 @@ export const metadata = {
     "Business Marketing Services Khammam"
 ],
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/khammam"
+    canonical: "https://www.digitalmarketingtenx.com/khammam"
   }
 };
 
@@ -36,3 +36,4 @@ export default function LocationPage() {
     </>
   );
 }
+

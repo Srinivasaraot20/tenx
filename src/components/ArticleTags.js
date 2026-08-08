@@ -14,3 +14,4 @@ export default function ArticleTags({ tags = [] }) {
     </div>
   );
 }
+

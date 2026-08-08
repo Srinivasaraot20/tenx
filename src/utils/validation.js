@@ -41,3 +41,4 @@ export function validateForm(formName, payload) {
   const isValid = Object.keys(errors).length === 0;
   return { valid: isValid, errors, data: { ...sanitized, formName } };
 }
+

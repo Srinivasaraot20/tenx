@@ -99,3 +99,4 @@ export default function Newsletter({ id = "blog-newsletter" }) {
     </div>
   );
 }
+

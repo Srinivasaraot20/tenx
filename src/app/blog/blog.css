@@ -598,7 +598,6 @@
   overflow: hidden;
   transition: var(--transition);
   display: flex;
-  flex-direction: column;
 }
 
 .article-card:hover {

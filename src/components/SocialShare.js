@@ -51,3 +51,4 @@ export default function SocialShare({ url, title, compact = false }) {
     </div>
   );
 }
+

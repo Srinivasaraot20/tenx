@@ -15,10 +15,11 @@ export const metadata = {
   title: "Best Google Ads Services in Hyderabad | Digital TenX",
   description: "Get the best Google Ads services in Hyderabad with targeted PPC campaigns, expert management, conversion tracking, data-driven optimization. Get started today!",
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/services/google-ads"
+    canonical: "https://www.digitalmarketingtenx.com/services/google-ads"
   }
 };
 
 export default function Layout({ children }) {
   return children;
 }
+

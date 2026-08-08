@@ -14,3 +14,4 @@ export default function RelatedPosts({ posts = [] }) {
     </section>
   );
 }
+

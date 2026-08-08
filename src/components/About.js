@@ -31,29 +31,6 @@ export default function About() {
           Whether you are a startup looking to build your online presence, a local business aiming to attract more customers, or an established brand seeking scalable growth, our digital marketing experts in Hyderabad create strategies aligned with your goals, audience, and industry.
         </p>
 
-        {/* Structured Answer Support (Checklist) */}
-        <div style={{ textAlign: "left", maxWidth: "900px", width: "100%", marginBottom: "24px" }}>
-          <h3 style={{ fontSize: "18px", color: "#0f172a", marginBottom: "12px", fontWeight: "700" }}>Our Digital Growth Checklist:</h3>
-          <ul style={{ listStyleType: "none", padding: "0", margin: "0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
-            <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> AI-Powered SEO Strategies
-            </li>
-            <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> High-Converting Google Ads
-            </li>
-            <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> Targeted Social Media Marketing
-            </li>
-            <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "15px", color: "#64748b" }}>
-              <span style={{ color: "#ff5722", fontWeight: "bold" }}>✓</span> Performance-Driven Web Design
-            </li>
-          </ul>
-        </div>
-
-        {/* Top Summary Answer */}
-        <div style={{ backgroundColor: "#f9f9ff", padding: "16px", borderRadius: "8px", marginBottom: "48px", borderLeft: "4px solid var(--primary)", maxWidth: "900px", width: "100%", textAlign: "left" }}>
-          <strong>Bottom Line:</strong> If you need the best digital marketing agency in Hyderabad to scale your business, Digital TenX offers comprehensive, data-driven solutions tailored for startups and enterprises alike.
-        </div>
 
         {/* Responsive Features Grid */}
         <div className="about-features-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(480px, 1fr))", gap: "24px", width: "100%", textAlign: "left" }}>
@@ -151,4 +128,5 @@ export default function About() {
     </section>
   );
 }
+
 

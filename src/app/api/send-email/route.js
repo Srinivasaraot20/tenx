@@ -78,3 +78,4 @@ export async function POST(request) {
     return NextResponse.json({ success: false, message: 'Unable to send email' }, { status });
   }
 }
+

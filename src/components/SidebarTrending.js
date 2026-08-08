@@ -26,3 +26,4 @@ function TrendList({ title, items }) {
 export default function SidebarTrending({ data }) {
   return null;
 }
+

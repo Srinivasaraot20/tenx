@@ -209,8 +209,8 @@ a{text-decoration:none;color:inherit}
 .hero{padding:clamp(10px, 2vw, 20px) var(--space-fluid-section-px);display:flex;align-items:center;justify-content:space-between;gap:4vw;background:linear-gradient(135deg,#fff 60%,#fff8f3 100%);position:relative;overflow:hidden;min-height:calc(100vh - 100px);max-height:900px}
 .hero-badge{display:inline-block;background:#fff5ee;color:#ff5722;font-size:var(--font-fluid-small);font-weight:600;padding:5px clamp(10px, 1.5vw, 16px);border-radius:20px;margin-bottom:clamp(12px, 2vw, 20px);border:1px solid #ffd6b0}
 .hero-content{flex:1 1 50%;max-width:750px;display:flex;flex-direction:column;justify-content:center}
-.hero h1{font-size:calc(var(--font-fluid-h1) * 1.15);font-weight:900;line-height:1.15;max-width:100%;margin-bottom:16px}
-.hero h1 span{color:#1d4ed8;display:inline-block}
+.hero h1{font-size:calc(var(--font-fluid-h1) * 1.15);font-weight:900;line-height:1.15;max-width:100%;margin-bottom:16px;color:#1F2A7A}
+.hero h1 span{color:#1F2A7A;display:inline-block}
 .hero p{font-size:calc(var(--font-fluid-p) * 1.05);color:#555;max-width:100%;line-height:1.6;margin-bottom:clamp(16px, 2vw, 24px)}
 .hero-btns{display:flex;gap:var(--space-fluid-gap-sm);flex-wrap:wrap;margin-bottom:8px}
 
@@ -224,7 +224,7 @@ a{text-decoration:none;color:inherit}
 
 .hero-visual{position:relative;flex:1 1 50%;display:flex;justify-content:center;align-items:center}
 .globe-wrap{width:100%;max-width:680px;height:auto;position:relative;z-index:2}
-.globe-img{width:100%;height:auto;object-fit:contain;animation:float 6s ease-in-out infinite;transition:transform .4s ease}
+.globe-img{width:100%;height:auto;object-fit:contain;transition:transform .4s ease}
 .globe-img:hover{transform:translateY(-8px) scale(1.03)}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 
@@ -903,15 +903,24 @@ a{text-decoration:none;color:inherit}
 .cta-card-wrapper {
   width: 100%;
   max-width: min(100%, 1100px);
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-bottom: 5px solid #ff5722;
-  border-radius: 24px;
-  padding: clamp(30px, 6vw, 60px) clamp(20px, 4vw, 40px);
+  background: radial-gradient(circle at top, #fff9f6 0%, #fffdfa 100%);
+  border: 1px solid rgba(255, 87, 34, 0.1);
+  border-radius: 32px;
+  padding: clamp(40px, 6vw, 70px) clamp(20px, 4vw, 40px);
   text-align: center;
   position: relative;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
   overflow: hidden;
+}
+
+.cta-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #ff5722;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
 }
 .cta-grid-bg {
   position: absolute;
@@ -934,17 +943,17 @@ a{text-decoration:none;color:inherit}
 }
 .cta-card-content h2 {
   font-size: var(--font-fluid-h2);
-  font-weight: 850;
-  color: #1a1a2e;
+  font-weight: 900;
+  color: #0f172a;
   margin-bottom: 16px;
   letter-spacing: -0.5px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 .cta-card-content p {
   font-size: var(--font-fluid-p);
-  color: #555;
+  color: #475569;
   line-height: 1.6;
-  margin-bottom: clamp(16px, 2.5vw, 32px);
+  margin-bottom: clamp(24px, 3vw, 40px);
 }
 .cta-card-buttons {
   display: flex;
@@ -1040,19 +1049,19 @@ a{text-decoration:none;color:inherit}
 }
 
 /* ── FOOTER ── */
-footer{background:#1a1a2e;color:#ccc;padding:var(--space-fluid-section-py) var(--space-fluid-section-px);display:grid;grid-template-columns:repeat(auto-fit, minmax(min(200px, 100%), 1fr));gap:var(--space-fluid-gap-md)}
-footer h4{color:#fff;font-size:var(--font-fluid-small);font-weight:700;margin-bottom:16px}
+footer{background:#222238;color:rgba(255,255,255,0.96);padding:var(--space-fluid-section-py) var(--space-fluid-section-px);display:grid;grid-template-columns:repeat(auto-fit, minmax(min(200px, 100%), 1fr));gap:var(--space-fluid-gap-md)}
+footer h3, footer h4{color:#FFFFFF;font-size:var(--font-fluid-small);font-weight:700;margin-bottom:16px}
 footer ul{list-style:none}
-footer ul li{margin-bottom:10px;font-size:clamp(11.5px, 0.9vw, 13px);color:#999}
-footer ul li a:hover{color:#ff5722}
+footer ul li{margin-bottom:10px;font-size:clamp(11.5px, 0.9vw, 13px);color:rgba(255,255,255,0.96)}
+footer ul li a:hover{color:#FF6B00}
 .footer-brand .logo{color:#fff;margin-bottom:12px}
-.footer-brand p{font-size:clamp(11.5px, 0.9vw, 13px);color:#888;line-height:1.6;margin-bottom:16px}
+.footer-brand p{font-size:clamp(11.5px, 0.9vw, 13px);color:rgba(255,255,255,0.96);line-height:1.6;margin-bottom:16px}
 .social-links{display:flex;gap:10px;margin-bottom:16px}
 .social-links a{width:32px;height:32px;border-radius:6px;background:#2a2a3e;display:flex;align-items:center;justify-content:center;font-size:14px;color:#ccc}
-.social-links a:hover{background:#ff5722;color:#fff}
-.footer-bottom{background:#111827;text-align:center;padding:16px;font-size:12px;color:#666}
-.contact-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:12px;font-size:13px;color:#999}
-.contact-item span:first-child{color:#ff5722;flex-shrink:0;margin-top:2px}
+.social-links a:hover{background:#FF6B00;color:#fff}
+.footer-bottom{background:#19192A;text-align:center;padding:16px;font-size:12px;color:rgba(255,255,255,0.85)}
+.contact-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:12px;font-size:13px;color:rgba(255,255,255,0.96)}
+.contact-item > span:first-child, .contact-item > a > span:first-child {color:#FF6B00;flex-shrink:0;margin-top:2px}
 
 /* ── FLOATING ── */
 .float-btns{position:fixed;right:clamp(12px, 3vw, 24px);bottom:clamp(20px, 4vh, 40px);display:flex;flex-direction:column;gap:clamp(8px, 1.5vh, 14px);z-index:999}
@@ -3019,5 +3028,49 @@ body.modal-open-lock {
   }
   .ind-card p {
     font-size: 0.9rem;
+  }
+}
+
+.desktop-address { display: none; }
+.mobile-address { display: inline; }
+
+@media (min-width: 1024px) {
+  .desktop-address { display: inline; }
+  .mobile-address { display: none; }
+
+  /* Removed horizontal spacing as Resources and Legal are now combined */
+  
+  /* Align all section headings on the same baseline */
+  footer h3 {
+    height: 28px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 24px;
+  }
+  
+  /* Email icon and text same line, proper spacing */
+  .desktop-contact-item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+  }
+  
+  /* Address alignment and indentation */
+  .desktop-address-text {
+    line-height: 1.7;
+    margin-left: 4px;
+  }
+  
+  .desktop-contact-item[style] {
+    gap: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: clamp(25px, 7vw, 29px) !important;
+    letter-spacing: -1px !important;
+    line-height: 1.2 !important;
   }
 }

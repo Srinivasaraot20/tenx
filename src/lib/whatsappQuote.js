@@ -27,3 +27,4 @@ export function openWhatsAppQuote(serviceName) {
 
   window.open(url, "_blank");
 }
+

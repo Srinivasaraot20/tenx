@@ -49,7 +49,7 @@ export async function POST(req) {
           <p><strong>Name:</strong> ${newComment.name}</p>
           <p><strong>Email:</strong> ${newComment.email}</p>
           <p><strong>Comment:</strong> ${newComment.content}</p>
-          <p><a href="https://digitalmarketingtenx.com/admin/comments">Review Comment</a></p>
+          <p><a href="https://www.digitalmarketingtenx.com/admin/comments">Review Comment</a></p>
         `
       }).catch(err => console.error("Email notification error:", err));
     });
@@ -88,3 +88,4 @@ export async function GET(req) {
     return NextResponse.json({ ok: false, error: "Internal Server Error" }, { status: 500 });
   }
 }
+

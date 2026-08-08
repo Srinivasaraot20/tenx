@@ -161,11 +161,11 @@ export default function WhatsAppAutomationPage() {
 
   // Industry-specific tabs data
   const caseTabs = [
-    { name: "Lead Generation", title: "Automated Lead Capturing & Scoring", desc: "Capture cold traffic from search, social ads, and offline print media directly into a qualified WhatsApp database.", items: ["Custom greeting sequences", "Automated budget/sector screening", "Live dashboard notification alerts", "Immediate CRM contact updates"] },
-    { name: "E-Commerce", title: "Cart Recovery & Order Notifications", desc: "Boost store checkouts and improve retention rates by re-engaging abandoned cart users directly on their mobile screens.", items: ["Automated abandoned cart coupons", "Live order dispatch alerts", "Interactive product catalog sheets", "Automated customer review requests"] },
-    { name: "Healthcare", title: "Appointment Booking & Medical Reminders", desc: "Automate patient scheduling, reduce no-shows, and deliver test reports securely over WhatsApp.", items: ["Automated calendar slots booking", "Reports download PDFs delivery", "Pre-appointment prep guidelines", "Doctor availability checks"] },
-    { name: "Real Estate", title: "Qualified Buyer Triage & Listings", desc: "Handle property queries, share catalog brochures, and qualify buyers automatically before agent visits.", items: ["Property catalog PDFs delivery", "Buyer budget & location screening", "Automated site visit scheduling", "New listings alerts broadcasting"] },
-    { name: "Education", title: "Admissions Intake & Course Info", desc: "Nurture students, answer fee inquiries, and automate admission forms collections.", items: ["Course syllabus brochures sharing", "Fee schedule tables delivery", "Interview slots scheduling", "Documents upload collection"] }
+    { name: "🏥 Healthcare", title: "Appointment Booking & Medical Reminders", desc: "Automate patient scheduling, reduce no-shows, and deliver test reports securely over WhatsApp.", items: ["Automated calendar slots booking", "Reports download PDFs delivery", "Pre-appointment prep guidelines", "Doctor availability checks"] },
+    { name: "🏢 Real Estate", title: "Qualified Buyer Triage & Listings", desc: "Handle property queries, share catalog brochures, and qualify buyers automatically before agent visits.", items: ["Property catalog PDFs delivery", "Buyer budget & location screening", "Automated site visit scheduling", "New listings alerts broadcasting"] },
+    { name: "🎓 Education", title: "Admissions Intake & Course Info", desc: "Nurture students, answer fee inquiries, and automate admission forms collections.", items: ["Course syllabus brochures sharing", "Fee schedule tables delivery", "Interview slots scheduling", "Documents upload collection"] },
+    { name: "🛒 E-Commerce", title: "Cart Recovery & Order Notifications", desc: "Boost store checkouts and improve retention rates by re-engaging abandoned cart users directly on their mobile screens.", items: ["Automated abandoned cart coupons", "Live order dispatch alerts", "Interactive product catalog sheets", "Automated customer review requests"] },
+    { name: "💼 Professional Services", title: "Automated Lead Capturing & Support", desc: "Capture cold traffic, schedule consultations, and provide instant support for your professional service firm.", items: ["Custom greeting sequences", "Automated budget/sector screening", "Consultation slot scheduling", "Immediate CRM contact updates"] }
   ];
 
   // 10 Automation Templates previews
@@ -191,26 +191,11 @@ export default function WhatsAppAutomationPage() {
 
   // 20 accordion FAQ questions
   const faqs = [
-    { q: "What is the WhatsApp Business API?", a: "The WhatsApp Business API is a developer platform designed for medium and large companies to automate conversations, connect CRM systems, and send bulk notification broadcasts at scale. It requires approval from Meta and utilizes authorized API servers." },
-    { q: "How is it different from the standard WhatsApp Business App?", a: "The standard app is free for small local businesses, limited to 1 user or few connected devices, and does not support custom database CRM integrations, multi-agent chatbots, or automated broadcast campaigns. The API removes these limits and enables advanced workflow automation." },
-    { q: "Do my messages need to be approved by Meta?", a: "Only business-initiated outbound template messages (like broadcasts, payment reminders, or shipping updates) require prior approval from Meta. Inbound replies or user-initiated conversations can be fully custom without template approval." },
-    { q: "Can my phone number get blocked?", a: "By using the official Meta WhatsApp Business API and complying with Meta's guidelines (permission-based messaging, high-quality template updates), your number remains secure from blocks. We handle the entire compliance routing setup." },
-    { q: "Can we integrate this with HubSpot or Zoho CRM?", a: "Yes, we integrate WhatsApp API flows directly with major CRMs (HubSpot, Zoho, Salesforce) and sheets. This allows your team to view chat histories and update lead status directly inside your CRM." },
-    { q: "Can a human agent take over a chatbot conversation?", a: "Absolutely. Our triage systems are built for seamless agent handover. Whenever a user requests a human agent or answers a complex support query, the system instantly alerts your support team and assigns the chat to a live inbox." },
-    { q: "Is there a limit to the number of broadcast messages we can send?", a: "Meta categorizes API accounts into messaging tiers starting at 1,000 unique customers per day, scaling up to 10,000, 100,000, and unlimited. The tier automatically upgrades based on message volume and quality scores." },
-    { q: "Do you provide a custom team inbox dashboard?", a: "Yes, we build a multi-agent shared team inbox dashboard. This allows your sales, support, and billing teams to log in simultaneously, manage chats, assign tickets, and view analytics reports." },
-    { q: "Can we automate appointment bookings?", a: "Yes, we integrate the API with scheduling engines (Google Calendar, Calendly). The chatbot checks real-time availability, displays slots, books appointments, and triggers follow-up reminders." },
-    { q: "How do WhatsApp conversation charges work?", a: "Meta charges on a 24-hour conversation window basis. The pricing varies by region and category (Marketing, Utility, Authentication, Service). We will audit your usage and set up the most cost-efficient structure." },
-    { q: "Can we send catalogs, images, and PDF proposals?", a: "Yes. The API supports rich media attachments including high-res product catalogs, images, PDF brochures, video guides, and interactive buttons." },
-    { q: "Is the data secure and GDPR compliant?", a: "Yes. All conversations are end-to-end encrypted through Meta API routing. We follow secure customer database structures and permission-based opt-in flows to ensure compliance with GDPR and local data privacy laws." },
-    { q: "Do you build custom chatbots using AI?", a: "Yes, we build custom AI chatbots powered by OpenAI's GPT models. We train the AI on your business database, FAQ lists, and product catalogs to provide highly accurate, human-like answers." },
-    { q: "Can we integrate this with Shopify or WooCommerce?", a: "Yes, we integrate WhatsApp flows directly with Shopify and WooCommerce to trigger automated alerts for abandoned carts, order status updates, and tracking details." },
-    { q: "How long does the setup process take?", a: "Setting up the API, getting Meta credentials approved, and launching basic greeting/routing flows typically takes 7 to 10 business days. Custom AI database chatbots require 2 to 3 weeks." },
-    { q: "Do you assist in getting the green verified checkmark?", a: "Yes, we assist in submitting your business profile to Meta for verification. Meta reviews factors like brand authority, search index listings, and API usage history to grant the official green checkmark badge." },
-    { q: "Can we set up automated payment reminders?", a: "Yes, the system can monitor unpaid invoice deadlines in your billing software and automatically broadcast reminders along with payment gateway links." },
-    { q: "Can we run WhatsApp campaigns for festivals and promotions?", a: "Yes, you can broadcast promotional offers, coupon codes, and festival greetings to customers who have opted-in to receive updates." },
-    { q: "What analytics metrics can we track?", a: "Our dashboard reports real-time statistics for message delivery rates, read rates, click-through rates, average customer response times, chatbot conversion rates, and agent metrics." },
-    { q: "Do you offer monthly maintenance and optimization?", a: "Yes, we offer ongoing maintenance packages. We update template scripts, audit conversation charges to optimize costs, retrain AI chatbot models, and update CRM integrations monthly." }
+    { q: "1. What Are WhatsApp Automation Services?", a: "WhatsApp Automation Services automate customer conversations, instant replies, lead generation, follow-ups, and support using the official WhatsApp Business API." },
+    { q: "2. How Does WhatsApp Business Automation Work?", a: "It uses AI chatbots and automated workflows to respond instantly, qualify leads, schedule appointments, and connect with your CRM." },
+    { q: "3. Can WhatsApp Automation Generate More Leads?", a: "Yes. It captures, qualifies, and nurtures leads automatically, helping increase conversions and improve customer engagement." },
+    { q: "4. Can You Integrate WhatsApp With My CRM?", a: "Yes. We integrate WhatsApp with HubSpot, Zoho CRM, Salesforce, Shopify, WooCommerce, Google Sheets, and more." },
+    { q: "5. Why Choose Digital Marketing TenX for WhatsApp Automation Services in Hyderabad?", a: "We deliver customized WhatsApp automation, AI chatbots, CRM integrations, and lead generation solutions to help businesses grow faster." }
   ];
 
   const integrationTools = [
@@ -318,7 +303,8 @@ export default function WhatsAppAutomationPage() {
             <div className="wa-hero-content">
               <span className="wa-badge-premium">💬 AI-Powered WhatsApp Automation</span>
               <h1>
-                WhatsApp Automation Services in Hyderabad<br />
+                WhatsApp Automation<br />
+                Services in Hyderabad<br />
                 That <span className="wa-text-green">Convert More Customers</span>
               </h1>
               <p>
@@ -632,10 +618,10 @@ export default function WhatsAppAutomationPage() {
         <section className="wa-section wa-section-light">
           <div className="wa-grid-content">
             <div className="wa-title-centered">
-              <span className="eyebrow">Industry Applications</span>
-              <h2>Tailored Use Cases for Every Sector</h2>
+              <span className="eyebrow">USE CASES BY INDUSTRY</span>
+              <h2>WhatsApp Automation Solutions for Every Industry</h2>
               <p>
-                Explore how different business categories utilize WhatsApp workflows to optimize lead qualification and updates.
+                Discover how businesses across different industries use WhatsApp Automation Services to generate leads, automate customer communication, and improve conversions.
               </p>
             </div>
 
@@ -688,7 +674,7 @@ export default function WhatsAppAutomationPage() {
               <span className="eyebrow">Seamless Connections</span>
               <h2>Works Seamlessly with Your Existing Tools</h2>
               <p>
-                Our API integrations link WhatsApp directly with your sales, marketing, support, and billing apps.
+                Integrate WhatsApp Business Automation with HubSpot, Zoho CRM, Salesforce, Shopify, Google Sheets, and 100+ business tools to automate communication and improve team productivity.
               </p>
             </div>
 
@@ -768,117 +754,7 @@ export default function WhatsAppAutomationPage() {
                 </div>
               </div>
 
-              {/* Right Column: Central Hub */}
-              <div className="wa-hub-card wa-glass-card">
-                <div className="wa-hub-header">
-                  <div className="wa-hub-header-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                    </svg>
-                  </div>
-                  <div className="wa-hub-header-info">
-                    <h3>Central Communication Hub</h3>
-                    <p>One unified API connection routing WhatsApp to all your cloud software stacks.</p>
-                  </div>
-                </div>
 
-                <div className="wa-hub-diagram-wrapper">
-                  {/* Dynamic Dotted Lines using responsive percentage coordinates */}
-                  <svg className="wa-hub-svg-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <line x1="50" y1="50" x2="50" y2="15" stroke="rgba(16, 185, 129, 0.2)" strokeWidth="0.6" strokeDasharray="1.5 1.5" />
-                    <line x1="50" y1="50" x2="82" y2="30" stroke="rgba(16, 185, 129, 0.2)" strokeWidth="0.6" strokeDasharray="1.5 1.5" />
-                    <line x1="50" y1="50" x2="82" y2="70" stroke="rgba(16, 185, 129, 0.2)" strokeWidth="0.6" strokeDasharray="1.5 1.5" />
-                    <line x1="50" y1="50" x2="50" y2="85" stroke="rgba(16, 185, 129, 0.2)" strokeWidth="0.6" strokeDasharray="1.5 1.5" />
-                    <line x1="50" y1="50" x2="18" y2="70" stroke="rgba(16, 185, 129, 0.2)" strokeWidth="0.6" strokeDasharray="1.5 1.5" />
-                    <line x1="50" y1="50" x2="18" y2="30" stroke="rgba(16, 185, 129, 0.2)" strokeWidth="0.6" strokeDasharray="1.5 1.5" />
-                  </svg>
-
-                  {/* Center Node: WhatsApp */}
-                  <div className="wa-hub-node-center">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-                      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.632 3.977 14.159 2.95 11.53 2.95c-5.439 0-9.863 4.372-9.867 9.802-.001 1.73.457 3.415 1.328 4.922l-1.02 3.722 3.821-.99c1.5.82 3.03 1.25 4.54 1.25zM17.5 13.9c-.3-.15-1.78-.88-2.06-.98-.28-.1-.49-.15-.69.15-.2.3-.77.98-.95 1.18-.18.2-.36.23-.66.08-.3-.15-1.27-.47-2.42-1.5-1-.89-1.67-2-1.87-2.35-.2-.3-.02-.47.13-.62.14-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.07-.15-.69-1.65-.95-2.27-.25-.62-.53-.53-.73-.54-.19-.01-.41-.01-.63-.01-.22 0-.58.08-.88.4-.3.32-1.15 1.12-1.15 2.73s1.17 3.16 1.33 3.38c.16.22 2.3 3.52 5.58 4.94.78.34 1.39.54 1.86.69.78.25 1.5.21 2.06.13.62-.09 1.78-.73 2.03-1.43.25-.7.25-1.29.17-1.43-.08-.14-.28-.23-.58-.38z"/>
-                    </svg>
-                  </div>
-
-                  {/* Outer Nodes */}
-                  <div className="wa-hub-node node-crm">
-                    <span className="wa-node-label">CRM</span>
-                    <div className="wa-node-icon purple">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div className="wa-hub-node node-marketing">
-                    <div className="wa-node-icon orange">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-                      </svg>
-                    </div>
-                    <span className="wa-node-label">Marketing</span>
-                  </div>
-
-                  <div className="wa-hub-node node-support">
-                    <div className="wa-node-icon blue">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
-                      </svg>
-                    </div>
-                    <span className="wa-node-label">Support</span>
-                  </div>
-
-                  <div className="wa-hub-node node-billing">
-                    <div className="wa-node-icon purple">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
-                        <line x1="2" y1="10" x2="22" y2="10"></line>
-                      </svg>
-                    </div>
-                    <span className="wa-node-label">Billing</span>
-                  </div>
-
-                  <div className="wa-hub-node node-analytics">
-                    <span className="wa-node-label">Analytics</span>
-                    <div className="wa-node-icon green">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <line x1="18" y1="20" x2="18" y2="10"></line>
-                        <line x1="12" y1="20" x2="12" y2="4"></line>
-                        <line x1="6" y1="20" x2="6" y2="14"></line>
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div className="wa-hub-node node-automation">
-                    <span className="wa-node-label">Automation</span>
-                    <div className="wa-node-icon orange">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Footer Trusted by */}
-                <div className="wa-hub-trust-footer">
-                  <div className="wa-hub-trust-text">
-                    <span className="wa-hub-check-badge">✔</span>
-                    <span>Trusted by 500+ businesses worldwide</span>
-                  </div>
-                  <div className="wa-hub-avatars">
-                    <div className="wa-avatar-circle a1"></div>
-                    <div className="wa-avatar-circle a2"></div>
-                    <div className="wa-avatar-circle a3"></div>
-                    <div className="wa-avatar-circle a4"></div>
-                    <div className="wa-avatar-plus">+500</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -887,10 +763,10 @@ export default function WhatsAppAutomationPage() {
         <section className="wa-section wa-section-light">
           <div className="wa-grid-content">
             <div className="wa-title-centered">
-              <span className="eyebrow">Ready-to-Use Solutions</span>
-              <h2>Pre-configured Conversation Templates</h2>
+              <span className="eyebrow">READY-TO-USE AUTOMATION FLOWS</span>
+              <h2>Pre-Built WhatsApp Automation Templates</h2>
               <p>
-                Swipe through our pre-built notification sequences designed for instant customer engagement.
+                Launch proven WhatsApp automation workflows for lead generation, customer support, appointment booking, sales, and follow-ups without building everything from scratch.
               </p>
             </div>
 
@@ -958,10 +834,10 @@ export default function WhatsAppAutomationPage() {
         <section className="wa-section wa-section-light">
           <div className="wa-grid-content">
             <div className="wa-title-centered">
-              <span className="eyebrow">Enterprise Security</span>
-              <h2>Security & Compliance parameters</h2>
+              <span className="eyebrow">ENTERPRISE-GRADE SECURITY</span>
+              <h2>Secure, Reliable & Compliant WhatsApp Automation</h2>
               <p>
-                All message routing and contact data integrations follow global security guidelines.
+                Protect customer conversations with enterprise-grade security, official WhatsApp Business API, encrypted messaging, and industry-standard compliance.
               </p>
             </div>
 
@@ -971,31 +847,31 @@ export default function WhatsAppAutomationPage() {
                 <div className="wa-security-card wa-glass-card">
                   <div className="wa-sec-icon">🔒</div>
                   <h3>End-to-End Encryption</h3>
-                  <p>All message data routed through the official Meta API utilizes strict encryption.</p>
+                  <p>Every customer conversation is securely encrypted to ensure complete privacy and data protection.</p>
                 </div>
                 <div className="wa-security-card wa-glass-card">
                   <div className="wa-sec-icon">🇪🇺</div>
-                  <h3>GDPR Compliant</h3>
-                  <p>Permission-based opt-in templates protect client contact database information.</p>
+                  <h3>GDPR & Data Privacy Compliance</h3>
+                  <p>Customer information is handled securely using global privacy standards and consent-based messaging.</p>
                 </div>
                 <div className="wa-security-card wa-glass-card">
                   <div className="wa-sec-icon">☁</div>
-                  <h3>99.9% Server Uptime</h3>
-                  <p>Hosted on highly redundant cloud networks to guarantee round-the-clock message delivery.</p>
+                  <h3>99.9% Platform Uptime</h3>
+                  <p>Experience reliable message delivery with enterprise cloud infrastructure and uninterrupted availability.</p>
                 </div>
                 <div className="wa-security-card wa-glass-card">
                   <div className="wa-sec-icon">🛡</div>
-                  <h3>Official API Verified</h3>
-                  <p>Official WhatsApp Business profiles prevent spam filtering or block risks.</p>
+                  <h3>Official WhatsApp Business API</h3>
+                  <p>Built using Meta's official WhatsApp Business API for secure messaging, verified accounts, and scalable automation.</p>
                 </div>
               </div>
 
               {/* Right Column Shield graphic */}
               <div className="wa-security-visual">
                 <div className="wa-security-shield-icon">✔</div>
-                <h3>Enterprise Security Certified</h3>
-                <p>Your database and marketing contacts are fully protected.</p>
-                <div className="wa-compliance-check">GDPR compliant</div>
+                <h3>Enterprise-Level Security</h3>
+                <p>Your customer data, conversations, and business communications remain protected through secure infrastructure, encrypted messaging, and trusted WhatsApp Business API technology.</p>
+                <div className="wa-compliance-check">Official & Secure</div>
               </div>
             </div>
           </div>
@@ -1022,10 +898,10 @@ export default function WhatsAppAutomationPage() {
             <div className="seo-grid">
               <div className="seo-faqs-col">
                 <div className="sec-title">
-                  <span className="eyebrow">Got Questions?</span>
-                  <h2>Frequently Asked Inquiries About WhatsApp API</h2>
+                  <span className="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+                  <h2>Frequently Asked Questions About WhatsApp Automation Services</h2>
                   <p>
-                    Find comprehensive answers to setup requirements, message costs, and CRM connections.
+                    Find answers to common questions about WhatsApp Business Automation, API integration, chatbots, CRM connectivity, pricing, and business automation.
                   </p>
                 </div>
 
@@ -1065,16 +941,16 @@ export default function WhatsAppAutomationPage() {
           <div className="cta-card-wrapper">
             <div className="cta-grid-bg"></div>
             <div className="cta-card-content">
-              <h2>Ready to Automate Your Customer Communication?</h2>
+              <h2>Ready to Grow Your Business with WhatsApp Automation?</h2>
               <p>
-                Transform customer engagement with intelligent WhatsApp automation that saves time, increases conversions, and scales your business.
+                Automate customer conversations, capture more leads, and improve response times with our WhatsApp Automation Services in Hyderabad. Let our experts build a solution tailored to your business.
               </p>
               <div className="cta-card-buttons">
                 <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal", { detail: { service: "WhatsApp Automation" } }))}>
-                  📅 Book Free Consultation
+                  📅 Get Free Consultation
                 </button>
                 <button className="btn-outline" onClick={() => openWhatsAppQuote("WhatsApp Automation – Live Demo")}>
-                  ▶ Schedule Live Demo
+                  ▶ Book A Live Demo
                 </button>
               </div>
             </div>
@@ -1089,3 +965,4 @@ export default function WhatsAppAutomationPage() {
     </div>
   );
 }
+

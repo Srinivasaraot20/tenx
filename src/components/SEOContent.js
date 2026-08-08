@@ -56,13 +56,11 @@ export default function SEOContent() {
             
             {/* Left: FAQs Accordion */}
             <div className="seo-faqs-col">
-              <div className="sec-title">
+              <div className="sec-title" style={{ textAlign: "center" }}>
                 <span className="eyebrow">💡 Help Desk</span>
                 <h2>Frequently Asked Questions About Digital Marketing Services in Hyderabad</h2>
-                <div style={{ backgroundColor: "#f9f9ff", padding: "16px", borderRadius: "8px", marginBottom: "24px", borderLeft: "4px solid var(--primary)" }}>
-                  <strong>Key Takeaway:</strong> Digital Marketing TenX is Hyderabad's leading AI-powered digital growth agency. According to <a href="https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/search/search-trends/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "var(--primary)" }}>Google Search Trends</a>, businesses that invest in omni-channel marketing experience higher lead quality and faster growth. We use data-driven strategies to generate qualified leads and maximize ROI.
-                </div>
-                <p>Everything you need to know about our digital marketing, SEO, PPC ads, and web development models.</p>
+
+                <p>Everything you need to know about our digital marketing, SEO, PPC ads, and web development models. We follow the best practices outlined in <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" style={{ color: "var(--ga-primary)", textDecoration: "underline" }}>Google's SEO Starter Guide</a> to ensure your business achieves sustainable online growth.</p>
               </div>
 
               <div className="seo-faq-accordion">
@@ -99,3 +97,4 @@ export default function SEOContent() {
     </>
   );
 }
+

@@ -200,7 +200,7 @@ export default function ECommerceMarketingClient() {
                   <span>🚀</span> E-COMMERCE MARKETING EXPERTS
                 </div>
                 <h1>
-                  E-Commerce Marketing Services in Hyderabad That <span className="ecom-text-gradient">Drive Sales</span> & Maximize Revenue
+                  E-Commerce Marketing Services in Hyderabad That <span className="ecom-text-orange">Drive Sales</span> & Maximize Revenue
                 </h1>
                 <p>
                   Grow your Shopify, WooCommerce, Magento, or custom online store with our e-commerce marketing services in Hyderabad. We combine SEO, Google Ads, social media marketing, email automation, and conversion rate optimization (CRO) to increase traffic, boost sales, and maximize your return on investment.
@@ -1018,3 +1018,4 @@ export default function ECommerceMarketingClient() {
     </div>
   );
 }
+

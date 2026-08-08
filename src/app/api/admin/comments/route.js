@@ -55,3 +55,4 @@ export async function DELETE(req) {
     return NextResponse.json({ success: false, error: 'Failed to delete comments' }, { status: 500 });
   }
 }
+

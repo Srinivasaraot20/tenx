@@ -61,3 +61,4 @@ export async function PATCH(req) {
     return NextResponse.json({ success: false, error: 'Failed to update notification' }, { status: 500 });
   }
 }
+

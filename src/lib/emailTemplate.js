@@ -85,3 +85,4 @@ export function generateEmailHtml(formName, data) {
   </html>
   `;
 }
+

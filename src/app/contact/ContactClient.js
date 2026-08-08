@@ -17,28 +17,11 @@ export default function ContactClient() {
 
   const [formData, setFormData] = useState({
     fullName: "",
-    companyName: "",
-    email: "",
     phone: "",
-    whatsApp: "",
-    website: "",
-    businessLocation: "",
-    businessType: "",
-    industry: "",
-    services: {
-      seo: false,
-      googleAds: false,
-      websiteDesign: false,
-      socialMedia: false,
-      ecommerce: false,
-      whatsappAutomation: false,
-      aiAutomation: false,
-    },
-    budget: "",
-    timeline: "",
-    projectDescription: "",
-    contactMethod: "Email",
-    agreePrivacy: false,
+    email: "",
+    companyName: "",
+    serviceRequired: "",
+    message: ""
   });
 
   const [errors, setErrors] = useState({});
@@ -76,38 +59,27 @@ export default function ContactClient() {
         });
         
         const serviceKeyMap = {
-          "seo": "seo",
-          "google-ads": "googleAds",
-          "website-design": "websiteDesign",
-          "social-media": "socialMedia",
-          "ecommerce": "ecommerce",
-          "whatsapp-automation": "whatsappAutomation"
+          "seo": "SEO",
+          "google-ads": "Google Ads",
+          "website-design": "Website Design",
+          "social-media": "Social Media Marketing",
+          "ecommerce": "E-Commerce Marketing",
+          "whatsapp-automation": "WhatsApp Automation"
         };
         
         const key = serviceKeyMap[serviceId];
         if (key) {
           setFormData(prev => ({
             ...prev,
-            services: {
-              ...prev.services,
-              [key]: true
-            },
-            projectDescription: `[Selected Package: ${serviceData.title} - ${packageData.name} (${packageData.price}${packageData.period || ""})]\n\n`
+            serviceRequired: key,
+            message: `[Selected Package: ${serviceData.title} - ${packageData.name} (${packageData.price}${packageData.period || ""})]\n\n`
           }));
         }
       }
     }
   }, [serviceId, packageId]);
 
-  const handleServiceCheckboxChange = (serviceKey) => {
-    setFormData((prev) => ({
-      ...prev,
-      services: {
-        ...prev.services,
-        [serviceKey]: !prev.services[serviceKey],
-      },
-    }));
-  };
+
 
   const validateForm = () => {
     const newErrors = {};
@@ -122,8 +94,8 @@ export default function ContactClient() {
     } else if (!/^\+?[0-9\s-]{10,15}$/.test(formData.phone.replace(/\s+/g, ""))) {
       newErrors.phone = "Please enter a valid phone number (10-15 digits).";
     }
-    if (!formData.agreePrivacy) {
-      newErrors.agreePrivacy = "You must agree to the Privacy Policy.";
+    if (!formData.serviceRequired) {
+      newErrors.serviceRequired = "Please select a service.";
     }
     return newErrors;
   };
@@ -162,10 +134,7 @@ export default function ContactClient() {
         if (response.status === 201 || res.success) {
           gtag.event("contact_form_success", { form_name: "contact_page_form" });
           setFormData({
-          fullName: "", companyName: "", email: "", phone: "", whatsApp: "",
-          website: "", businessLocation: "", businessType: "", industry: "",
-          services: { seo: false, googleAds: false, websiteDesign: false, socialMedia: false, ecommerce: false, whatsappAutomation: false, aiAutomation: false },
-          budget: "", timeline: "", projectDescription: "", contactMethod: "Email", agreePrivacy: false
+          fullName: "", companyName: "", email: "", phone: "", serviceRequired: "", message: ""
         });
         setShowSuccessModal(true);
       } else {
@@ -199,38 +168,11 @@ export default function ContactClient() {
   };
 
   const faqs = [
-    {
-      q: "Do you offer free consultation?",
-      a: "Yes! We offer a completely free, 30-minute growth strategy consultation. During this session, our digital marketing experts will analyze your current online presence, identify gaps, and provide actionable recommendations to increase your traffic and sales. There are no obligations."
-    },
-    {
-      q: "How quickly do you respond?",
-      a: "We respond to all contact form inquiries and emails within 2 hours during business hours (Monday to Saturday). For urgent matters, you can reach out directly via WhatsApp for instant communication with our team."
-    },
-    {
-      q: "Do you provide remote services?",
-      a: "Yes, absolutely! While our main branch is in Hyderabad, we serve clients globally. We utilize Google Meet, Zoom, Slack, and detailed real-time reporting dashboards to collaborate seamlessly with businesses worldwide."
-    },
-    {
-      q: "Do you work with international clients?",
-      a: "Yes. Digital Marketing TenX works with e-commerce stores, B2B brands, and service businesses across India, North America, Europe, the Middle East, and Southeast Asia. We align our campaign strategies with target local market behaviors."
-    },
-    {
-      q: "Can we visit your office?",
-      a: "Of course! Our physical office is located at Level 4, Gumidelli Towers, Begumpet, Hyderabad. We recommend scheduling an appointment in advance via our contact form or phone call so we can prepare for your visit."
-    },
-    {
-      q: "How do I schedule a meeting?",
-      a: "You can schedule a meeting by submitting the contact form, clicking the 'Book Free Consultation' button to trigger our calendar scheduler, or messaging us directly on WhatsApp. We will confirm a time slot that works for you."
-    },
-    {
-      q: "Do you provide website audits?",
-      a: "Yes, we do. We provide comprehensive, manual website audits covering SEO ranking factors, mobile responsiveness, page speed optimization, checkout funnel checkout leaks, and conversion rate optimization (CRO) opportunities."
-    },
-    {
-      q: "How much do your services cost?",
-      a: "Our pricing depends on the project scope, services selected, and target milestones. We offer flexible, value-based monthly retainers and project-based pricing structures designed to optimize your return on investment (ROI). All proposals are fully transparent with zero hidden fees."
-    }
+    { q: "How quickly will you respond?", a: "We usually respond within 24 business hours." },
+    { q: "Do you offer free consultations?", a: "Yes, we provide a free consultation for every new enquiry." },
+    { q: "Do you work with businesses across India?", a: "Yes, we serve clients throughout India." },
+    { q: "Can I request a custom marketing package?", a: "Yes, all our services can be customized." },
+    { q: "Do you provide monthly reports?", a: "Yes, we provide detailed performance reports for ongoing projects." }
   ];
 
   const whatsappHref = selectedPackageInfo 
@@ -246,13 +188,10 @@ export default function ContactClient() {
         <div className="con-wrap">
           <div className="con-hero-grid">
             <div className="con-hero-content">
-              <span className="con-hero-eyebrow">📞 Contact Digital Marketing TenX</span>
-              <h1>Contact <span>Digital Marketing TenX</span></h1>
-              <div className="executive-summary" style={{ background: "rgba(255, 107, 0, 0.05)", borderLeft: "4px solid #ff5722", padding: "16px", borderRadius: "0 8px 8px 0", marginBottom: "24px" }}>
-                <strong>Expert Digital Marketing Solutions for Business Growth:</strong> Looking for expert digital marketing? Our team at Digital Marketing TenX provides scalable SEO, Google Ads, and Web Development strategies for startups, SMEs, and enterprise brands across Hyderabad and globally.
-              </div>
+              <span className="con-hero-eyebrow">CONTACT US</span>
+              <h1>Let's <span style={{ color: "#ff5722" }}>Grow</span> Your Business Together</h1>
               <p>
-                Every successful business begins with the right strategy. We combine creativity, technology, AI, and performance marketing to help businesses increase visibility, generate qualified leads, and achieve long-term growth.
+                Have a project in mind? Get in touch with Digital Marketing TenX for expert SEO, Google Ads, Social Media Marketing, Website Design, and WhatsApp Automation services.
               </p>
               
               <div className="what-happens-next" style={{ marginTop: "24px", padding: "20px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
@@ -374,7 +313,7 @@ export default function ContactClient() {
               </p>
               <div className="con-card-actions">
                 <a href="mailto:info@digitalmarketingtenx.com" className="con-btn-primary" onClick={() => gtag.event("email_click", { email_address: "info@digitalmarketingtenx.com", button_location: "contact_page_card" })}>Send Email</a>
-                <a href="https://digitalmarketingtenx.com" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("website_click", { destination: "digitalmarketingtenx.com" })}>Visit Website</a>
+                <a href="https://www.digitalmarketingtenx.com" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("website_click", { destination: "digitalmarketingtenx.com" })}>Visit Website</a>
               </div>
             </div>
 
@@ -393,20 +332,6 @@ export default function ContactClient() {
         </div>
       </section>
 
-      {/* 3. INTERACTIVE GOOGLE MAP */}
-      <section className="con-section con-section-light" style={{ paddingTop: 0 }}>
-        <div className="con-wrap">
-          <div className="con-map-container">
-            <iframe 
-              className="con-map-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6666687000003!2d78.4664!3d17.4447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90a187a41295%3A0xe54e63b368739cf9!2sGumidelli%20Towers!5e0!3m2!1sen!2sin!4v1624800000000!5m2!1sen!2sin" 
-              allowFullScreen="" 
-              loading="lazy"
-              title="Google Maps Location - Digital Marketing TenX Begumpet Office"
-            ></iframe>
-          </div>
-        </div>
-      </section>
 
       {/* 4. CONTACT FORM */}
       <section className="con-section con-section-white" id="inquiry-form">
@@ -448,274 +373,54 @@ export default function ContactClient() {
 
             <form onSubmit={handleSubmit}>
               <div className="con-form-grid">
-                
                 {/* Full Name */}
-                <div className="con-form-group">
+                <div className="con-form-group con-form-group-full">
                   <label htmlFor="fullName">Full Name <span>*</span></label>
-                  <input 
-                    type="text" 
-                    id="fullName" 
-                    name="fullName"
-                    value={formData.fullName} 
-                    onChange={handleInputChange}
-                    placeholder="John Doe"
-                  />
+                  <input type="text" id="fullName" name="fullName" value={formData.fullName} onChange={handleInputChange} placeholder="John Doe" />
                   {errors.fullName && <span style={{ color: "#ef4444", fontSize: "11px" }}>{errors.fullName}</span>}
-                </div>
-
-                {/* Company Name */}
-                <div className="con-form-group">
-                  <label htmlFor="companyName">Company Name</label>
-                  <input 
-                    type="text" 
-                    id="companyName" 
-                    name="companyName"
-                    value={formData.companyName} 
-                    onChange={handleInputChange}
-                    placeholder="Acme Corporation"
-                  />
-                </div>
-
-                {/* Email */}
-                <div className="con-form-group">
-                  <label htmlFor="email">Email Address <span>*</span></label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    value={formData.email} 
-                    onChange={handleInputChange}
-                    placeholder="john@example.com"
-                  />
-                  {errors.email && <span style={{ color: "#ef4444", fontSize: "11px" }}>{errors.email}</span>}
                 </div>
 
                 {/* Phone */}
                 <div className="con-form-group">
                   <label htmlFor="phone">Phone Number <span>*</span></label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone"
-                    value={formData.phone} 
-                    onChange={handleInputChange}
-                    placeholder="+91 98765 43210"
-                  />
+                  <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="+91 98765 43210" />
                   {errors.phone && <span style={{ color: "#ef4444", fontSize: "11px" }}>{errors.phone}</span>}
                 </div>
 
-                {/* WhatsApp */}
+                {/* Email */}
                 <div className="con-form-group">
-                  <label htmlFor="whatsApp">WhatsApp Number</label>
-                  <input 
-                    type="tel" 
-                    id="whatsApp" 
-                    name="whatsApp"
-                    value={formData.whatsApp} 
-                    onChange={handleInputChange}
-                    placeholder="+91 98765 43210"
-                  />
+                  <label htmlFor="email">Email Address <span>*</span></label>
+                  <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} placeholder="john@example.com" />
+                  {errors.email && <span style={{ color: "#ef4444", fontSize: "11px" }}>{errors.email}</span>}
                 </div>
 
-                {/* Website */}
+                {/* Company Name */}
                 <div className="con-form-group">
-                  <label htmlFor="website">Website URL</label>
-                  <input 
-                    type="url" 
-                    id="website" 
-                    name="website"
-                    value={formData.website} 
-                    onChange={handleInputChange}
-                    placeholder="https://example.com"
-                  />
+                  <label htmlFor="companyName">Company Name (Optional)</label>
+                  <input type="text" id="companyName" name="companyName" value={formData.companyName} onChange={handleInputChange} placeholder="Acme Corporation" />
                 </div>
 
-                {/* Business Location */}
+                {/* Service Required */}
                 <div className="con-form-group">
-                  <label htmlFor="businessLocation">Business Location</label>
-                  <input 
-                    type="text" 
-                    id="businessLocation" 
-                    name="businessLocation"
-                    value={formData.businessLocation} 
-                    onChange={handleInputChange}
-                    placeholder="e.g. Hyderabad, India"
-                  />
-                </div>
-
-                {/* Business Type */}
-                <div className="con-form-group">
-                  <label htmlFor="businessType">Business Type</label>
-                  <select 
-                    id="businessType" 
-                    name="businessType"
-                    value={formData.businessType} 
-                    onChange={handleInputChange}
-                  >
-                    <option value="">Select Business Type</option>
-                    <option value="Ecommerce">E-Commerce Store</option>
-                    <option value="B2B">B2B SaaS / Services</option>
-                    <option value="Local">Local Business / Shop</option>
-                    <option value="Enterprise">Enterprise Brand</option>
+                  <label htmlFor="serviceRequired">Service Required <span>*</span></label>
+                  <select id="serviceRequired" name="serviceRequired" value={formData.serviceRequired} onChange={handleInputChange}>
+                    <option value="">Select Service</option>
+                    <option value="SEO">SEO Services</option>
+                    <option value="Google Ads">Google Ads</option>
+                    <option value="Social Media Marketing">Social Media Marketing</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="WhatsApp Automation">WhatsApp Automation</option>
+                    <option value="Branding">Branding</option>
                     <option value="Other">Other</option>
                   </select>
+                  {errors.serviceRequired && <span style={{ color: "#ef4444", fontSize: "11px" }}>{errors.serviceRequired}</span>}
                 </div>
 
-                {/* Industry */}
-                <div className="con-form-group">
-                  <label htmlFor="industry">Industry</label>
-                  <input 
-                    type="text" 
-                    id="industry" 
-                    name="industry"
-                    value={formData.industry} 
-                    onChange={handleInputChange}
-                    placeholder="e.g. Retail, Healthcare, Tech"
-                  />
+                {/* Message */}
+                <div className="con-form-group con-form-group-full">
+                  <label htmlFor="message">Message</label>
+                  <textarea id="message" name="message" rows="4" value={formData.message} onChange={handleInputChange} placeholder="How can we help you?"></textarea>
                 </div>
-
-                {/* Budget */}
-                <div className="con-form-group">
-                  <label htmlFor="budget">Monthly Marketing Budget</label>
-                  <select 
-                    id="budget" 
-                    name="budget"
-                    value={formData.budget} 
-                    onChange={handleInputChange}
-                  >
-                    <option value="">Select Budget Range</option>
-                    <option value="Under 25k">Under ₹25,000 /mo</option>
-                    <option value="25k-50k">₹25,000 - ₹50,000 /mo</option>
-                    <option value="50k-1L">₹50,000 - ₹1,00,000 /mo</option>
-                    <option value="1L-5L">₹1,00,000 - ₹5,00,000 /mo</option>
-                    <option value="Over 5L">Over ₹5,00,000 /mo</option>
-                  </select>
-                </div>
-
-                {/* Timeline */}
-                <div className="con-form-group">
-                  <label htmlFor="timeline">Desired Project Start</label>
-                  <select 
-                    id="timeline" 
-                    name="timeline"
-                    value={formData.timeline} 
-                    onChange={handleInputChange}
-                  >
-                    <option value="">Select Start Timeline</option>
-                    <option value="Immediate">Immediate (Within 1 week)</option>
-                    <option value="1-2 Weeks">1 - 2 Weeks</option>
-                    <option value="1 Month">Within 1 month</option>
-                    <option value="Flexible">Flexible / Just researching</option>
-                  </select>
-                </div>
-
-                {/* Preferred Contact Method */}
-                <div className="con-form-group">
-                  <label htmlFor="contactMethod">Preferred Contact Method</label>
-                  <select 
-                    id="contactMethod" 
-                    name="contactMethod"
-                    value={formData.contactMethod} 
-                    onChange={handleInputChange}
-                  >
-                    <option value="Email">Email</option>
-                    <option value="Phone">Phone Call</option>
-                    <option value="WhatsApp">WhatsApp Message</option>
-                    <option value="Google Meet">Google Meet Call</option>
-                  </select>
-                </div>
-
-                {/* Services Interested In Checkboxes */}
-                <div className="con-form-group con-form-group-full" style={{ marginTop: "10px" }}>
-                  <span className="con-checkbox-title">Services Interested In</span>
-                  <div className="con-checkbox-grid">
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.seo} 
-                        onChange={() => handleServiceCheckboxChange("seo")}
-                      />
-                      SEO Optimization
-                    </label>
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.googleAds} 
-                        onChange={() => handleServiceCheckboxChange("googleAds")}
-                      />
-                      Google Ads PPC
-                    </label>
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.websiteDesign} 
-                        onChange={() => handleServiceCheckboxChange("websiteDesign")}
-                      />
-                      Website Design
-                    </label>
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.socialMedia} 
-                        onChange={() => handleServiceCheckboxChange("socialMedia")}
-                      />
-                      Social Media Marketing
-                    </label>
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.ecommerce} 
-                        onChange={() => handleServiceCheckboxChange("ecommerce")}
-                      />
-                      E-Commerce Marketing
-                    </label>
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.whatsappAutomation} 
-                        onChange={() => handleServiceCheckboxChange("whatsappAutomation")}
-                      />
-                      WhatsApp Automation
-                    </label>
-                    <label className="con-checkbox-label">
-                      <input 
-                        type="checkbox" 
-                        checked={formData.services.aiAutomation} 
-                        onChange={() => handleServiceCheckboxChange("aiAutomation")}
-                      />
-                      AI Powered Solutions
-                    </label>
-                  </div>
-                </div>
-
-                {/* Project Description */}
-                <div className="con-form-group con-form-group-full" style={{ marginTop: "10px" }}>
-                  <label htmlFor="projectDescription">Project Description / Requirements</label>
-                  <textarea 
-                    id="projectDescription" 
-                    name="projectDescription"
-                    rows="4"
-                    value={formData.projectDescription} 
-                    onChange={handleInputChange}
-                    placeholder="Briefly describe your business goals, target audience, and what you would like to achieve..."
-                  ></textarea>
-                </div>
-
-                {/* Privacy Policy Checkbox */}
-                <div className="con-form-group con-form-group-full con-privacy-group">
-                  <label className="con-checkbox-label" htmlFor="agreePrivacy">
-                    <input 
-                      type="checkbox" 
-                      id="agreePrivacy"
-                      name="agreePrivacy"
-                      checked={formData.agreePrivacy} 
-                      onChange={handleInputChange}
-                    />
-                    I agree to the <Link href="/privacy-policy" style={{ color: "var(--con-primary)", fontWeight: 700 }}>Privacy Policy</Link> and consent to being contacted. <span>*</span>
-                  </label>
-                  {errors.agreePrivacy && <span style={{ color: "#ef4444", fontSize: "11px" }}>{errors.agreePrivacy}</span>}
-                </div>
-
               </div>
 
               {/* Form Action Buttons */}
@@ -757,28 +462,28 @@ export default function ContactClient() {
         <div className="con-wrap">
           <div className="con-title-center">
             <span className="con-eyebrow">🛡️ Partnering with TenX</span>
-            <h2>Why Contact Us</h2>
+            <h2>Why Choose Digital Marketing TenX?</h2>
             <p>We work as your dedicated marketing department to maximize your return on ad spend and sales.</p>
           </div>
 
           <div className="con-why-grid">
             
             <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(16, 185, 129, 0.08)", color: "#10b981" }}>⚡</div>
-              <h4>Fast Response</h4>
-              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Average response time of under 2 hours.</p>
-            </div>
-
-            <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(37, 99, 235, 0.08)", color: "#2563eb" }}>🎓</div>
-              <h4>Certified Experts</h4>
-              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Google, Meta, and Hubspot certified staff.</p>
-            </div>
-
-            <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(255, 107, 0, 0.08)", color: "var(--con-orange)" }}>📅</div>
+              <div className="con-why-icon" style={{ background: "rgba(16, 185, 129, 0.08)", color: "#10b981" }}>📅</div>
               <h4>Free Consultation</h4>
               <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Get a complimentary strategy plan session.</p>
+            </div>
+
+            <div className="con-why-card">
+              <div className="con-why-icon" style={{ background: "rgba(37, 99, 235, 0.08)", color: "#2563eb" }}>📈</div>
+              <h4>Custom Growth Strategy</h4>
+              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Tailored campaigns optimized for your specific goals.</p>
+            </div>
+
+            <div className="con-why-card">
+              <div className="con-why-icon" style={{ background: "rgba(255, 107, 0, 0.08)", color: "var(--con-orange)" }}>🎓</div>
+              <h4>Experienced Marketing Experts</h4>
+              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Google, Meta, and Hubspot certified staff.</p>
             </div>
 
             <div className="con-why-card">
@@ -788,59 +493,43 @@ export default function ContactClient() {
             </div>
 
             <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(13, 148, 136, 0.08)", color: "#0d9488" }}>📞</div>
+              <div className="con-why-icon" style={{ background: "rgba(13, 148, 136, 0.08)", color: "#0d9488" }}>⚡</div>
+              <h4>Fast Response Time</h4>
+              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Average response time of under 2 hours.</p>
+            </div>
+
+            <div className="con-why-card">
+              <div className="con-why-icon" style={{ background: "rgba(225, 29, 72, 0.08)", color: "#e11d48" }}>📞</div>
               <h4>Dedicated Support</h4>
               <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>24/7 Slack & WhatsApp support access.</p>
-            </div>
-
-            <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(225, 29, 72, 0.08)", color: "#e11d48" }}>📈</div>
-              <h4>Results Driven</h4>
-              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Focusing strictly on generating more profits.</p>
-            </div>
-
-            <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(14, 165, 233, 0.08)", color: "#0ea5e9" }}>🤖</div>
-              <h4>AI Powered Solutions</h4>
-              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Integrating smart CRM marketing automation.</p>
-            </div>
-
-            <div className="con-why-card">
-              <div className="con-why-icon" style={{ background: "rgba(245, 158, 11, 0.08)", color: "#f59e0b" }}>💵</div>
-              <h4>ROI Focused Strategies</h4>
-              <p style={{ fontSize: "12.5px", color: "var(--con-text-muted)", margin: 0 }}>Campaigns optimized for maximum search sales.</p>
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* 8. OFFICE GALLERY */}
+      {/* SERVICES WE CAN HELP WITH */}
       <section className="con-section con-section-white">
         <div className="con-wrap">
           <div className="con-title-center">
-            <span className="con-eyebrow">🏢 Hyderabad Workspace</span>
-            <h2>Our Office Gallery</h2>
-            <p>Take a virtual look inside our premium Begumpet workspace designed for collaboration and client meetings.</p>
+            <span className="con-eyebrow">🚀 OUR EXPERTISE</span>
+            <h2>Services We Can Help With</h2>
+            <p>Comprehensive digital marketing solutions tailored to grow your business.</p>
           </div>
-
-          <div className="con-gallery-slider">
-            
-            <div className="con-gallery-item">
-              <img src="/office_reception.webp" alt="Digital Marketing TenX Office Reception Lobby" />
-              <div className="con-gallery-caption">Office Reception Area</div>
-            </div>
-
-            <div className="con-gallery-item">
-              <img src="/office_meeting.webp" alt="Digital Marketing TenX Conference Meeting Boardroom" />
-              <div className="con-gallery-caption">Meeting Conference Room</div>
-            </div>
-
-            <div className="con-gallery-item">
-              <img src="/office_workspace.webp" alt="Digital Marketing TenX Open Collaborative Workspace" />
-              <div className="con-gallery-caption">Collaborative Workspace</div>
-            </div>
-
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '40px' }}>
+            {[
+              { name: "Website Design", icon: "/website-design.webp" },
+              { name: "Google Ads", icon: "/google-ads.webp" },
+              { name: "SEO", icon: "/seo.webp" },
+              { name: "Social Media Marketing", icon: "/smm.webp" },
+              { name: "E-Commerce Marketing", icon: "/e-commerce.webp" },
+              { name: "WhatsApp Automation", icon: "/whatsapp-automation.webp" }
+            ].map(service => (
+              <div key={service.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '30px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '16px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', fontWeight: 700, fontSize: '18px', color: '#0f172a', textAlign: 'center', transition: 'all 0.3s ease' }}>
+                <img src={service.icon} alt={service.name} style={{ width: '40px', height: '40px', marginBottom: '16px', objectFit: 'contain' }} />
+                {service.name}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -874,6 +563,19 @@ export default function ContactClient() {
             <span className="con-area-tag">Worldwide Remote Services</span>
           </div>
         </div>
+      </section>
+
+      {/* GOOGLE MAP */}
+      <section style={{ width: '100%', height: '400px', background: '#eee' }}>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6666687000003!2d78.4664!3d17.4447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90a187a41295%3A0xe54e63b368739cf9!2sGumidelli%20Towers!5e0!3m2!1sen!2sin!4v1624800000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy"
+          title="Google Maps Location - Digital Marketing TenX"
+        ></iframe>
       </section>
 
       {/* 10. FAQ SECTION */}
@@ -935,3 +637,4 @@ export default function ContactClient() {
     </div>
   );
 }
+

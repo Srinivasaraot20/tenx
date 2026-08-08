@@ -379,7 +379,7 @@ export const metadata = {
   title: "Best Digital Marketing Agency in Hyderabad | TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
   alternates: {
-    canonical: "/",
+    canonical: "https://www.digitalmarketingtenx.com/",
   },
   openGraph: {
     title: "Best Digital Marketing Agency in Hyderabad | TenX",
@@ -388,7 +388,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://digitalmarketingtenx.com/og-image.webp",
+        url: "https://www.digitalmarketingtenx.com/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Digital Marketing TenX Agency Hyderabad",
@@ -418,7 +418,6 @@ export default function Home() {
         <Challenges />
         <Industries />
         <Process />
-        <RecentBlogs />
         <SEOContent />
         <CTA />
       </main>
@@ -427,3 +426,4 @@ export default function Home() {
     </>
   );
 }
+

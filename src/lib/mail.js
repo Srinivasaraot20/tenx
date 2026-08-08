@@ -47,3 +47,4 @@ export async function sendServiceInquiryEmail(data) {
   const html = generateEmailHtml('Service Inquiry', data);
   return sendEmail({ to: process.env.ADMIN_EMAIL, subject: '🚀 New Lead Received | Digital Marketing TenX', html });
 }
+

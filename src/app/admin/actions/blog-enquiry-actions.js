@@ -124,3 +124,4 @@ export async function bulkUpdateEnquiryStatus(ids, status) {
     return { success: false, message: error.message || "Failed to bulk update status" };
   }
 }
+

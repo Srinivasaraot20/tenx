@@ -11,10 +11,8 @@ import { getFeaturedArticle, getCategoryCards, getTrendingSidebar } from "@/lib/
 import "./blog.css";
 
 export const metadata = {
-  title:
-    "Digital Marketing Blog | SEO, Google Ads, AI Marketing & Business Growth Tips | Digital Marketing TenX",
-  description:
-    "Explore the Digital Marketing TenX blog for expert insights on SEO, Google Ads, AI marketing, social media, website development, performance marketing, eCommerce growth, lead generation, and the latest digital marketing trends.",
+  title: "Top Digital Marketing Agency in India | Digital TenX",
+  description: "Explore expert digital marketing blogs, SEO tips, PPC, social media, AI marketing insights, and proven strategies from Digital Marketing TenX across India.",
   keywords: [
     "Digital Marketing Blog",
     "SEO Blog",
@@ -28,16 +26,16 @@ export const metadata = {
     "Digital Marketing Agency Hyderabad",
   ],
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/blog",
+    canonical: "https://www.digitalmarketingtenx.com/blog",
   },
   openGraph: {
     title: "Digital Marketing Blog | Digital Marketing TenX",
     description: "Read expert articles on SEO, Google Ads, AI marketing, website development, social media marketing, and business growth strategies.",
     type: "website",
-    url: "https://digitalmarketingtenx.com/blog",
+    url: "https://www.digitalmarketingtenx.com/blog",
     images: [
       {
-        url: "https://digitalmarketingtenx.com/images/blog-og.jpg",
+        url: "https://www.digitalmarketingtenx.com/images/blog-og.jpg",
       },
     ],
   },
@@ -59,16 +57,16 @@ export default function BlogPage() {
     "@type": "Blog",
     name: "Digital Marketing TenX Blog",
     description: "Expert digital marketing, SEO, and business growth insights",
-    url: "https://digitalmarketingtenx.com/blog",
+    url: "https://www.digitalmarketingtenx.com/blog",
     publisher: {
       "@type": "Organization",
       name: "Digital Marketing TenX",
-      logo: { "@type": "ImageObject", url: "https://digitalmarketingtenx.com/logo.webp" },
+      logo: { "@type": "ImageObject", url: "https://www.digitalmarketingtenx.com/logo.webp" },
     },
     blogPost: ARTICLES.slice(0, 10).map((a) => ({
       "@type": "BlogPosting",
       headline: a.title,
-      url: `https://digitalmarketingtenx.com/blog/${a.slug}`,
+      url: `https://www.digitalmarketingtenx.com/blog/${a.slug}`,
       datePublished: a.date,
       author: { "@type": "Person", name: a.author },
     })),
@@ -104,3 +102,4 @@ export default function BlogPage() {
       </main>
   );
 }
+

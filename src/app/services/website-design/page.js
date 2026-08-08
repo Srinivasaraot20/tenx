@@ -230,41 +230,39 @@ export default function WebsiteDesignPage() {
       title: "CMS & ECOMMERCE",
       icon: "🛒",
       items: [
-        { title: "WordPress", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg", desc: "Flexible, SEO-friendly websites that are easy to manage." },
-        { title: "WooCommerce", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg", desc: "Powerful eCommerce solutions for online stores that convert." },
-        { title: "Shopify", logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg", desc: "Scalable and secure eCommerce stores that drive sales." }
+        { title: "WordPress Development", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg", desc: "We build easy-to-manage WordPress websites that are flexible, secure, SEO-friendly, and perfect for businesses of all sizes." },
+        { title: "WooCommerce", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg", desc: "Launch a feature-rich online store with WooCommerce, complete with secure payment gateways, inventory management, and an optimized shopping experience." },
+        { title: "Shopify Development", logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg", desc: "We design and develop custom Shopify stores that are easy to manage, mobile-friendly, and built to maximize online sales." }
       ]
     },
     {
       title: "FRONTEND TECHNOLOGIES",
       icon: "🖥️",
       items: [
-        { title: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", desc: "Structured, clean and semantic code." },
-        { title: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", desc: "Modern styling for responsive designs." },
-        { title: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", desc: "Interactive features and dynamic user experiences." },
-        { title: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", desc: "Build fast, interactive and high-performance user interfaces." },
-        { title: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", desc: "SEO-friendly, fast and optimized web applications." }
+        { title: "HTML5 & CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", desc: "We use clean HTML5 and CSS3 coding standards to create responsive, accessible, and modern website designs." },
+        { title: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", desc: "Enhance website functionality with interactive features, animations, and seamless user experiences powered by modern JavaScript." },
+        { title: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", desc: "We develop interactive, fast, and dynamic user interfaces with React.js to deliver a smooth and engaging user experience." },
+        { title: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", desc: "Build lightning-fast, SEO-optimized websites with Next.js, offering better performance, faster loading times, and improved search engine visibility." }
       ]
     },
     {
       title: "BACKEND DEVELOPMENT",
       icon: "⌨️",
       items: [
-        { title: "PHP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg", desc: "Robust and reliable development for custom web solutions." },
-        { title: "Laravel", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg", desc: "Secure, scalable and high-performance PHP framework." },
-        { title: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", desc: "Build scalable and high-performance server-side applications." },
-        { title: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", desc: "Versatile programming language for modern web applications." },
-        { title: "Django", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg", desc: "High-level Python framework for rapid development." },
-        { title: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg", desc: "Lightweight WSGI web application framework." }
+        { title: "PHP Development", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg", desc: "Our PHP development services deliver secure, scalable, and customized websites tailored to your business requirements." },
+        { title: "Laravel Development", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg", desc: "Our developers create powerful custom web applications and business portals using Laravel for enhanced security, performance, and scalability." },
+        { title: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", desc: "For advanced web applications and APIs, we leverage Node.js to build high-performance, scalable, and real-time solutions." },
+        { title: "Python Development", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", desc: "Build secure, scalable, and high-performance web applications with Python, tailored to your business needs." },
+        { title: "Java Development", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", desc: "Develop secure, scalable, and reliable web applications and enterprise solutions with Java." }
       ]
     },
     {
       title: "DATABASE",
       icon: "🗄️",
       items: [
-        { title: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg", desc: "Reliable and efficient database management for secure data storage and fast performance." },
-        { title: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", desc: "Advanced open-source relational database." },
-        { title: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", desc: "C-language library that implements a small, fast SQL database engine." }
+        { title: "MySQL Database", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg", desc: "Our websites use reliable MySQL databases to ensure secure data storage, fast performance, and efficient data management." },
+        { title: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", desc: "Advanced open-source relational database designed for secure, reliable, and high-performance data management." },
+        { title: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", desc: "Lightweight, self-contained SQL database engine ideal for fast, reliable, and efficient data storage in web applications." }
       ]
     }
   ];
@@ -389,7 +387,7 @@ export default function WebsiteDesignPage() {
             <div className="w-hero-content">
               <span className="badge-premium">WEBSITE DESIGN & DEVELOPMENT SERVICES</span>
               <h1>
-                Website Design and Development Company in Hyderabad
+                Website Design and Development Company in <span style={{ color: "#ff5722" }}>Hyderabad</span>
               </h1>
               <p>
                 At Digital Marketing TenX, we are a trusted Website Design and Development Company in Hyderabad delivering custom, responsive, SEO-friendly, and high-performance websites for startups, SMEs, and enterprises. From business websites and WordPress development to eCommerce stores and AI-powered web solutions, we build websites that attract visitors, generate qualified leads, and drive long-term business growth.
@@ -462,7 +460,7 @@ export default function WebsiteDesignPage() {
               <span className="eyebrow">Our Website Design Process</span>
               <h2>Our Website Design & Development Process</h2>
               <p>
-                From strategy to launch, we follow a proven process to create websites that are visually stunning, technically strong, and built to generate business results.
+                From Strategy to Success, we follow a proven process to create websites that are visually stunning, technically strong, and built to generate business results.
               </p>
             </div>
 
@@ -486,15 +484,15 @@ export default function WebsiteDesignPage() {
             <div className="w-title-centered" style={{ maxWidth: "900px", margin: "0 auto" }}>
               <span className="eyebrow" style={{ marginBottom: "8px", display: "inline-block" }}>WHY INVEST IN A PROFESSIONAL WEBSITE</span>
               <h2 style={{ fontSize: "2.5rem", margin: "0 auto 16px", lineHeight: "1.2" }}>Why Your Business Needs a Professional Website</h2>
-              <div style={{ textAlign: "center", color: "var(--w-text-muted)", fontSize: "1.1rem", lineHeight: "1.7", maxWidth: "850px", margin: "0 auto 24px" }}>
+              <div style={{ textAlign: "center", color: "var(--w-text-muted)", fontSize: "16px", lineHeight: "1.6", maxWidth: "800px", margin: "0 auto 16px" }}>
                 <p>
-                  Your website is your most valuable digital asset, helping build trust, strengthen your brand, and convert visitors into customers. At Digital Marketing TenX, we design and develop fast, SEO-friendly, mobile-responsive websites tailored to your business goals. Our custom solutions drive more leads, engagement, and long-term business growth.
+                  Your website is more than just an online presence, it's your most valuable digital asset. A professionally designed website builds trust, strengthens your brand, and helps convert visitors into customers. Whether you're a startup, local business, or established enterprise, investing in a high-quality website creates opportunities for long-term growth.
                 </p>
               </div>
             </div>
 
-            <div className="w-title-centered" style={{ marginTop: "16px", marginBottom: "24px" }}>
-              <h2 style={{ fontSize: "2rem" }}>Key Benefits</h2>
+            <div className="w-title-centered" style={{ marginBottom: "24px" }}>
+              <h3 style={{ fontSize: "2rem" }}>Key Benefits</h3>
             </div>
 
             <div className="w-key-benefits-grid">
@@ -674,9 +672,9 @@ export default function WebsiteDesignPage() {
           <div className="w-grid-content">
             <div className="w-title-centered" style={{ maxWidth: "800px" }}>
               <span className="eyebrow">MODERN DEVELOPMENT STACK</span>
-              <h2>Technologies We Use to Build Fast, Secure & SEO-Friendly Websites</h2>
+              <h2>Technologies We Use to Build High-Performance Websites</h2>
               <p>
-                At Digital Marketing TenX, we use modern, reliable, and industry-leading technologies to build secure, scalable, and high-performing websites. We choose the right technology stack based on your business goals to deliver the best results.
+                At Digital Marketing TenX, we use modern, reliable, and industry-leading technologies to build secure, scalable, and high-performing websites. As a trusted Website Design and Development Company in Hyderabad, we choose the right technology stack based on your business goals, ensuring your website is fast, responsive, SEO-friendly, and built for long-term success.
               </p>
             </div>
 
@@ -771,49 +769,7 @@ export default function WebsiteDesignPage() {
           </div>
         </section>
 
-        {/* SECTION 9: PORTFOLIO SHOWCASES */}
-        <section className="w-section w-section-white" id="portfolio">
-          <div className="w-grid-content">
-            <div className="w-title-centered" style={{ maxWidth: "800px" }}>
-              <span className="eyebrow">OUR CLIENT SUCCESS STORIES</span>
-              <h2>Real Client Websites Delivering Measurable Business Growth</h2>
-              <p>
-                Explore websites we've designed and developed for real clients across multiple industries. As a trusted Website Design and Development Company in Hyderabad, we create responsive, SEO-friendly, and conversion-focused websites that help businesses strengthen their online presence, generate qualified leads, and achieve measurable growth.
-              </p>
-            </div>
 
-            <div className="w-portfolio-grid">
-              {portfolioProjects.map((proj, idx) => (
-                <div className="w-project-card w-glass-card" key={idx}>
-                  <div className="w-project-img-frame" style={{ position: "relative" }}>
-                    <Image 
-                      src={proj.img} 
-                      alt={proj.title} 
-                      fill
-                      style={{ objectFit: "cover" }} 
-                    />
-                  </div>
-                  <span className="w-project-tag">{proj.tag}</span>
-                  <h3>{proj.title}</h3>
-                  
-                  <div className="w-project-stats-row">
-                    {proj.stats.map((stat, statIdx) => (
-                      <span className="w-proj-stat" key={statIdx}>{stat}</span>
-                    ))}
-                  </div>
-
-                  <div className="w-project-tech-logos">
-                    {proj.techs.map((tech, techIdx) => (
-                      <span className="w-project-tech-tag" key={techIdx}>
-                        {techIdx > 0 && " • "} {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* SECTION 10: RESULTS STATS */}
 
@@ -893,3 +849,4 @@ export default function WebsiteDesignPage() {
     </div>
   );
 }
+

@@ -58,19 +58,19 @@ export const metadata = {
     "start your digital marketing project"
 ],
 
-  title: "Contact Digital Marketing TenX | Top Agency in Hyderabad",
-  description: "Contact Digital Marketing TenX in Hyderabad. We offer expert SEO, Google Ads, Web Development, and AI Automation. Book a free consultation today.",
+  title: "Contact Digital Marketing Agency in Hyderabad | TenX",
+  description: "Contact Digital Marketing TenX in Hyderabad for SEO, Google Ads, social media marketing, website design, and WhatsApp automation services.",
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/contact",
+    canonical: "https://www.digitalmarketingtenx.com/contact",
   },
   openGraph: {
-    title: "Contact Digital Marketing TenX | Top Agency in Hyderabad",
-    description: "Contact Digital Marketing TenX in Hyderabad. We offer expert SEO, Google Ads, Web Development, and AI Automation. Book a free consultation today.",
-    url: "https://digitalmarketingtenx.com/contact",
+    title: "Contact Digital Marketing Agency in Hyderabad | TenX",
+    description: "Contact Digital Marketing TenX in Hyderabad for SEO, Google Ads, social media marketing, website design, and WhatsApp automation services.",
+    url: "https://www.digitalmarketingtenx.com/contact",
     type: "website",
     images: [
       {
-        url: "https://digitalmarketingtenx.com/logo.webp",
+        url: "https://www.digitalmarketingtenx.com/logo.webp",
         width: 300,
         height: 300,
         alt: "Digital Marketing TenX",
@@ -140,3 +140,4 @@ export default function ContactPage() {
     </>
   );
 }
+

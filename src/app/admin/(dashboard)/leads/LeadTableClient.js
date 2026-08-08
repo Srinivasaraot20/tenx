@@ -571,3 +571,4 @@ export default function LeadTableClient({ initialLeads }) {
     </>
   );
 }
+

@@ -245,12 +245,12 @@
 }
 
 .seo-hero-content h1 {
-  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--seo-dark);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .seo-hero-content h1 span.gradient-text {
@@ -262,15 +262,15 @@
 
 .seo-hero-content p {
   font-size: clamp(16px, 1.8vw, 17px);
-  line-height: 1.6;
+  line-height: 1.5;
   color: #475569;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .seo-hero-ctas {
   display: flex;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
@@ -403,8 +403,11 @@
 .seo-hero-visual-container {
   position: relative;
   perspective: 1200px;
-  transform: scale(0.70);
-  transform-origin: center right;
+  /* Replaced scale(0.70) which caused huge whitespace, with width control */
+  width: 90%;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .seo-dashboard-mockup {
@@ -1793,55 +1796,66 @@
 
 .seo-lead-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .seo-lead-info h2 {
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 900;
-  color: var(--seo-dark);
+  color: #0f172a;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.seo-lead-info p {
-  font-size: 15.5px;
+.seo-lead-info > p {
+  font-size: 16px;
   line-height: 1.6;
-  color: var(--seo-muted);
-  margin-bottom: 32px;
+  color: #475569;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .seo-lead-points {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .seo-lead-point {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
 }
 
 .seo-lp-icon {
   color: var(--seo-primary);
   flex-shrink: 0;
+  font-size: 24px;
 }
 
 .seo-lead-point h4 {
-  font-size: clamp(14px, 2vw, 16px);
-  font-weight: 750;
-  color: var(--seo-dark);
-  margin: 0 0 4px 0;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px 0;
 }
 
 .seo-lead-point p {
-  font-size: 12.5px;
-  color: var(--seo-muted);
+  font-size: 14.5px;
+  color: #475569;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .seo-lead-card {
@@ -2042,6 +2056,9 @@
 }
 
 @media (max-width: 768px) {
+  .seo-lead-points {
+    grid-template-columns: 1fr;
+  }
   .seo-stats-bar {
     grid-template-columns: 1fr;
     gap: 16px;

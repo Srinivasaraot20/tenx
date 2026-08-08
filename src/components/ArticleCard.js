@@ -152,3 +152,4 @@ export default function ArticleCard({ article, compact = false }) {
     </article>
   );
 }
+

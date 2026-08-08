@@ -25,3 +25,4 @@ export default function BlogCategories({ categories = [], onSelect }) {
     </section>
   );
 }
+

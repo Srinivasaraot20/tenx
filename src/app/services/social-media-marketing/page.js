@@ -429,9 +429,9 @@ export default function SocialMediaMarketingPage() {
             ⚡ Social Media Management &amp; Ads
           </div>
           <h1>
-            Social Media<br />
-            Marketing Services in Hyderabad<br />
-            That <span className="grad-brand">Grow Brands</span><br />
+            Social Media Marketing<br />
+            Services in Hyderabad<br />
+            That <span style={{ color: "var(--smm-orange)" }}>Grow Brands</span><br />
             &amp; Generate Leads
           </h1>
           <p>
@@ -516,7 +516,7 @@ export default function SocialMediaMarketingPage() {
             <p>Build a strong online presence and make your business more recognizable across Facebook, Instagram, LinkedIn, and other social platforms.</p>
           </div>
           <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">🤝</div>
+            <div className="smm-why-icon">💬</div>
             <h3>Higher Engagement</h3>
             <p>Increase likes, comments, shares, and meaningful interactions that strengthen customer relationships.</p>
           </div>
@@ -531,12 +531,12 @@ export default function SocialMediaMarketingPage() {
             <p>Convert social media audiences into qualified leads using lead forms, targeted campaigns, and compelling calls to action.</p>
           </div>
           <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">📈</div>
-            <h3>Increase Sales & Conversions</h3>
+            <div className="smm-why-icon">🛒</div>
+            <h3>Increase Sales &amp; Conversions</h3>
             <p>Turn followers into paying customers with optimized campaigns, retargeting, and conversion-focused strategies.</p>
           </div>
           <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">❤️</div>
+            <div className="smm-why-icon">🤝</div>
             <h3>Build Customer Loyalty</h3>
             <p>Strengthen long-term customer relationships through consistent communication, valuable content, and active community management.</p>
           </div>
@@ -546,7 +546,7 @@ export default function SocialMediaMarketingPage() {
             <p>Build trust and credibility by maintaining a professional social media presence and responding to customer feedback.</p>
           </div>
           <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">💰</div>
+            <div className="smm-why-icon">📈</div>
             <h3>Maximize ROI</h3>
             <p>Improve marketing performance with continuous optimization, audience targeting, and data-driven campaign decisions.</p>
           </div>
@@ -635,9 +635,9 @@ export default function SocialMediaMarketingPage() {
       {/* 14. WHY CHOOSE US */}
       <section className="smm-section">
         <div className="smm-sec-header reveal-element">
-          <span className="eyebrow">Why Partner With Us?</span>
-          <h2>Why Choose TenX Digital</h2>
-          <p>We are a performance-first agency committed to transparent execution and quality design.</p>
+          <span className="eyebrow">WHY CHOOSE TENX</span>
+          <h2>Why Businesses Choose Digital Marketing TenX</h2>
+          <p>We combine creative content, paid advertising, and data-driven strategies to help businesses build stronger brands, generate qualified leads, and achieve measurable social media growth.</p>
         </div>
         <div className="smm-why-us-grid reveal-element">
           {whyChooseUs.map((item, idx) => (
@@ -712,3 +712,4 @@ export default function SocialMediaMarketingPage() {
     </div>
   );
 }
+

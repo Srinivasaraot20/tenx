@@ -27,3 +27,4 @@ export default function ServiceHero({ leftContent, rightContent, bottomContent }
     </section>
   );
 }
+

@@ -93,9 +93,9 @@
 
 .smm-hero h1 {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
   font-weight: 900;
-  line-height: 1.13;
+  line-height: 1.25;
   color: var(--smm-dark);
   margin: 0 0 14px 0;
   letter-spacing: -1px;
@@ -262,6 +262,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 .smm-hero-scene {
   position: relative;
@@ -708,7 +709,7 @@
 ═══════════════════════════════════════ */
 .smm-why-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 22px;
   max-width: 1200px;
   margin: 0 auto;
@@ -1999,9 +2000,11 @@
 /* Desktop Grid Defaults */
 @media (min-width: 1025px) {
   .smm-services-grid,
-  .smm-ind-grid,
   .smm-benefits-grid {
     grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .smm-ind-grid {
+    grid-template-columns: repeat(5, 1fr) !important;
   }
 }
 

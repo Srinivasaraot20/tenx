@@ -1266,34 +1266,7 @@ Please contact me for the audit. Thank you!`;
         </div>
       </section>
 
-      {/* ── 14. FREQUENTLY ASKED QUESTIONS ── */}
-      <section className="seo-section seo-section-white">
-        <div className="seo-wrap">
-          <div className="seo-sec-header reveal-element">
-            <span className="eyebrow">❓ Got Questions?</span>
-            <h2>Frequently Asked Questions About SEO Services</h2>
-            <p>
-              Find answers to common questions about our SEO services, pricing, timelines, reporting, and how we help businesses improve Google rankings and organic traffic.
-            </p>
-          </div>
 
-          <div className="seo-faq-accordion reveal-element" style={{ maxWidth: "820px", margin: "0 auto" }}>
-            {faqs.map((faq, idx) => (
-              <div key={idx} className={`seo-faq-item ${openFaq === idx ? "open" : ""}`}>
-                <button className="seo-faq-question-btn" onClick={() => setOpenFaq(openFaq === idx ? null : idx)}>
-                  <span>{faq.q}</span>
-                  <svg className="chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </button>
-                <div className="seo-faq-answer">
-                  <p>{faq.a}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── 15. LEAD GENERATION SECTION ── */}
       <section className="seo-lead-section" id="seo-audit-form-section">
@@ -1332,7 +1305,7 @@ Please contact me for the audit. Thank you!`;
                 </div>
               </div>
 
-              <div style={{ display: "flex", gap: "12px" }}>
+              <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
                 <button className="seo-btn seo-btn-primary" onClick={scrollToForm}>
                   Get Free SEO Audit
                 </button>
@@ -1342,126 +1315,7 @@ Please contact me for the audit. Thank you!`;
               </div>
             </div>
 
-            {/* Right Column Form */}
-            <div className="seo-lead-card reveal-element delay-100">
-              <h3 style={{ fontSize: "18px", fontWeight: "800", marginBottom: "20px", color: "var(--seo-dark)" }}>
-                Get Your Free SEO Audit
-              </h3>
-              
-              <form className="seo-form" onSubmit={handleFormSubmit}>
-                <div className="seo-form-row">
-                  <div className={`seo-form-group ${formErrors.name ? "has-error" : ""}`}>
-                    <label htmlFor="form-name">Full Name *</label>
-                    <input 
-                      id="form-name"
-                      type="text" 
-                      name="name" 
-                      value={formData.name} 
-                      onChange={handleInputChange} 
-                      placeholder="John Doe"
-                    />
-                    {formErrors.name && <span className="seo-error-txt">{formErrors.name}</span>}
-                  </div>
 
-                  <div className={`seo-form-group ${formErrors.email ? "has-error" : ""}`}>
-                    <label htmlFor="form-email">Email Address *</label>
-                    <input 
-                      id="form-email"
-                      type="email" 
-                      name="email" 
-                      value={formData.email} 
-                      onChange={handleInputChange} 
-                      placeholder="john@company.com"
-                    />
-                    {formErrors.email && <span className="seo-error-txt">{formErrors.email}</span>}
-                  </div>
-                </div>
-
-                <div className="seo-form-row">
-                  <div className={`seo-form-group ${formErrors.phone ? "has-error" : ""}`}>
-                    <label htmlFor="form-phone">Phone Number *</label>
-                    <input 
-                      id="form-phone"
-                      type="tel" 
-                      name="phone" 
-                      value={formData.phone} 
-                      onChange={handleInputChange} 
-                      placeholder="e.g. +91 98765 43210"
-                    />
-                    {formErrors.phone && <span className="seo-error-txt">{formErrors.phone}</span>}
-                  </div>
-
-                  <div className={`seo-form-group ${formErrors.website ? "has-error" : ""}`}>
-                    <label htmlFor="form-website">Website URL *</label>
-                    <input 
-                      id="form-website"
-                      type="text" 
-                      name="website" 
-                      value={formData.website} 
-                      onChange={handleInputChange} 
-                      placeholder="www.yourcompany.com"
-                    />
-                    {formErrors.website && <span className="seo-error-txt">{formErrors.website}</span>}
-                  </div>
-                </div>
-
-                <div className="seo-form-row">
-                  <div className="seo-form-group">
-                    <label htmlFor="form-biz-type">Business Type</label>
-                    <select 
-                      id="form-biz-type"
-                      name="businessType" 
-                      value={formData.businessType} 
-                      onChange={handleInputChange}
-                    >
-                      <option value="e-commerce">E-Commerce Store</option>
-                      <option value="healthcare">Healthcare Clinic</option>
-                      <option value="real-estate">Real Estate Brand</option>
-                      <option value="saas">SaaS / Technology</option>
-                      <option value="education">Education Provider</option>
-                      <option value="local-services">Local Services Business</option>
-                      <option value="other">Other Business Type</option>
-                    </select>
-                  </div>
-
-                  <div className="seo-form-group">
-                    <label htmlFor="form-budget">Monthly Marketing Budget</label>
-                    <select 
-                      id="form-budget"
-                      name="budget" 
-                      value={formData.budget} 
-                      onChange={handleInputChange}
-                    >
-                      <option value="₹15k-₹25k">₹15,000 - ₹25,000 /mo</option>
-                      <option value="₹25k-₹50k">₹25,000 - ₹50,000 /mo</option>
-                      <option value="₹50k-₹1L">₹50,000 - ₹1,00,000 /mo</option>
-                      <option value="₹1L+">₹1,00,000+ /mo</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="seo-form-group">
-                  <label htmlFor="form-message">Message / Specific SEO Goals</label>
-                  <textarea 
-                    id="form-message"
-                    name="message" 
-                    value={formData.message} 
-                    onChange={handleInputChange} 
-                    rows="3" 
-                    placeholder="Tell us about your organic search goals or specific crawl errors..."
-                  />
-                </div>
-
-                <button 
-                  type="submit" 
-                  className="seo-btn seo-btn-primary" 
-                  disabled={isSubmitting}
-                  style={{ width: "100%", marginTop: "10px" }}
-                >
-                  {isSubmitting ? "Processing Audit Details..." : "🚀 Get Free SEO Audit Report"}
-                </button>
-              </form>
-            </div>
           </div>
         </div>
       </section>
@@ -1507,6 +1361,35 @@ Please contact me for the audit. Thank you!`;
         ]}
       />
 
+      {/* ── 14. FREQUENTLY ASKED QUESTIONS ── */}
+      <section className="seo-section seo-section-white">
+        <div className="seo-wrap">
+          <div className="seo-sec-header reveal-element">
+            <span className="eyebrow">❓ Got Questions?</span>
+            <h2>Frequently Asked Questions About SEO Services</h2>
+            <p>
+              Find answers to common questions about our SEO services, pricing, timelines, reporting, and how we help businesses improve Google rankings and organic traffic.
+            </p>
+          </div>
+
+          <div className="seo-faq-accordion reveal-element" style={{ maxWidth: "820px", margin: "0 auto" }}>
+            {faqs.map((faq, idx) => (
+              <div key={idx} className={`seo-faq-item ${openFaq === idx ? "open" : ""}`}>
+                <button className="seo-faq-question-btn" onClick={() => setOpenFaq(openFaq === idx ? null : idx)}>
+                  <span>{faq.q}</span>
+                  <svg className="chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <div className="seo-faq-answer">
+                  <p>{faq.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CTA 
         title="Ready to Grow Your Organic Traffic?"
         description="Partner with Digital Marketing TenX and let our SEO experts improve your Google rankings, increase organic traffic, and generate qualified leads with data-driven SEO strategies."
@@ -1520,3 +1403,4 @@ Please contact me for the audit. Thank you!`;
     </div>
   );
 }
+

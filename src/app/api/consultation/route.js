@@ -98,7 +98,7 @@ export async function POST(req) {
           <p><strong>Services:</strong> ${(services || []).join(', ')}</p>
           <p><strong>Goals:</strong> ${(goals || []).join(', ')}</p>
           <br>
-          <p><a href="https://digitalmarketingtenx.com/admin/leads?type=Consultation">View full details in Dashboard</a></p>
+          <p><a href="https://www.digitalmarketingtenx.com/admin/leads?type=Consultation">View full details in Dashboard</a></p>
         `
       }).catch(err => console.error("Admin Email error:", err));
 
@@ -124,3 +124,4 @@ export async function POST(req) {
     return NextResponse.json({ success: false, error: "Failed to submit request" }, { status: 500 });
   }
 }
+

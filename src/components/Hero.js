@@ -63,15 +63,13 @@ export default function Hero() {
       <section className="hero">
         <div className="hero-content">
           <h1 className="">
-            <span style={{ color: "#000", WebkitTextFillColor: "#000", background: "none" }}>AI-Powered</span><br />
-            Digital Marketing Agency in Hyderabad
+            <span className="ai-powered-text">AI-Powered</span><br />
+            <span style={{ color: "#FF6B00" }}>Digital Marketing Agency</span> <br /> in Hyderabad
           </h1>
           <p className="">
             Digital Marketing TenX is a results-driven digital marketing agency in Hyderabad helping businesses improve their online visibility, generate qualified leads, and achieve sustainable growth. From SEO and Google Ads to social media marketing, website development, and performance marketing, we create data-driven strategies tailored to your business goals.
           </p>
-          <div style={{ backgroundColor: "#f9f9ff", padding: "16px", borderRadius: "8px", marginBottom: "24px", borderLeft: "4px solid var(--primary)", textAlign: "left", fontSize: "0.95rem", color: "#334155" }}>
-            <strong>Summary - End-to-End Digital Marketing Solutions for Business Growth:</strong> We provide comprehensive digital marketing services, including SEO, paid ads, and web development, to help businesses scale.
-          </div>
+
           <div className="hero-btns">
             <button className="btn-primary" onClick={() => {
               gtag.event("book_consultation_click", { button_location: "hero_section" });
@@ -104,4 +102,5 @@ export default function Hero() {
     </>
   );
 }
+
 

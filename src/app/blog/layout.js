@@ -40,8 +40,8 @@ export const metadata = {
     "Performance Marketing Trends 2026"
 ],
 
-  title: 'Blog - Digital Marketing TenX',
-  description: 'Authority hub for digital marketing, SEO, business strategy, and more.',
+  title: 'Top Digital Marketing Agency in India | Digital TenX',
+  description: 'Explore expert digital marketing blogs, SEO tips, PPC, social media, AI marketing insights, and proven strategies from Digital Marketing TenX across India.',
 };
 
 export default function BlogLayout({ children }) {
@@ -56,3 +56,4 @@ export default function BlogLayout({ children }) {
     </>
   );
 }
+

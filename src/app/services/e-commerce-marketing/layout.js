@@ -12,10 +12,11 @@ export const metadata = {
   title: "Best E-Commerce Marketing Services in Hyderabad | TenX",
   description: "Boost online sales with our e-commerce marketing services in Hyderabad. We help Shopify, WooCommerce, and D2C brands grow traffic, sales, and ROI.",
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/services/e-commerce-marketing"
+    canonical: "https://www.digitalmarketingtenx.com/services/e-commerce-marketing"
   }
 };
 
 export default function Layout({ children }) {
   return children;
 }
+

@@ -15,3 +15,4 @@ export default function ArticleFAQ({ faqs = [] }) {
     </section>
   );
 }
+

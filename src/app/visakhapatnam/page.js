@@ -16,7 +16,7 @@ export const metadata = {
     "Online Marketing Services Visakhapatnam"
 ],
   alternates: {
-    canonical: "https://digitalmarketingtenx.com/visakhapatnam"
+    canonical: "https://www.digitalmarketingtenx.com/visakhapatnam"
   }
 };
 
@@ -35,3 +35,4 @@ export default function LocationPage() {
     </>
   );
 }
+
