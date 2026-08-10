@@ -428,7 +428,7 @@ export default function AboutUsPage() {
                 At Digital Marketing TenX, we started with one simple goal, to help businesses grow through honest, transparent, and result-driven digital marketing. From day one, our focus has never been just on increasing website traffic or running campaigns. Our mission has always been to create strategies that generate real business growth, qualified leads, and long-term success.
               </p>
               <p style={{marginBottom: "20px"}}>
-                As the digital landscape continues to evolve — and with <a href="https://www.hubspot.com/marketing-statistics" target="_blank" rel="noopener noreferrer" style={{color: "#ff5722", textDecoration: "underline", fontWeight: "600"}}>industry statistics</a> showing that generating traffic and leads is the top challenge for marketers — we embrace innovation, data-driven decision-making, and AI-powered solutions to deliver measurable results for every client. We believe every business is unique, which is why we take the time to understand your goals before building customized marketing strategies.
+                As the digital landscape continues to evolve, and with <a href="https://www.hubspot.com/marketing-statistics" target="_blank" rel="noopener noreferrer" style={{color: "#ff5722", textDecoration: "underline", fontWeight: "600"}}>industry statistics</a> showing that generating traffic and leads is the top challenge for marketers, we embrace innovation, data-driven decision-making, and AI-powered solutions to deliver measurable results for every client. We believe every business is unique, which is why we take the time to understand your goals before building customized marketing strategies.
               </p>
               <p style={{marginBottom: "20px"}}>
                 Our greatest achievement is the trust our clients place in us. Every project we undertake is treated as a long-term partnership built on transparency, accountability, and continuous improvement.
@@ -437,7 +437,10 @@ export default function AboutUsPage() {
                 Thank you for considering Digital Marketing TenX as your digital growth partner. We look forward to helping your business achieve sustainable success in today's competitive digital world.
               </p>
               
-              <h4 style={{fontSize: "1.25rem", fontWeight: "800", color: "#0f172a"}}>— Founder, Digital Marketing TenX</h4>
+              <div style={{ marginTop: "24px" }}>
+                <h4 style={{fontSize: "1.25rem", fontWeight: "800", color: "#0f172a", marginBottom: "4px"}}>Anil Kumar</h4>
+                <p style={{fontSize: "0.95rem", color: "#64748b", margin: 0}}>Founder, Digital Marketing TenX</p>
+              </div>
             </div>
           </div>
         </section>
