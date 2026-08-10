@@ -47,6 +47,13 @@ export default function ContactClient() {
   };
 
   useEffect(() => {
+    document.body.classList.add("has-static-header");
+    return () => {
+      document.body.classList.remove("has-static-header");
+    };
+  }, []);
+
+  useEffect(() => {
     if (serviceId && packageId && servicePricing[serviceId]) {
       const serviceData = servicePricing[serviceId];
       const packageData = serviceData.packages[packageId];
