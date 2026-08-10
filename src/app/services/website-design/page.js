@@ -670,11 +670,11 @@ export default function WebsiteDesignPage() {
         {/* SECTION 7: TECHNOLOGY STACK */}
         <section className="w-section w-section-white">
           <div className="w-grid-content">
-            <div className="w-title-centered" style={{ maxWidth: "800px" }}>
+            <div className="w-title-centered" style={{ maxWidth: "1000px", margin: "0 auto" }}>
               <span className="eyebrow">MODERN DEVELOPMENT STACK</span>
               <h2>Technologies We Use to Build High-Performance Websites</h2>
-              <p>
-                At Digital Marketing TenX, we use modern, reliable, and industry-leading technologies to build secure, scalable, and high-performing websites. As a trusted Website Design and Development Company in Hyderabad, we choose the right technology stack based on your business goals, ensuring your website is fast, responsive, SEO-friendly, and built for long-term success.
+              <p style={{ maxWidth: "980px", margin: "0 auto", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                At Digital Marketing TenX, we use modern, reliable, and industry-leading technologies to build <strong>secure, scalable, and high-performing websites</strong>. As a trusted Website Design and Development Company in Hyderabad, we choose the right technology stack based on your business goals, ensuring your website is <strong>fast, responsive, SEO-friendly, and built for long-term success.</strong>
               </p>
             </div>
 
