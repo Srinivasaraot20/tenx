@@ -450,8 +450,8 @@ export default function AboutUsPage() {
           <div className="sec-header">
             <span className="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
             <h2>Frequently Asked Questions About Digital Marketing Services</h2>
-            <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
-              Find answers to the most common questions about Digital Marketing TenX, our digital marketing services, and how we help businesses achieve sustainable online growth.
+            <p style={{ maxWidth: "750px", margin: "0 auto", color: "#475569", fontSize: "1.1rem", lineHeight: "1.7" }}>
+              Find answers to the most common questions about <strong>Digital Marketing TenX</strong>, our digital marketing services, and how we help businesses achieve <strong>sustainable online growth.</strong>
             </p>
           </div>
           <div className="seo-faq-accordion" style={{maxWidth: "800px", margin: "0 auto"}}>
