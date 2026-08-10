@@ -265,7 +265,8 @@ export default function AboutUsPage() {
           <div className="sec-header">
             <span className="eyebrow">OUR CORE VALUES</span>
             <h2>The Values That Drive Our Success</h2>
-            <p>At Digital Marketing TenX, our core values shape every strategy, campaign, and client partnership. From innovation and transparency to integrity and measurable results, these principles help us deliver digital marketing solutions that drive sustainable business growth.
+            <p style={{ maxWidth: "850px", margin: "0 auto", lineHeight: "1.8", color: "#475569", fontSize: "1.1rem" }}>
+              At Digital Marketing TenX, our core values drive every strategy and client partnership. We combine <strong>innovation, transparency, and integrity</strong> to deliver measurable results. These principles empower us to create digital solutions for <strong>sustainable business growth.</strong>
             </p>
           </div>
           <div className="values-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "1200px", margin: "0 auto"}}>
