@@ -120,7 +120,7 @@ export default function AboutUsPage() {
         <section className="about-hero-new">
           <div className="about-hero-container">
             <div className="about-hero-left">
-              <h1>Top Digital Marketing Company in Hyderabad Driving Real <span style={{color: "#ff5722"}}>Growth.</span></h1>
+              <h2 className="about-hero-title">Top Digital Marketing Company in Hyderabad Driving Real <span style={{color: "#ff5722"}}>Growth.</span></h2>
               <p className="hero-desc">
                 Digital Marketing TenX is a top digital marketing company in Hyderabad, helping businesses grow through SEO, Google Ads, social media marketing, web development, and AI-powered digital strategies. We combine data, creativity, and technology to drive measurable growth and long-term business success.
               </p>
@@ -214,6 +214,9 @@ export default function AboutUsPage() {
 
         {/* 3. Our Story */}
         <section className="about-story" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff"}}>
+          <div className="sec-title-centered" style={{ maxWidth: "800px", margin: "0 auto 40px", textAlign: "center" }}>
+            <h1 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: "900", color: "#0f172a", letterSpacing: "-1px" }}>About Digital Marketing TenX</h1>
+          </div>
           <div className="story-container" style={{maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "60px", alignItems: "center"}}>
             <div className="story-image-wrap" style={{position: "relative", width: "100%", borderRadius: "24px", overflow: "hidden"}}>
               <Image 
