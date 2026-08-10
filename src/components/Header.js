@@ -82,9 +82,11 @@ export default function Header() {
     setIsAccordionOpen((prev) => !prev);
   }, []);
 
+  const isContactPage = pathname === '/contact' || pathname === '/contact/';
+
   return (
     <>
-      <nav className={`header-nav ${pathname === '/contact' ? 'header-static' : ''}`}>
+      <nav className={`header-nav ${isContactPage ? 'header-static' : ''}`}>
         <Link href="/" className="logo" onClick={handleLinkClick}>
           <Image
             src="/logo.webp"
