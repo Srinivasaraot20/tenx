@@ -468,49 +468,39 @@ export default function SocialMediaMarketingPage() {
       <section className="smm-section">
         <div className="smm-sec-header reveal-element">
           <span className="eyebrow">WHY CHOOSE SOCIAL MEDIA MARKETING?</span>
-          <h2>Key Benefits of Social Media Marketing</h2>
-          <p>Grow your brand, reach the right audience, generate qualified leads, and increase sales with data-driven social media marketing strategies tailored to your business goals.</p>
+          <h2>Why Your Business Needs Social Media Marketing</h2>
+          <p>Build a strong online presence, connect with your target audience, and generate qualified leads through strategic social media marketing. From brand awareness to customer engagement, social media helps businesses grow faster and stay ahead of the competition.</p>
         </div>
         <div className="smm-why-grid reveal-element">
           <div className="glass-card smm-why-card">
             <div className="smm-why-icon">📢</div>
             <h3>Increase Brand Awareness</h3>
-            <p>Build a strong online presence and make your business more recognizable across Facebook, Instagram, LinkedIn, and other social platforms.</p>
-          </div>
-          <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">💬</div>
-            <h3>Higher Engagement</h3>
-            <p>Increase likes, comments, shares, and meaningful interactions that strengthen customer relationships.</p>
-          </div>
-          <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">🌐</div>
-            <h3>Drive Website Traffic</h3>
-            <p>Bring targeted visitors to your website through engaging content, strategic campaigns, and optimized social media profiles.</p>
+            <p>Grow your brand visibility across Facebook, Instagram, LinkedIn, and other platforms with consistent, engaging content that keeps your business top of mind.</p>
           </div>
           <div className="glass-card smm-why-card">
             <div className="smm-why-icon">🎯</div>
             <h3>Generate Quality Leads</h3>
-            <p>Convert social media audiences into qualified leads using lead forms, targeted campaigns, and compelling calls to action.</p>
-          </div>
-          <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">🛒</div>
-            <h3>Increase Sales &amp; Conversions</h3>
-            <p>Turn followers into paying customers with optimized campaigns, retargeting, and conversion-focused strategies.</p>
+            <p>Reach the right audience with targeted campaigns and convert interested users into qualified leads through optimized social media strategies.</p>
           </div>
           <div className="glass-card smm-why-card">
             <div className="smm-why-icon">🤝</div>
-            <h3>Build Customer Loyalty</h3>
-            <p>Strengthen long-term customer relationships through consistent communication, valuable content, and active community management.</p>
+            <h3>Build Customer Trust</h3>
+            <p>Build credibility by sharing valuable content, responding to customer queries, and maintaining an active, professional social media presence.</p>
           </div>
           <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">⭐</div>
-            <h3>Better Brand Reputation</h3>
-            <p>Build trust and credibility by maintaining a professional social media presence and responding to customer feedback.</p>
+            <div className="smm-why-icon">⚡</div>
+            <h3>Improve Engagement</h3>
+            <p>Increase likes, comments, shares, and conversations with engaging content that encourages your audience to interact with your brand.</p>
           </div>
           <div className="glass-card smm-why-card">
-            <div className="smm-why-icon">📈</div>
-            <h3>Maximize ROI</h3>
-            <p>Improve marketing performance with continuous optimization, audience targeting, and data-driven campaign decisions.</p>
+            <div className="smm-why-icon">🌐</div>
+            <h3>Drive Website Traffic</h3>
+            <p>Direct social media users to your website, landing pages, or online store to increase traffic, inquiries, and conversions.</p>
+          </div>
+          <div className="glass-card smm-why-card">
+            <div className="smm-why-icon">🛒</div>
+            <h3>Boost Sales &amp; Conversions</h3>
+            <p>Turn followers into customers with strategic campaigns, retargeting ads, and conversion-focused content that drives measurable business growth.</p>
           </div>
         </div>
       </section>
