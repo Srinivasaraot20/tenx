@@ -82,7 +82,7 @@ export default function BlogPage() {
 
       <section className="blog-wrap">
         <div className="blog-main">
-          <FeaturedArticle article={featured} />
+
           <BlogList initialArticles={ARTICLES} categoryCards={categoryCards} />
         </div>
 
