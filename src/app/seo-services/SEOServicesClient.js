@@ -592,21 +592,6 @@ Please contact me for the audit. Thank you!`;
       bg: "rgba(245, 158, 11, 0.08)"
     },
     {
-      title: "Link Building",
-      bullets: [
-        "Editorial outreach campaigns",
-        "Skyscraper technique articles",
-        "HARO press opportunities",
-        "High-authority resource links",
-        "Broken link replacement",
-        "PR distribution outreach",
-        "Safe white-hat link acquisition",
-        "Toxic link disavow management"
-      ],
-      color: "#6366f1",
-      bg: "rgba(99, 102, 241, 0.08)"
-    },
-    {
       title: "SEO Reporting",
       bullets: [
         "Google Analytics 4 setup",
