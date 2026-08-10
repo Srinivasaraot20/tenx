@@ -1537,7 +1537,8 @@ body.drawer-open {
 
 /* ── SEO SECTION STYLING ── */
 .seo-section {
-  padding: clamp(2rem, 5vw, 5rem) 0;
+  padding-top: clamp(2rem, 3vw, 3.5rem);
+  padding-bottom: clamp(2rem, 5vw, 5rem);
   background: #f8fafc;
   border-top: 1px solid rgba(15, 23, 42, 0.04);
 }
