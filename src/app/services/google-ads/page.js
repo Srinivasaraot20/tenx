@@ -409,8 +409,7 @@ const services = [
   { title: "Performance Max", desc: "AI-powered campaigns that run across all Google channels automatically to maximize conversions.", benefits: ["All-channel reach", "AI optimization", "Smart bidding"], color: "#34A853", bg: "rgba(52,168,83,0.1)" },
   { title: "Shopping Ads", desc: "Show product listings with images, prices and reviews directly in search results.", benefits: ["Product showcase", "High purchase intent", "Visual CTR boost"], color: "#FBBC05", bg: "rgba(251,188,5,0.15)" },
   { title: "YouTube Ads", desc: "Engage audiences with compelling video ads on the world's #2 search engine and largest video platform.", benefits: ["Video storytelling", "Massive reach", "Skip-ad analytics"], color: "#FF0000", bg: "rgba(255,0,0,0.08)" },
-  { title: "Remarketing", desc: "Re-engage visitors who've interacted with your brand before and bring them back to convert.", benefits: ["Warm audience", "Higher CVR", "Custom audiences"], color: "#7c3aed", bg: "rgba(124,58,237,0.1)" },
-  { title: "Local Service Ads", desc: "Appear at the very top of local searches with a trusted Google Guaranteed badge.", benefits: ["Google Guaranteed", "Local dominance", "Call leads"], color: "#0f9d58", bg: "rgba(15,157,88,0.1)" },
+
   { title: "Call-Only Ads", desc: "Drive phone calls directly from Google search results — perfect for service businesses.", benefits: ["Direct calls", "Mobile-first", "High intent"], color: "#ff5722", bg: "rgba(255,107,0,0.1)" },
   { title: "Discovery Ads", desc: "Reach people browsing YouTube feed, Gmail Promotions and Google Discover at key moments.", benefits: ["Native-style ads", "Intent signals", "Visual formats"], color: "#1a73e8", bg: "rgba(26,115,232,0.1)" },
   { title: "Demand Gen", desc: "Immersive, visually rich campaigns designed to generate demand on Google's most engaging platforms.", benefits: ["Brand building", "Lookalike audiences", "Rich creatives"], color: "#d946ef", bg: "rgba(217,70,239,0.1)" },
