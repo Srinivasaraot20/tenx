@@ -1172,7 +1172,12 @@
     padding: 20px 24px 10px 24px;
   }
   .services-hero-content h1 {
-    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    font-size: clamp(1.4rem, 6.5vw, 2.1rem) !important;
+    line-height: 1.15 !important;
+    max-width: 100% !important;
+  }
+  .services-hero-content h1 span {
+    display: block !important;
   }
   .s-globe-container {
     max-width: 380px;

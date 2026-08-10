@@ -616,7 +616,7 @@ export default function ServicesPage() {
               <div className="services-hero-content">
                 <span className="badge-premium">🚀 Our Digital Marketing Services</span>
                 <h1 className="services-hero-title">
-                  Digital Marketing Solutions <br className="hide-mobile" />
+                  <span className="w-text-main">Digital Marketing Solutions</span> <br className="hide-mobile" />
                   <span className="w-text-orange">That Accelerate</span> <br className="hide-mobile" />
                   <span className="w-text-purple">Business Growth</span>
                 </h1>
