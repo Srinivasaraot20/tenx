@@ -674,7 +674,7 @@ export default function WebsiteDesignPage() {
               <span className="eyebrow">MODERN DEVELOPMENT STACK</span>
               <h2>Technologies We Use to Build High-Performance Websites</h2>
               <p style={{ maxWidth: "980px", margin: "0 auto", fontSize: "1.1rem", lineHeight: "1.7" }}>
-                At Digital Marketing TenX, we use modern, reliable, and industry-leading technologies to build <strong>secure, scalable, and high-performing websites</strong>. As a trusted Website Design and Development Company in Hyderabad, we choose the right technology stack based on your business goals, ensuring your website is <strong>fast, responsive, SEO-friendly, and built for long-term success.</strong>
+                At <a href="https://digitalmarketingtenx.com/" target="_blank" rel="noopener noreferrer" style={{color: "#ff5722", textDecoration: "underline", fontWeight: "600"}}>Digital Marketing TenX</a>, we use modern, reliable, and industry-leading technologies to build <strong>secure, scalable, and high-performing websites</strong>. As a trusted Website Design and Development Company in Hyderabad, we choose the right technology stack based on your business goals, ensuring your website is <strong>fast, responsive, SEO-friendly, and built for long-term success.</strong>
               </p>
             </div>
 
