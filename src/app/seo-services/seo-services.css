@@ -2067,6 +2067,25 @@
 }
 
 @media (max-width: 768px) {
+  /* ── Hero: image first on mobile ── */
+  .seo-hero-section {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .seo-hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .seo-hero-content {
+    order: 2;
+  }
+  .seo-hero-visual-container {
+    order: 1;
+    max-width: 420px !important;
+    margin: 0 auto 8px auto !important;
+    width: 100%;
+  }
   .seo-lead-points {
     grid-template-columns: 1fr;
   }
