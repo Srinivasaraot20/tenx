@@ -382,8 +382,8 @@ export default function AboutUsPage() {
           <div className="sec-header">
             <span className="eyebrow">OUR EXPERTISE</span>
             <h2>Our Digital Marketing Expertise</h2>
-            <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
-              We combine strategy, creativity, technology, and data to deliver comprehensive digital marketing solutions that help businesses increase visibility, generate qualified leads, and achieve sustainable growth.
+            <p style={{ maxWidth: "900px", margin: "0 auto", color: "#475569", fontSize: "1.1rem", lineHeight: "1.7" }}>
+              We combine <strong>strategy, creativity, technology, and data</strong> to deliver comprehensive digital marketing solutions that help businesses <strong>increase visibility, generate qualified leads, and achieve sustainable growth.</strong>
             </p>
           </div>
           <div className="expertise-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "1200px", margin: "0 auto"}}>
