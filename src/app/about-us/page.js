@@ -282,7 +282,7 @@ export default function AboutUsPage() {
         <section className="about-why-choose" style={{padding: "var(--space-fluid-section-py) var(--space-fluid-section-px)", background: "#fff", color: "#0f172a"}}>
           <div className="why-choose-container" style={{maxWidth: "1200px", margin: "0 auto"}}>
             
-            <div className="sec-title-centered" style={{textAlign: "center", maxWidth: "800px", margin: "0 auto 50px"}}>
+            <div className="sec-title-centered" style={{textAlign: "center", maxWidth: "1000px", margin: "0 auto 50px"}}>
               <span className="eyebrow" style={{ display: "inline-block", marginBottom: "16px" }}>WHY CHOOSE US</span>
               <h2 style={{ marginBottom: "20px" }}>Why Businesses Choose Digital Marketing TenX</h2>
               <p style={{color: "#475569", fontSize: "1.1rem", lineHeight: "1.7", margin: "0 auto"}}>
