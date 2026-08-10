@@ -1,5 +1,10 @@
 /* ─── WEBSITE DESIGN SERVICE LANDING PAGE CSS (LIGHT/GLASS THEME) ─── */
 
+/* Mobile-only br utility */
+.show-mobile-br {
+  display: none;
+}
+
 :root {
   --w-light-bg: #f8f9fc;
   --w-white-bg: #ffffff;
@@ -2699,6 +2704,9 @@
 
 @media (max-width: 768px) {
   /* HERO SECTION MOBILE RE-ORDER AND CENTERING */
+  .show-mobile-br {
+    display: inline;
+  }
   .w-hero-grid {
     display: flex;
     flex-direction: column;
@@ -2706,17 +2714,17 @@
     gap: 16px;
   }
   .w-hero-content {
-    order: 1;
+    order: 2;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .w-hero-visual-container {
-    order: 2;
+    order: 1;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 420px;
+    margin: 0 auto 8px auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -2742,7 +2750,9 @@
     min-height: 0;
   }
   .w-hero-content h1 {
-    font-size: 30px;
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    line-height: 1.15 !important;
+    max-width: 100% !important;
   }
   .w-services-grid {
     grid-template-columns: 1fr;
@@ -2829,10 +2839,13 @@
     padding: 36px 24px;
   }
   .w-hero-visual-container {
-    display: none;
+    display: flex;
+    order: 1;
+    max-width: 360px;
+    margin: 0 auto 8px auto;
   }
   .w-hero-section {
-    padding: 40px 20px;
+    padding: 20px 20px 10px 20px;
   }
 }
 
