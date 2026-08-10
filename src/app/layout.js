@@ -14,7 +14,18 @@ const inter = Inter({
 export const metadata = {
   title: "Best Digital Marketing Agency in Hyderabad | TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
-  metadataBase: new URL("https://digitalmarketingtenx.com"),
+  metadataBase: new URL("https://www.digitalmarketingtenx.com"),
+  icons: {
+    icon: [
+      { url: "/favicon-48x48.webp", sizes: "48x48", type: "image/webp" },
+      { url: "/favicon-64x64.webp", sizes: "64x64", type: "image/webp" },
+      { url: "/favicon-192x192.webp", sizes: "192x192", type: "image/webp" },
+    ],
+    shortcut: "/favicon-48x48.webp",
+    apple: [
+      { url: "/apple-icon.webp", sizes: "180x180", type: "image/webp" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
