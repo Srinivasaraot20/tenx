@@ -387,7 +387,7 @@ export default function WebsiteDesignPage() {
             <div className="w-hero-content">
               <span className="badge-premium">WEBSITE DESIGN & DEVELOPMENT SERVICES</span>
               <h1>
-                Website Design and Development Company in <span style={{ color: "#ff5722" }}>Hyderabad</span>
+                Website Design and Development Company <br /> in <span style={{ color: "#ff5722" }}>Hyderabad</span>
               </h1>
               <p>
                 At Digital Marketing TenX, we are a trusted Website Design and Development Company in Hyderabad delivering custom, responsive, SEO-friendly, and high-performance websites for startups, SMEs, and enterprises. From business websites and WordPress development to eCommerce stores and AI-powered web solutions, we build websites that attract visitors, generate qualified leads, and drive long-term business growth.
