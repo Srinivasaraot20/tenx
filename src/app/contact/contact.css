@@ -23,9 +23,20 @@
   background: #ffffff;
 }
 
+.con-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
 @media (max-width: 768px) {
   .con-section {
     padding: 30px 20px;
+  }
+  .con-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 

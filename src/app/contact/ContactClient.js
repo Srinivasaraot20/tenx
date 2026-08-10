@@ -516,7 +516,7 @@ export default function ContactClient() {
             <h2>Services We Can Help With</h2>
             <p>Comprehensive digital marketing solutions tailored to grow your business.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '40px' }}>
+          <div className="con-services-grid">
             {[
               { name: "Website Design", icon: "/website-design.webp" },
               { name: "Google Ads", icon: "/google-ads.webp" },
