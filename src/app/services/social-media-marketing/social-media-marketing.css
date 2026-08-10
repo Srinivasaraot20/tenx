@@ -93,7 +93,7 @@
 
 .smm-hero h1 {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 900;
   line-height: 1.25;
   color: var(--smm-dark);
