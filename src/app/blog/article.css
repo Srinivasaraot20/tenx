@@ -313,8 +313,14 @@
   margin-bottom: 16px;
 }
 
-.article-content ul, .article-content ol {
-  margin: 0 0 20px 20px;
+.article-content ul {
+  list-style-type: disc !important;
+  margin: 0 0 20px 24px;
+}
+
+.article-content ol {
+  list-style-type: decimal !important;
+  margin: 0 0 20px 24px;
 }
 
 .article-content li {
