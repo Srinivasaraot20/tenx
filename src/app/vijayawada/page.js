@@ -16,7 +16,7 @@ export const metadata = {
     "Digital Marketing Experts Vijayawada"
 ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/vijayawada"
+    canonical: "https://digitalmarketingtenx.com/vijayawada"
   }
 };
 

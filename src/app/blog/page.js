@@ -26,16 +26,16 @@ export const metadata = {
     "Digital Marketing Agency Hyderabad",
   ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/blog",
+    canonical: "https://digitalmarketingtenx.com/blog",
   },
   openGraph: {
     title: "Digital Marketing Blog | Digital Marketing TenX",
     description: "Read expert articles on SEO, Google Ads, AI marketing, website development, social media marketing, and business growth strategies.",
     type: "website",
-    url: "https://www.digitalmarketingtenx.com/blog",
+    url: "https://digitalmarketingtenx.com/blog",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/images/blog-og.jpg",
+        url: "https://digitalmarketingtenx.com/images/blog-og.jpg",
       },
     ],
   },
@@ -57,16 +57,16 @@ export default function BlogPage() {
     "@type": "Blog",
     name: "Digital Marketing TenX Blog",
     description: "Expert digital marketing, SEO, and business growth insights",
-    url: "https://www.digitalmarketingtenx.com/blog",
+    url: "https://digitalmarketingtenx.com/blog",
     publisher: {
       "@type": "Organization",
       name: "Digital Marketing TenX",
-      logo: { "@type": "ImageObject", url: "https://www.digitalmarketingtenx.com/logo.webp" },
+      logo: { "@type": "ImageObject", url: "https://digitalmarketingtenx.com/logo.webp" },
     },
     blogPost: ARTICLES.slice(0, 10).map((a) => ({
       "@type": "BlogPosting",
       headline: a.title,
-      url: `https://www.digitalmarketingtenx.com/blog/${a.slug}`,
+      url: `https://digitalmarketingtenx.com/blog/${a.slug}`,
       datePublished: a.date,
       author: { "@type": "Person", name: a.author },
     })),

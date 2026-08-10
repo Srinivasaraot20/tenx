@@ -93,7 +93,7 @@ To trigger any request, email our compliance officer at privacy@digitalmarketing
 - **Address**: Level 4, Gumidelli Towers, 39 to 44, Old Patigadda,<br />Prakash Nagar, Begumpet,<br />Hyderabad, Telangana 500016
 - **Phone Number**: +91 93922 51739
 - **Support Email**: info@digitalmarketingtenx.com
-- **Website URL**: https://www.digitalmarketingtenx.com`
+- **Website URL**: https://digitalmarketingtenx.com`
     }
   ];
 

@@ -11,7 +11,7 @@ export const metadata = {
   title: "Best WhatsApp Automation Services in Hyderabad | Digital TenX",
   description: "Automate customer support, lead generation, sales with WhatsApp Automation Services in Hyderabad. Grow faster using WhatsApp API, chatbots & CRM integration.",
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/services/whatsapp-automation"
+    canonical: "https://digitalmarketingtenx.com/services/whatsapp-automation"
   }
 };
 

@@ -145,7 +145,7 @@ const termsSections = [
       "Address: Regus Begumpet, Level 4, Gumidelli Towers, Sardar Patel Road, Begumpet, Hyderabad, Telangana – 500016, India",
       "Phone: +91 93922 51739",
       "Email: info@digitalmarketingtenx.com",
-      "Website: https://www.digitalmarketingtenx.com",
+      "Website: https://digitalmarketingtenx.com",
       "Business Hours: Monday – Saturday, 9:00 AM – 6:30 PM IST"
     ]
   }

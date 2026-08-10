@@ -83,16 +83,16 @@ export const metadata = {
   title: "Top Digital Marketing Companies in Hyderabad | Digital TenX",
   description: "Digital Marketing TenX is a top digital marketing company in Hyderabad offering SEO, Google Ads, social media marketing, web development. Get started today!",
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/about-us",
+    canonical: "https://digitalmarketingtenx.com/about-us",
   },
   openGraph: {
     title: "Top Digital Marketing Companies in Hyderabad | Digital TenX",
     description: "Digital Marketing TenX is a top digital marketing company in Hyderabad offering SEO, Google Ads, social media marketing, web development. Get started today!",
-    url: "https://www.digitalmarketingtenx.com/about-us",
+    url: "https://digitalmarketingtenx.com/about-us",
     type: "website",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/og-image.webp",
+        url: "https://digitalmarketingtenx.com/og-image.webp",
         width: 1200,
         height: 630,
         alt: "About Digital Marketing TenX",
@@ -108,8 +108,8 @@ export default function AboutLayout({ children }) {
     "mainEntity": {
       "@type": "Organization",
       "name": "Digital Marketing TenX",
-      "url": "https://www.digitalmarketingtenx.com",
-      "logo": "https://www.digitalmarketingtenx.com/logo.webp",
+      "url": "https://digitalmarketingtenx.com",
+      "logo": "https://digitalmarketingtenx.com/logo.webp",
       "description": "AI-Powered Full-Service Digital Marketing Agency & SEO Experts based in Hyderabad, Telangana.",
       "telephone": "+91-93922-51739",
       "address": {
@@ -148,13 +148,13 @@ export default function AboutLayout({ children }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.digitalmarketingtenx.com"
+        "item": "https://digitalmarketingtenx.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "About Us",
-        "item": "https://www.digitalmarketingtenx.com/about-us"
+        "item": "https://digitalmarketingtenx.com/about-us"
       }
     ]
   };

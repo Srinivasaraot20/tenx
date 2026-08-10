@@ -61,16 +61,16 @@ export const metadata = {
   title: "Contact Digital Marketing Agency in Hyderabad | TenX",
   description: "Contact Digital Marketing TenX in Hyderabad for SEO, Google Ads, social media marketing, website design, and WhatsApp automation services.",
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/contact",
+    canonical: "https://digitalmarketingtenx.com/contact",
   },
   openGraph: {
     title: "Contact Digital Marketing Agency in Hyderabad | TenX",
     description: "Contact Digital Marketing TenX in Hyderabad for SEO, Google Ads, social media marketing, website design, and WhatsApp automation services.",
-    url: "https://www.digitalmarketingtenx.com/contact",
+    url: "https://digitalmarketingtenx.com/contact",
     type: "website",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/logo.webp",
+        url: "https://digitalmarketingtenx.com/logo.webp",
         width: 300,
         height: 300,
         alt: "Digital Marketing TenX",

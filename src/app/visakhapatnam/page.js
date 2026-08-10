@@ -16,7 +16,7 @@ export const metadata = {
     "Online Marketing Services Visakhapatnam"
 ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/visakhapatnam"
+    canonical: "https://digitalmarketingtenx.com/visakhapatnam"
   }
 };
 

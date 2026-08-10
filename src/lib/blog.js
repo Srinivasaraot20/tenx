@@ -1,7 +1,7 @@
 import { ARTICLES } from "@/data/articles";
 import { CATEGORIES } from "@/data/categories";
 
-export const SITE_URL = "https://www.digitalmarketingtenx.com";
+export const SITE_URL = "https://digitalmarketingtenx.com";
 
 export function getArticleBySlug(slug) {
   return ARTICLES.find((a) => a.slug === slug);

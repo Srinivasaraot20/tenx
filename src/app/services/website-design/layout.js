@@ -68,16 +68,16 @@ export const metadata = {
   title: "Website Design and Development Company in Hyderabad | TenX",
   description: "Looking for a website design and development company in Hyderabad? Get SEO-friendly, responsive websites from Digital Marketing TenX. Contact us today!",
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/services/website-design"
+    canonical: "https://digitalmarketingtenx.com/services/website-design"
   },
   openGraph: {
     title: "Website Design and Development Company in Hyderabad | TenX",
     description: "Looking for a website design and development company in Hyderabad? Get SEO-friendly, responsive websites from Digital Marketing TenX. Contact us today!",
-    url: "https://www.digitalmarketingtenx.com/services/website-design",
+    url: "https://digitalmarketingtenx.com/services/website-design",
     type: "website",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/logo.webp",
+        url: "https://digitalmarketingtenx.com/logo.webp",
         width: 300,
         height: 300,
         alt: "Digital Marketing TenX",

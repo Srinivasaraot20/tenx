@@ -17,7 +17,7 @@ export const metadata = {
     "Lead Generation Company Warangal"
 ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/warangal"
+    canonical: "https://digitalmarketingtenx.com/warangal"
   }
 };
 

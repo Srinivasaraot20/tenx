@@ -23,7 +23,7 @@ export const metadata = {
     "Lead Generation Company Hyderabad"
 ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/hyderabad"
+    canonical: "https://digitalmarketingtenx.com/hyderabad"
   }
 };
 

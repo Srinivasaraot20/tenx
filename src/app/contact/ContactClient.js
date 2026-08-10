@@ -313,7 +313,7 @@ export default function ContactClient() {
               </p>
               <div className="con-card-actions">
                 <a href="mailto:info@digitalmarketingtenx.com" className="con-btn-primary" onClick={() => gtag.event("email_click", { email_address: "info@digitalmarketingtenx.com", button_location: "contact_page_card" })}>Send Email</a>
-                <a href="https://www.digitalmarketingtenx.com" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("website_click", { destination: "digitalmarketingtenx.com" })}>Visit Website</a>
+                <a href="https://digitalmarketingtenx.com" target="_blank" rel="noopener noreferrer" className="con-btn-secondary" onClick={() => gtag.event("website_click", { destination: "digitalmarketingtenx.com" })}>Visit Website</a>
               </div>
             </div>
 

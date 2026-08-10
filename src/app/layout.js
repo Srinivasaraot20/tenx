@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata = {
   title: "Best Digital Marketing Agency in Hyderabad | TenX",
   description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
-  metadataBase: new URL("https://www.digitalmarketingtenx.com"),
+  metadataBase: new URL("https://digitalmarketingtenx.com"),
 };
 
 export default function RootLayout({ children }) {

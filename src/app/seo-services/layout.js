@@ -37,16 +37,16 @@ export const metadata = {
   title: "SEO Services & Search Engine Optimization Company | Digital Marketing TenX",
   description: "Rank higher on Google, increase organic visibility, and drive long-term business growth with white-hat SEO services from Digital Marketing TenX. Request your free SEO audit today.",
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/seo-services",
+    canonical: "https://digitalmarketingtenx.com/seo-services",
   },
   openGraph: {
     title: "SEO Services & Search Engine Optimization Company | Digital Marketing TenX",
     description: "Rank higher on Google, increase organic visibility, and drive long-term business growth with white-hat SEO services from Digital Marketing TenX. Request your free SEO audit today.",
-    url: "https://www.digitalmarketingtenx.com/seo-services",
+    url: "https://digitalmarketingtenx.com/seo-services",
     type: "website",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/seo-dashboard.webp",
+        url: "https://digitalmarketingtenx.com/seo-dashboard.webp",
         width: 1200,
         height: 630,
         alt: "Enterprise SEO Dashboard & Organic Growth Services",
@@ -64,8 +64,8 @@ export default function SEOServicesLayout({ children }) {
     "provider": {
       "@type": "Organization",
       "name": "Digital Marketing TenX",
-      "url": "https://www.digitalmarketingtenx.com",
-      "logo": "https://www.digitalmarketingtenx.com/logo.webp"
+      "url": "https://digitalmarketingtenx.com",
+      "logo": "https://digitalmarketingtenx.com/logo.webp"
     },
     "description": "Premium white-hat SEO services including Technical SEO, On-Page optimization, Off-Page Link Building, Local SEO, Keyword Research, and analytics reporting to drive organic rankings and sales.",
     "areaServed": [
@@ -126,19 +126,19 @@ export default function SEOServicesLayout({ children }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.digitalmarketingtenx.com"
+        "item": "https://digitalmarketingtenx.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.digitalmarketingtenx.com/services"
+        "item": "https://digitalmarketingtenx.com/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "SEO Services",
-        "item": "https://www.digitalmarketingtenx.com/seo-services"
+        "item": "https://digitalmarketingtenx.com/seo-services"
       }
     ]
   };
@@ -195,14 +195,14 @@ export default function SEOServicesLayout({ children }) {
     "@type": "WebPage",
     "name": "SEO Services - Digital Marketing TenX",
     "description": "Rank higher on Google and scale your business with enterprise-grade SEO Services from Digital Marketing TenX.",
-    "url": "https://www.digitalmarketingtenx.com/seo-services"
+    "url": "https://digitalmarketingtenx.com/seo-services"
   };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Digital Marketing TenX (SEO Company Hyderabad)",
-    "image": "https://www.digitalmarketingtenx.com/logo.webp",
+    "image": "https://digitalmarketingtenx.com/logo.webp",
     "telephone": "+91-93922-51739",
     "email": "grow@digitalmarketingtenx.com",
     "priceRange": "$$",
@@ -219,7 +219,7 @@ export default function SEOServicesLayout({ children }) {
       "latitude": "17.4447",
       "longitude": "78.4664"
     },
-    "url": "https://www.digitalmarketingtenx.com/seo-services",
+    "url": "https://digitalmarketingtenx.com/seo-services",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],

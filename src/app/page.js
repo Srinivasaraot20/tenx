@@ -384,11 +384,11 @@ export const metadata = {
   openGraph: {
     title: "Best Digital Marketing Agency in Hyderabad | TenX",
     description: "Looking for a results-driven digital marketing agency in Hyderabad? Get SEO, Google Ads & social media marketing that grows leads. Book a free audit today.",
-    url: "https://www.digitalmarketingtenx.com/",
+    url: "https://digitalmarketingtenx.com/",
     type: "website",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/logo.webp",
+        url: "https://digitalmarketingtenx.com/logo.webp",
         width: 1200,
         height: 630,
         alt: "Digital Marketing TenX Agency Hyderabad",

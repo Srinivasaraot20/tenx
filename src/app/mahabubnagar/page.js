@@ -16,7 +16,7 @@ export const metadata = {
     "Business Growth Agency Mahabubnagar"
 ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/mahabubnagar"
+    canonical: "https://digitalmarketingtenx.com/mahabubnagar"
   }
 };
 

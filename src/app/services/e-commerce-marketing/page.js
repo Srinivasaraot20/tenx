@@ -4,18 +4,18 @@ export const metadata = {
   title: "Best E-Commerce Marketing Services in Hyderabad | TenX",
   description: "Boost online sales with our e-commerce marketing services in Hyderabad. We help Shopify, WooCommerce, and D2C brands grow traffic, sales, and ROI.",
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/services/e-commerce-marketing",
+    canonical: "https://digitalmarketingtenx.com/services/e-commerce-marketing",
   },
   openGraph: {
     title: "Best E-Commerce Marketing Services in Hyderabad | TenX",
     description: "Boost online sales with our e-commerce marketing services in Hyderabad. We help Shopify, WooCommerce, and D2C brands grow traffic, sales, and ROI.",
-    url: "https://www.digitalmarketingtenx.com/services/e-commerce-marketing",
+    url: "https://digitalmarketingtenx.com/services/e-commerce-marketing",
     siteName: "Digital Marketing TenX",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://www.digitalmarketingtenx.com/og-image.webp",
+        url: "https://digitalmarketingtenx.com/og-image.webp",
         width: 1200,
         height: 630,
         alt: "E-Commerce Marketing Services - Digital Marketing TenX",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "E-Commerce Marketing Services | Scale Shopify & WooCommerce | TenX",
     description: "Accelerate your online store sales with Digital Marketing TenX. Premium Shopify marketing, WooCommerce SEO, Google Shopping PMax campaigns, and Klaviyo email flows.",
-    images: ["https://www.digitalmarketingtenx.com/og-image.webp"],
+    images: ["https://digitalmarketingtenx.com/og-image.webp"],
   }
 };
 
@@ -39,19 +39,19 @@ export default function Page() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.digitalmarketingtenx.com"
+        "item": "https://digitalmarketingtenx.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.digitalmarketingtenx.com/services"
+        "item": "https://digitalmarketingtenx.com/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "E-Commerce Marketing",
-        "item": "https://www.digitalmarketingtenx.com/services/e-commerce-marketing"
+        "item": "https://digitalmarketingtenx.com/services/e-commerce-marketing"
       }
     ]
   };
@@ -64,8 +64,8 @@ export default function Page() {
     "provider": {
       "@type": "Organization",
       "name": "Digital Marketing TenX",
-      "url": "https://www.digitalmarketingtenx.com",
-      "logo": "https://www.digitalmarketingtenx.com/logo.webp"
+      "url": "https://digitalmarketingtenx.com",
+      "logo": "https://digitalmarketingtenx.com/logo.webp"
     },
     "areaServed": [
       { "@type": "City", "name": "Hyderabad" },
@@ -216,7 +216,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Digital Marketing TenX (E-Commerce Branch)",
-    "image": "https://www.digitalmarketingtenx.com/logo.webp",
+    "image": "https://digitalmarketingtenx.com/logo.webp",
     "telephone": "+91-93922-51739",
     "email": "grow@digitalmarketingtenx.com",
     "priceRange": "$$",
@@ -233,7 +233,7 @@ export default function Page() {
       "latitude": "17.4447",
       "longitude": "78.4664"
     },
-    "url": "https://www.digitalmarketingtenx.com/services/e-commerce-marketing"
+    "url": "https://digitalmarketingtenx.com/services/e-commerce-marketing"
   };
 
   return (

@@ -4,7 +4,7 @@ export const metadata = {
   title: "Privacy Policy | Digital Marketing TenX | Data Protection & Privacy",
   description: "Learn how Digital Marketing TenX collects, uses, stores, and protects your personal information. Read our Privacy Policy for transparency and data security.",
   alternatives: {
-    canonical: "https://www.digitalmarketingtenx.com/privacy-policy"
+    canonical: "https://digitalmarketingtenx.com/privacy-policy"
   },
   robots: {
     index: true,
@@ -18,49 +18,49 @@ export default function PrivacyPolicyPage() {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.digitalmarketingtenx.com/privacy-policy#webpage",
-        "url": "https://www.digitalmarketingtenx.com/privacy-policy",
+        "@id": "https://digitalmarketingtenx.com/privacy-policy#webpage",
+        "url": "https://digitalmarketingtenx.com/privacy-policy",
         "name": "Privacy Policy | Digital Marketing TenX",
         "description": "Learn how Digital Marketing TenX collects, uses, stores, and protects your personal information.",
         "breadcrumb": {
-          "@id": "https://www.digitalmarketingtenx.com/privacy-policy#breadcrumb"
+          "@id": "https://digitalmarketingtenx.com/privacy-policy#breadcrumb"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.digitalmarketingtenx.com/privacy-policy#breadcrumb",
+        "@id": "https://digitalmarketingtenx.com/privacy-policy#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.digitalmarketingtenx.com/"
+            "item": "https://digitalmarketingtenx.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Privacy Policy",
-            "item": "https://www.digitalmarketingtenx.com/privacy-policy"
+            "item": "https://digitalmarketingtenx.com/privacy-policy"
           }
         ]
       },
       {
         "@type": "Organization",
-        "@id": "https://www.digitalmarketingtenx.com/#organization",
+        "@id": "https://digitalmarketingtenx.com/#organization",
         "name": "Digital Marketing TenX",
-        "url": "https://www.digitalmarketingtenx.com/",
-        "logo": "https://www.digitalmarketingtenx.com/logo.webp"
+        "url": "https://digitalmarketingtenx.com/",
+        "logo": "https://digitalmarketingtenx.com/logo.webp"
       },
       {
         "@type": "PrivacyPolicy",
-        "@id": "https://www.digitalmarketingtenx.com/privacy-policy#policy",
+        "@id": "https://digitalmarketingtenx.com/privacy-policy#policy",
         "isPartOf": {
-          "@id": "https://www.digitalmarketingtenx.com/privacy-policy#webpage"
+          "@id": "https://digitalmarketingtenx.com/privacy-policy#webpage"
         },
         "name": "Privacy Policy",
-        "url": "https://www.digitalmarketingtenx.com/privacy-policy",
+        "url": "https://digitalmarketingtenx.com/privacy-policy",
         "about": {
-          "@id": "https://www.digitalmarketingtenx.com/#organization"
+          "@id": "https://digitalmarketingtenx.com/#organization"
         }
       }
     ]

@@ -17,7 +17,7 @@ export const metadata = {
     "Business Marketing Services Khammam"
 ],
   alternates: {
-    canonical: "https://www.digitalmarketingtenx.com/khammam"
+    canonical: "https://digitalmarketingtenx.com/khammam"
   }
 };
 
