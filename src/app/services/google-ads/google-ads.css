@@ -1754,8 +1754,21 @@
 }
 @media(max-width:768px){
   .ga-section{padding:60px 24px}
-  .ga-hero{padding:36px 24px 50px}
-  .ga-hero h1{font-size: clamp(1.4rem, 3.5vw, 2.2rem);letter-spacing:-1px}
+  .ga-hero{padding:20px 24px 30px}
+  .ga-hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ga-hero-grid > div:first-child {
+    order: 2;
+  }
+  .ga-hero-visual {
+    order: 1;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 20px auto;
+  }
+  .ga-hero h1{font-size: clamp(1.5rem, 6vw, 2.1rem);letter-spacing:-1px}
   .ga-services-grid,
   .ga-included-grid,
   .ga-why-tenx-grid,
