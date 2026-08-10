@@ -401,8 +401,8 @@ export default function AboutUsPage() {
           <div className="sec-header">
             <span className="eyebrow">OUR TEAM & CULTURE</span>
             <h2>The People Behind Your Digital Success</h2>
-            <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7"}}>
-              At Digital Marketing TenX, our strength lies in our people. Our team of digital marketing strategists, SEO specialists, Google Ads experts, web developers, designers, and content creators work together to deliver innovative solutions that help businesses achieve sustainable growth.
+            <p style={{ maxWidth: "950px", margin: "0 auto", color: "#475569", fontSize: "1.1rem", lineHeight: "1.7" }}>
+              At Digital Marketing TenX, our strength lies in <strong>our people</strong>. Our team of digital marketing strategists, SEO specialists, Google Ads experts, web developers, designers, and content creators work together to deliver <strong>innovative solutions that help businesses achieve sustainable growth.</strong>
             </p>
           </div>
           <div className="team-grid" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "1200px", margin: "0 auto"}}>
