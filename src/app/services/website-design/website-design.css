@@ -2754,6 +2754,16 @@
     line-height: 1.15 !important;
     max-width: 100% !important;
   }
+  /* Features heading: exactly 3 lines on mobile */
+  .w-features-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+    line-height: 1.2 !important;
+  }
+  .w-feat-line1,
+  .w-feat-line2,
+  .w-feat-line3 {
+    display: block !important;
+  }
   .w-services-grid {
     grid-template-columns: 1fr;
   }

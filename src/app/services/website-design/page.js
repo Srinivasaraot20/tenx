@@ -539,9 +539,10 @@ export default function WebsiteDesignPage() {
               <span className="eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(124, 58, 237, 0.08)", color: "var(--w-accent-purple)", padding: "6px 16px", borderRadius: "30px", fontWeight: "700", fontSize: "0.85rem", letterSpacing: "1px", marginBottom: "20px" }}>
                 ⭐ WEBSITE FEATURES
               </span>
-              <h2 style={{ fontSize: "3rem", fontWeight: "900", color: "#0f172a", marginBottom: "24px", lineHeight: "1.2" }}>
-                Everything Your Business<br />
-                <span style={{ color: "#7c3aed" }}>Website</span> <span style={{ color: "#ff5722" }}>Needs</span>
+              <h2 className="w-features-title" style={{ fontSize: "3rem", fontWeight: "900", color: "#0f172a", marginBottom: "24px", lineHeight: "1.2" }}>
+                <span className="w-feat-line1">Everything Your</span>{" "}
+                <span className="w-feat-line2">Business <span style={{ color: "#7c3aed" }}>Website</span></span>{" "}
+                <span className="w-feat-line3"><span style={{ color: "#ff5722" }}>Needs</span></span>
               </h2>
               <p style={{ color: "#475569", fontSize: "1.1rem", lineHeight: "1.7", maxWidth: "900px", margin: "0 auto 40px" }}>
                 Build a website that is <strong>fast, secure, SEO-ready, and designed to generate leads</strong>. Every website we develop includes essential features that improve <strong>user experience, search visibility, and business growth.</strong>
