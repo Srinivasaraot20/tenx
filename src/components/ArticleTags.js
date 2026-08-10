@@ -5,7 +5,7 @@ export default function ArticleTags({ tags = [] }) {
 
   return (
     <div className="article-tags">
-      <span className="tags-label">Tags:</span>
+      <span className="tags-label">Key Topics:</span>
       {tags.map((tag) => (
         <Link key={tag} href={`/blog?tag=${encodeURIComponent(tag)}`} className="tag-pill">
           {tag}
