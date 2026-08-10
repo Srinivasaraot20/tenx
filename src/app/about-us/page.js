@@ -228,7 +228,7 @@ export default function AboutUsPage() {
               />
             </div>
             <div className="story-content">
-              <h2>Our Story — A Performance Marketing Agency</h2>
+              <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.4rem)", fontWeight: "bold", color: "#0f172a", marginBottom: "20px", lineHeight: "1.2" }}>Our Story — A Performance Marketing Agency</h2>
               <p style={{color: "#475569", fontSize: "1.05rem", lineHeight: "1.7", marginBottom: "16px"}}>
                 Digital Marketing TenX was founded in 2021 with a clear vision, to help businesses achieve sustainable growth through data-driven digital marketing. As a top digital marketing company in Hyderabad, we focus on strategies that generate qualified leads, increase brand visibility, and deliver measurable business results.
               </p>
