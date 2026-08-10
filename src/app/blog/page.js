@@ -95,6 +95,28 @@ export default function BlogPage() {
         </aside>
       </section>
 
+      <section className="blog-seo-content" style={{ padding: "60px 20px", maxWidth: "1200px", margin: "0 auto", color: "#333", lineHeight: "1.8" }}>
+        <h2 style={{ fontSize: "2rem", marginBottom: "20px", color: "#111" }}>Welcome to the Digital Marketing TenX Blog</h2>
+        <p style={{ marginBottom: "16px", fontSize: "1.1rem" }}>
+          In the fast-paced world of online business, staying updated with the latest digital marketing trends is crucial for sustainable growth. 
+          At the Digital Marketing TenX blog, we are dedicated to bringing you the most actionable, data-driven strategies from industry experts. 
+          Whether you are looking to boost your organic search rankings, optimize your Google Ads campaigns, or build a loyal audience on social media, 
+          our comprehensive guides and expert insights have you covered.
+        </p>
+        <p style={{ marginBottom: "16px", fontSize: "1.1rem" }}>
+          Our mission is to decode the complexities of digital marketing and provide you with clear, step-by-step tutorials that yield measurable results. 
+          We understand that every business is unique, which is why our articles cover a wide range of topics—from local SEO techniques tailored for specific cities, 
+          to broader performance marketing strategies designed for e-commerce scaling. By reading our blog, you will gain exclusive insights into the algorithms that power search engines, 
+          social media networks, and online advertising platforms, empowering you to make informed decisions that drive qualified traffic and maximize your Return on Investment (ROI).
+        </p>
+        <p style={{ fontSize: "1.1rem" }}>
+          We also focus on emerging technologies like AI marketing, automation, and advanced data analytics, ensuring that your business is always prepared for the future. 
+          Bookmark this page and subscribe to our newsletter to ensure you never miss out on our latest content. Dive into our expertly crafted articles, 
+          explore detailed case studies, and discover the tools you need to stay ahead of the competition. Let Digital Marketing TenX be your trusted 
+          companion on the journey to digital excellence.
+        </p>
+      </section>
+
       <RelatedServices />
       <CTA />
     
