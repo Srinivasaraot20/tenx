@@ -541,8 +541,8 @@ export default function WebsiteDesignPage() {
                 Everything Your Business<br />
                 <span style={{ color: "#7c3aed" }}>Website</span> <span style={{ color: "#ff5722" }}>Needs</span>
               </h2>
-              <p style={{ color: "#475569", fontSize: "1.1rem", lineHeight: "1.6", margin: "0 auto 40px" }}>
-                Build a website that is fast, secure, SEO-ready, and designed to generate leads. Every website we develop includes essential features that improve user experience, search visibility, and business growth.
+              <p style={{ color: "#475569", fontSize: "1.1rem", lineHeight: "1.7", maxWidth: "900px", margin: "0 auto 40px" }}>
+                Build a website that is <strong>fast, secure, SEO-ready, and designed to generate leads</strong>. Every website we develop includes essential features that improve <strong>user experience, search visibility, and business growth.</strong>
               </p>
             </div>
 
