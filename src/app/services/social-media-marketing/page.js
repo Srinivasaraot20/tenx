@@ -446,45 +446,7 @@ export default function SocialMediaMarketingPage() {
             </button>
           </div>
 
-          {/* Mini trust badges */}
-          <div className="smm-hero-trust-row">
-            <div className="smm-hero-trust-item">
-              <div className="smm-hero-trust-icon" style={{ background: "rgba(124,58,237,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <div>
-                <div className="smm-trust-item-title">Targeted Audience</div>
-                <div className="smm-trust-item-desc">Reach the right people</div>
-              </div>
-            </div>
-            <div className="smm-hero-trust-item">
-              <div className="smm-hero-trust-icon" style={{ background: "rgba(236,72,153,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#be185d" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-              </div>
-              <div>
-                <div className="smm-trust-item-title">Higher Engagement</div>
-                <div className="smm-trust-item-desc">Increase likes, shares &amp; comments</div>
-              </div>
-            </div>
-            <div className="smm-hero-trust-item">
-              <div className="smm-hero-trust-icon" style={{ background: "rgba(255,107,0,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 9 11 13 15 22 22 3"/></svg>
-              </div>
-              <div>
-                <div className="smm-trust-item-title">Lead Generation</div>
-                <div className="smm-trust-item-desc">Convert followers into customers</div>
-              </div>
-            </div>
-            <div className="smm-hero-trust-item">
-              <div className="smm-hero-trust-icon" style={{ background: "rgba(16,185,129,0.08)" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-              </div>
-              <div>
-                <div className="smm-trust-item-title">Brand Growth</div>
-                <div className="smm-trust-item-desc">Build authority &amp; grow your brand</div>
-              </div>
-            </div>
-          </div>
+
 
 
         </div>
