@@ -38,7 +38,7 @@
 
 /* Section Containers */
 .services-section {
-  padding: 30px 60px 50px 60px;
+  padding: 0px 60px 50px 60px;
   position: relative;
 }
 
@@ -138,7 +138,7 @@
    1. HERO SECTION
    ────────────────────────────────────── */
 .services-hero-section {
-  padding: clamp(2rem, 5vw, 5rem) clamp(1rem, 5vw, 4rem) 30px 60px;
+  padding: clamp(2rem, 5vw, 5rem) clamp(1rem, 5vw, 4rem) 0px 60px;
   background: linear-gradient(135deg, #fff 60%, #fff8f3 100%);
   position: relative;
   overflow: hidden;
