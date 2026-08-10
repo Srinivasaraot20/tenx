@@ -127,44 +127,6 @@ export default function AboutUsPage() {
               
 
               
-              <div className="hero-stats-grid">
-                <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#ff5722"}}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                  </div>
-                  <div className="stat-text">
-                    <h3>Result Driven</h3>
-                    <p>Strategies that deliver measurable growth.</p>
-                  </div>
-                </div>
-                <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(59,130,246,0.1)", color: "#1d4ed8"}}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg>
-                  </div>
-                  <div className="stat-text">
-                    <h3>Data Backed</h3>
-                    <p>Smart decisions powered by data.</p>
-                  </div>
-                </div>
-                <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(139,92,246,0.1)", color: "#8b5cf6"}}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
-                  </div>
-                  <div className="stat-text">
-                    <h3>AI Powered</h3>
-                    <p>Automation for maximum performance.</p>
-                  </div>
-                </div>
-                <div className="stat-card">
-                  <div className="stat-icon-wrapper" style={{background: "rgba(255,107,0,0.1)", color: "#ff5722"}}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                  </div>
-                  <div className="stat-text">
-                    <h3>Expert Team</h3>
-                    <p>Experienced professionals dedicated to your growth.</p>
-                  </div>
-                </div>
-              </div>
 
               <p className="hero-objective">
                 Every campaign is built around measurable business objectives, ensuring transparency, continuous optimization, and sustainable digital growth.
