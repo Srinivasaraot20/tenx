@@ -618,9 +618,7 @@ Please contact me for the audit. Thank you!`;
           "Structured data & Schema Markup",
           "Entity-based SEO implementation",
           "Knowledge Graph optimization",
-          "E-E-A-T enhancement",
           "Conversational content optimization",
-          "Zero-click search optimization",
           "AI-friendly content architecture"
         ],
         color: "#2563eb",
