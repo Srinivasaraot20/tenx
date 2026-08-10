@@ -254,9 +254,9 @@
 }
 
 .seo-hero-content h1 span.gradient-text {
-  background: linear-gradient(90deg, #ff5722 0%, #be185d 45%, #2563eb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff5722;
+  background: none;
+  -webkit-text-fill-color: initial;
   display: inline-block;
 }
 
