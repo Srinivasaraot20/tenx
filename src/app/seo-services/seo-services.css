@@ -2086,6 +2086,15 @@
     margin: 0 auto 8px auto !important;
     width: 100%;
   }
+  /* ── H1: exactly 2 lines on mobile ── */
+  .seo-hero-content h1 {
+    font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+    line-height: 1.15 !important;
+  }
+  .seo-h1-line1,
+  .seo-h1-line2 {
+    display: block !important;
+  }
   .seo-lead-points {
     grid-template-columns: 1fr;
   }

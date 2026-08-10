@@ -975,9 +975,8 @@ Please contact me for the audit. Thank you!`;
                 <span className="seo-hero-pill-orange"><span style={{ marginRight: "4px" }}>🚀</span> #1 SEO COMPANY FOR BUSINESSES</span>
               </div>
               <h1>
-                Rank Higher. <br />
-                Drive More Traffic. <br />
-                <span className="gradient-text">Grow Your Business.</span>
+                <span className="seo-h1-line1">Rank Higher. Drive More Traffic.</span>{" "}
+                <span className="seo-h1-line2"><span className="gradient-text">Grow Your Business.</span></span>
               </h1>
               <p>
                 Our data-driven SEO strategies help businesses improve search rankings, increase organic traffic, and generate sustainable long-term growth. Digital Marketing TenX provides performance-focused SEO services in Hyderabad, helping businesses build stronger online visibility and attract more qualified customers.
