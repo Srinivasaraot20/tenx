@@ -3395,7 +3395,7 @@
 /* 3. Tech Cards */
 .w-tech-items-grid {
   display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
+  grid-template-columns: repeat(5, 1fr) !important;
   gap: 16px !important;
 }
 .w-tech-logo-card {
