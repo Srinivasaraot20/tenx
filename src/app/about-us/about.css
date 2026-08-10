@@ -2274,7 +2274,7 @@
   flex-direction: column;
 }
 
-.about-hero-title { font-size: clamp(1.8rem, 3vw, 2.3rem);
+.about-hero-title { font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 900;
   color: #0f172a;
   line-height: 1.05;
@@ -2481,7 +2481,7 @@
   align-items: flex-start;
 }
 
-.about-hero-title { font-size: clamp(1.8rem, 3vw, 2.3rem);
+.about-hero-title { font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 900;
   color: #0f172a;
   line-height: 1.05;
@@ -2676,7 +2676,7 @@ font-size: 0.9rem;
   align-items: flex-start;
 }
 
-.about-hero-title { font-size: clamp(1.8rem, 3vw, 2.3rem);
+.about-hero-title { font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 900;
   color: #0f172a;
   line-height: 1.05;
