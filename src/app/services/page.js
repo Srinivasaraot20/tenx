@@ -661,7 +661,7 @@ export default function ServicesPage() {
           <div className="services-grid-content">
             <div className="sec-title-centered">
               <span className="eyebrow">Services Overview</span>
-              <h2>Premium Marketing Solutions Tailored for Scale</h2>
+              <h2>Premium Marketing Solutions<br className="show-mobile-br" /> Tailored for Scale</h2>
               <p>
                 Explore our six core competencies, detailing exactly what we cover, why it matters, and how it drives value.
               </p>

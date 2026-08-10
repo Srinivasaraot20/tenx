@@ -1,5 +1,10 @@
 /* ─── PREMIUM SERVICES PAGE CSS (LIGHT THEME) ─── */
 
+/* Mobile-only br utility (hidden on desktop) */
+.show-mobile-br {
+  display: none;
+}
+
 :root {
   --light-section-bg: #f9f9fb;
   --white-section-bg: #ffffff;
@@ -1134,6 +1139,9 @@
   }
   .hide-mobile {
     display: none;
+  }
+  .show-mobile-br {
+    display: inline;
   }
   .sec-title-centered {
     text-align: center;
