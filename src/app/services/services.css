@@ -1258,12 +1258,13 @@
     display: contents !important;
   }
   .services-hero-content {
-    order: 1;
+    order: 2;
     margin-bottom: 0 !important;
   }
   .hero-visual-wrap {
-    order: 2;
+    order: 1;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
   .s-hero-features {
     order: 3;
