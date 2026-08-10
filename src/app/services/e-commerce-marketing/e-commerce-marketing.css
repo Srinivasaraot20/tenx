@@ -189,6 +189,26 @@
 }
 
 @media (max-width: 768px) {
+  /* ── Hero: image first on mobile ── */
+  .ecom-hero {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .ecom-hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .ecom-hero-grid > div:first-child {
+    order: 2;
+  }
+  .ecom-hero-visual {
+    order: 1;
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto 8px auto !important;
+    margin-top: 0 !important;
+  }
   .ecom-hero h1 {
     font-size: clamp(28px, 5vw, 40px);
     letter-spacing: -1px;
