@@ -1953,7 +1953,25 @@
 }
 
 @media (max-width: 768px) {
-  .smm-hero { padding: 36px 20px 50px; }
+  /* ── Hero: image first on mobile ── */
+  .smm-hero {
+    padding: 20px 20px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .smm-hero-content {
+    order: 2;
+    align-items: center;
+    text-align: center;
+  }
+  .smm-hero-visual {
+    order: 1;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 8px auto;
+    margin-top: 0 !important;
+  }
   .smm-section { padding: 56px 20px; }
   .smm-metrics-section { padding: 56px 20px; }
   .smm-why-grid, .smm-services-grid, .smm-showcase-grid,
