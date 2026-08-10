@@ -56,7 +56,7 @@ export default function SEOContent() {
             
             {/* Left: FAQs Accordion */}
             <div className="seo-faqs-col">
-              <div className="sec-title" style={{ textAlign: "center" }}>
+              <div className="sec-title" style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 40px auto" }}>
                 <span className="eyebrow">💡 Help Desk</span>
                 <h2>Frequently Asked Questions About Digital Marketing Services in Hyderabad</h2>
 
