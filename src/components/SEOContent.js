@@ -57,8 +57,8 @@ export default function SEOContent() {
             {/* Left: FAQs Accordion */}
             <div className="seo-faqs-col">
               <div className="sec-title" style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 40px auto" }}>
-                <span className="eyebrow">💡 Help Desk</span>
-                <h2>Frequently Asked Questions About Digital Marketing Services in Hyderabad</h2>
+                <span className="eyebrow" style={{ display: "inline-block", marginBottom: "16px" }}>💡 Help Desk</span>
+                <h2 style={{ marginBottom: "20px" }}>Frequently Asked Questions About Digital Marketing Services in Hyderabad</h2>
 
                 <p>Everything you need to know about our digital marketing, SEO, PPC ads, and web development models. We follow the best practices outlined in <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" style={{ color: "var(--ga-primary)", textDecoration: "underline" }}>Google's SEO Starter Guide</a> to ensure your business achieves sustainable online growth.</p>
               </div>
