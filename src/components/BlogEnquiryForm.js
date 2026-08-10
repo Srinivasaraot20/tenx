@@ -98,7 +98,7 @@ export default function BlogEnquiryForm({ blogTitle, blogUrl }) {
       }}
     >
       <h3 style={{ fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "white" }}>
-        Enquiry Now
+        Make an Enquiry
       </h3>
 
       {submitStatus === "success" ? (
