@@ -51,7 +51,7 @@ export default function BlogHero() {
         <div className="blog-hero-visual">
           <div className="hero-visual-main">
             <Image
-              src="/blog1.webp"
+              src="/blog_hero_new.webp"
               alt="Digital marketing tools, analytics, and business growth concepts"
               width={600}
               height={400}
