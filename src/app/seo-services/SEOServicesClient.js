@@ -632,19 +632,13 @@ Please contact me for the audit. Thank you!`;
           "AI search optimization strategy",
           "ChatGPT visibility optimization",
           "Google AI Overviews optimization",
-          "Microsoft Copilot optimization",
           "Perplexity AI optimization",
-          "Claude AI optimization",
-          "Gemini AI optimization",
           "Entity & semantic optimization",
           "Brand authority development",
           "Citation and source optimization",
           "AI-ready content creation",
           "LLM indexing optimization",
-          "Knowledge Graph expansion",
-          "Digital PR for AI citations",
-          "Topical authority development",
-          "AI content performance monitoring"
+          "Knowledge Graph expansion"
         ],
         color: "#8b5cf6",
         bg: "rgba(139, 92, 246, 0.08)"
