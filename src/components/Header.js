@@ -84,7 +84,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="header-nav">
+      <nav className={`header-nav ${pathname === '/contact' ? 'header-static' : ''}`}>
         <Link href="/" className="logo" onClick={handleLinkClick}>
           <Image
             src="/logo.webp"
