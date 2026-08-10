@@ -627,6 +627,9 @@ export default function ServicesPage() {
                   <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
                     📅 Book Free Consultation
                   </button>
+                  <Link href="/about-us" className="btn-outline">
+                    Explore About Us
+                  </Link>
                 </div>
               </div>
 
