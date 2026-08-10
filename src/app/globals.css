@@ -31,7 +31,7 @@ a{text-decoration:none;color:inherit}
 
 /* ── NAV ── */
 .header-nav{display:flex;align-items:center;justify-content:space-between;padding:clamp(10px, 1.5vw, 16px) var(--space-fluid-section-px);background:rgba(255, 255, 255, 0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);position:fixed;top:0;left:0;right:0;z-index:1500;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
-.header-nav.header-static { position: static; z-index: auto; top: auto; left: auto; right: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.header-nav.header-static { position: relative; z-index: 1500; top: auto; left: auto; right: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
 .logo{display:flex;align-items:center;gap:var(--space-fluid-gap-sm);font-weight:900;font-size:clamp(1.25rem, 2vw, 1.5rem);color:#1a1a2e;letter-spacing:-0.5px}
 .brand-name{color:#1d4ed8}
 .brand-highlight{background:linear-gradient(135deg, #ff5722 0%, #d946ef 50%, #1d4ed8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block;font-weight:900}
