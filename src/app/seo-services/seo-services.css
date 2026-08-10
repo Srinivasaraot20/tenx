@@ -318,7 +318,7 @@
 .seo-hero-badges-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px 16px;
+  gap: 16px 8px;
 }
 @media (max-width: 992px) {
   .seo-hero-badges-container {
@@ -394,6 +394,7 @@
   align-items: center;
   gap: 4px;
   line-height: 1.25;
+  white-space: nowrap;
 }
 
 .seo-trust-badge-text strong {
@@ -413,8 +414,9 @@
   position: relative;
   perspective: 1200px;
   /* Replaced scale(0.70) which caused huge whitespace, with width control */
-  width: 90%;
+  width: 105%;
   margin-left: auto;
+  margin-right: -5%;
   display: flex;
   align-items: center;
 }
