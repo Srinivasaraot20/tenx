@@ -459,8 +459,8 @@ export default function WebsiteDesignPage() {
             <div className="w-title-centered">
               <span className="eyebrow">Our Website Design Process</span>
               <h2>Our Website Design & Development Process</h2>
-              <p>
-                From Strategy to Success, we follow a proven process to create websites that are visually stunning, technically strong, and built to generate business results.
+              <p style={{ maxWidth: "750px", margin: "0 auto", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                From <strong>Strategy to Success</strong>, we follow a proven process to create websites that are visually stunning, technically strong, and built to <strong>generate business results.</strong>
               </p>
             </div>
 
