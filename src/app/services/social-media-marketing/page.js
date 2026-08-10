@@ -383,14 +383,14 @@ export default function SocialMediaMarketingPage() {
   ];
 
   const benefits = [
-    { title: "Increase Followers", desc: "Attract a dedicated, targeted fan base interested in your service niche." },
-    { title: "Higher Engagement", desc: "Get more likes, shares, comments, and direct message queries." },
-    { title: "More Website Traffic", desc: "Drive high-intent social media clickers directly to your landing pages." },
-    { title: "Brand Recognition", desc: "Familiarize local audiences with your company color, voice, and values." },
-    { title: "Quality Leads", desc: "Capture user contact details using interactive bios and ad-forms." },
-    { title: "Higher Sales Conversion", desc: "Nurture social traffic into sales using product retargeting ads." },
-    { title: "Customer Loyalty", desc: "Engage post-purchase users to build repeat customers." },
-    { title: "Maximum ROI", desc: "Optimize ad spend using custom conversion targeting options." }
+    { title: "Increase Brand Awareness", desc: "Build a strong online presence and make your business more recognizable across Facebook, Instagram, LinkedIn, and other social platforms." },
+    { title: "Higher Engagement", desc: "Increase likes, comments, shares, and meaningful interactions that strengthen customer relationships." },
+    { title: "Drive Website Traffic", desc: "Bring targeted visitors to your website through engaging content, strategic campaigns, and optimized social media profiles." },
+    { title: "Generate Quality Leads", desc: "Convert social media audiences into qualified leads using lead forms, targeted campaigns, and compelling calls to action." },
+    { title: "Increase Sales & Conversions", desc: "Turn followers into paying customers with optimized campaigns, retargeting, and conversion-focused strategies." },
+    { title: "Build Customer Loyalty", desc: "Strengthen long-term customer relationships through consistent communication, valuable content, and active community management." },
+    { title: "Better Brand Reputation", desc: "Build trust and credibility by maintaining a professional social media presence and responding to customer feedback." },
+    { title: "Maximize ROI", desc: "Improve marketing performance with continuous optimization, audience targeting, and data-driven campaign decisions." }
   ];
 
   const whyChooseUs = [
@@ -567,9 +567,9 @@ export default function SocialMediaMarketingPage() {
       {/* 10. BENEFITS & RESULTS */}
       <section className="smm-section" style={{ backgroundColor: "#ffffff" }}>
         <div className="smm-sec-header reveal-element">
-          <span className="eyebrow">The Benefits</span>
-          <h2>Key Growth Benefits of SMM</h2>
-          <p>By building consistent touchpoints across feeds, we grow your bottom-line metrics.</p>
+          <span className="eyebrow">WHY CHOOSE SOCIAL MEDIA MARKETING?</span>
+          <h2>Key Benefits of Social Media Marketing</h2>
+          <p>Grow your brand, reach the right audience, generate qualified leads, and increase sales with data-driven social media marketing strategies tailored to your business goals.</p>
         </div>
         <div className="smm-benefits-grid reveal-element">
           {benefits.map((item, idx) => (
