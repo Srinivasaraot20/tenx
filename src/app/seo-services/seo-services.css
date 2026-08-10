@@ -315,8 +315,15 @@
 }
 
 /* Trust Badges Row */
-.seo-hero-badges-container { display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 16px 24px;
+.seo-hero-badges-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 16px;
+}
+@media (max-width: 992px) {
+  .seo-hero-badges-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* AEO / GEO Advanced Sections */
