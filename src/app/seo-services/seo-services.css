@@ -383,7 +383,9 @@
 
 .seo-trust-badge-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
   line-height: 1.25;
 }
 
