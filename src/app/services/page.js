@@ -627,53 +627,10 @@ export default function ServicesPage() {
                   <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
                     📅 Book Free Consultation
                   </button>
-                  <Link href="/" className="btn-outline">
-                    ▶ View Our Portfolio
-                  </Link>
                 </div>
               </div>
 
-              {/* 3 Strategic Service Highlights */}
-              <div className="s-hero-features">
-                <div className="s-feat-item">
-                  <div className="s-feat-icon-box orange">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <circle cx="12" cy="12" r="6"></circle>
-                      <circle cx="12" cy="12" r="2"></circle>
-                    </svg>
-                  </div>
-                  <div className="s-feat-info">
-                    <h5>Data-Driven Strategies</h5>
-                    <p>Smarter decisions for better results.</p>
-                  </div>
-                </div>
-                <div className="s-feat-item">
-                  <div className="s-feat-icon-box purple">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <line x1="18" y1="20" x2="18" y2="10"></line>
-                      <line x1="12" y1="20" x2="12" y2="4"></line>
-                      <line x1="6" y1="20" x2="6" y2="14"></line>
-                    </svg>
-                  </div>
-                  <div className="s-feat-info">
-                    <h5>Measurable Growth</h5>
-                    <p>Track, analyze and scale what works.</p>
-                  </div>
-                </div>
-                <div className="s-feat-item">
-                  <div className="s-feat-icon-box green">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
-                    </svg>
-                  </div>
-                  <div className="s-feat-info">
-                    <h5>Customer Focused</h5>
-                    <p>Solutions that engage and convert.</p>
-                  </div>
-                </div>
-              </div>
+
             </div>
 
             <div className="hero-visual-wrap">
