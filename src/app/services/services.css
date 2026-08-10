@@ -1169,15 +1169,18 @@
     padding: 60px 24px;
   }
   .services-hero-section {
-    padding: 80px 24px 40px 24px;
+    padding: 80px 24px 10px 24px;
   }
   .services-hero-content h1 {
     font-size: clamp(1.8rem, 4vw, 2.2rem);
   }
   .s-globe-container {
     max-width: 380px;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+  .hero-visual-wrap {
+    margin-bottom: 10px !important;
   }
   .s-float-tag.lead-gen { top: 15px; left: -10px; }
   .s-float-tag.social-media { top: 15px; right: -25px; }
@@ -1215,8 +1218,8 @@
 @media (max-width: 480px) {
   .s-globe-container {
     max-width: 290px;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    height: auto !important;
+    aspect-ratio: auto !important;
   }
   .floating-globe {
     width: 76%;
