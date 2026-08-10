@@ -944,3 +944,33 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+/* Google Map Sizing and Styling */
+.contact-map {
+  width: 100%;
+  height: 520px; /* Increased from 450px */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #eee;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .contact-map {
+    height: 450px; /* Increased from 400px */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-map {
+    height: 360px; /* Increased from 320px */
+    border-radius: 12px;
+  }
+}
+
+
