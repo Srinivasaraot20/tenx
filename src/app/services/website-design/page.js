@@ -485,7 +485,11 @@ export default function WebsiteDesignPage() {
           <div className="w-grid-content">
             <div className="w-title-centered" style={{ maxWidth: "900px", margin: "0 auto" }}>
               <span className="eyebrow" style={{ marginBottom: "8px", display: "inline-block" }}>WHY INVEST IN A PROFESSIONAL WEBSITE</span>
-              <h2 style={{ fontSize: "2.5rem", margin: "0 auto 16px", lineHeight: "1.2" }}>Why Your Business Needs a Professional Website</h2>
+              <h2 className="w-why-title" style={{ fontSize: "2.5rem", margin: "0 auto 16px", lineHeight: "1.2" }}>
+                <span className="w-why-line1">Why Your Business</span>{" "}
+                <span className="w-why-line2">Needs a Professional</span>{" "}
+                <span className="w-why-line3">Website</span>
+              </h2>
               <div style={{ textAlign: "center", color: "var(--w-text-muted)", fontSize: "1.1rem", lineHeight: "1.7", maxWidth: "980px", margin: "0 auto 16px", fontStyle: "italic" }}>
                 <p>
                   Your website is more than just an online presence, it's <strong>your most valuable digital asset</strong>. A professionally designed website builds trust, strengthens your brand, and helps convert visitors into customers. Whether you're a startup, local business, or established enterprise, investing in a high-quality website creates opportunities for <strong>long-term growth.</strong>

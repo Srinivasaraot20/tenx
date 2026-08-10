@@ -2764,6 +2764,16 @@
   .w-feat-line3 {
     display: block !important;
   }
+  /* Why heading: exactly 3 lines on mobile */
+  .w-why-title {
+    font-size: clamp(1.5rem, 6.5vw, 2rem) !important;
+    line-height: 1.2 !important;
+  }
+  .w-why-line1,
+  .w-why-line2,
+  .w-why-line3 {
+    display: block !important;
+  }
   .w-services-grid {
     grid-template-columns: 1fr;
   }
