@@ -165,9 +165,9 @@
 }
 
 .w-hero-content h1 {
-  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.05;
   margin-bottom: 24px;
   letter-spacing: -1.5px;
   color: var(--w-text-dark);
@@ -2742,7 +2742,7 @@
     min-height: 0;
   }
   .w-hero-content h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   .w-services-grid {
     grid-template-columns: 1fr;
